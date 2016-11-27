@@ -1,17 +1,16 @@
 <template>
 	<div id="app">
-		<img src="./assets/logo.png">
-		<hello></hello>
+		<video-capture></video-capture>
 	</div>
 </template>
 
 <script>
-import Hello from './components/Hello'
+import VideoCapture from './components/video-capture'
 
 export default {
 	name: 'app',
 	components: {
-		Hello
+		VideoCapture
 	}
 }
 </script>
