@@ -45,5 +45,6 @@ export default {
 }
 </script>
 
-<style>
+<style lang="sass">
+	@import '../styles/_variables.sass';
 </style>

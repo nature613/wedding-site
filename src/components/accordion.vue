@@ -1,6 +1,6 @@
 <template>
 	<div>
-		RSVP here
+Accordion here
 	</div>
 </template>
 

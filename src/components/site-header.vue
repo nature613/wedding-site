@@ -14,5 +14,11 @@
 <script>
 </script>
 
-<style>
+<style lang="sass">
+	@import '../styles/_variables.sass';
+
+	#header
+		background: $background3;
+		opacity: .8;
+
 </style>
