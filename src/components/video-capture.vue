@@ -1,14 +1,18 @@
 <template>
-	<div>
-		<div v-if="isRecording">
-			<div>
-				<video autoplay></video>
+	<div id="video" class="row">
+		<div class="col-lg-2"></div>
+		<div id="video-recording" class="col-lg-8">
+			<div v-if="isRecording">
+				<div class="video-container">
+					<video autoplay></video>
+				</div>
+				<button @click="stop">Stop Recording</button>
 			</div>
-			<button @click="stop">Stop Recording</button>
+			<div v-else>
+				<button @click="start">Start Recording</button>
+			</div>
 		</div>
-		<div v-else>
-			<button @click="start">Start Recording</button>
-		</div>
+		<div class="col-lg-2"></div>
 	</div>
 </template>
 
@@ -47,4 +51,12 @@ export default {
 
 <style lang="sass">
 	@import '../styles/_variables.sass';
+
+	#video
+		margin: 3rem;
+
+		#video-recording
+			.video-container
+				background: $background3;
+				padding: 6rem;
 </style>

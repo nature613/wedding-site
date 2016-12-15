@@ -2,8 +2,10 @@
 	<div id="app">
 		<site-header></site-header>
 		<main>
-			<p>Wedding website for Dacia James and David Rodrigue</p>
-			<video-capture></video-capture>
+			<div class="container">
+				<p>Wedding website for Dacia James and David Rodrigue</p>
+				<video-capture></video-capture>
+			</div>
 		</main>
 		<site-footer></site-footer>
 	</div>
@@ -35,7 +37,7 @@ export default {
 		background: $color-light-merlot url('assets/backgrounds/background-lights-purple-circles.jpg') 50% top no-repeat / cover;
 		background-blend-mode: lighten;
 		color: $text;
-		font-family: $font-stack-sans-serif;
+		font: 15px/1.4 $font-stack-serif;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 		margin: 0;
@@ -44,5 +46,13 @@ export default {
 
 	h1, h2, h3,
 	h4, h5, h6
-		font-family: $font-stack-serif;
+		font-family: $font-stack-sans-serif2;
+		margin: 0;
+
+	main
+		position: relative;
+		top: 8rem;
+
+		.container
+			margin-bottom: 6rem;
 </style>
