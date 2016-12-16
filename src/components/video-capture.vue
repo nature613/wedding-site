@@ -4,7 +4,7 @@
 		<div id="video-recording" class="col-lg-8">
 			<div v-if="isRecording">
 				<div class="video-container">
-					<video autoplay></video>
+					<video autoplay muted></video>
 				</div>
 				<button @click="stop">Stop Recording</button>
 			</div>
