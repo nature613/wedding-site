@@ -57,6 +57,12 @@ export default {
 
 		#video-recording
 			.video-container
-				background: $background3;
-				padding: 6rem;
+				background-color: rgba(43,6,22,0.5);
+				box-shadow: 0px 0px 10px 5px rgba(43,6,22,0.5);
+				margin-bottom: 1rem;
+				padding: 3rem;
+
+				video
+					height: auto !important;
+					width: 100% !important;
 </style>
