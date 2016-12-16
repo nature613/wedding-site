@@ -1,13 +1,11 @@
 import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
-import App from './app'
+import VueRouter from 'vue-router'
 
-// Globally register bootstrap-vue components
+import routes from './routes'
+
 Vue.use(BootstrapVue);
+Vue.use(VueRouter);
 
-/* eslint-disable no-new */
-new Vue({
-	el: '#app',
-	template: '<App/>',
-	components: { App }
-})
+const router = new VueRouter({ routes, linkActiveClass: 'active' })
+const app = new Vue({ router }).$mount('#app')

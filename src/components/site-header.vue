@@ -8,11 +8,11 @@
 					</div>
 					<div class="col-lg-8">
 						<b-nav type="navbar" class="pull-xs-left">
-							<b-nav-item link="#" active>Home</b-nav-item>
-							<b-nav-item link="#">Wedding</b-nav-item>
-							<b-nav-item link="#">RSVP</b-nav-item>
-							<b-nav-item link="#">Registry</b-nav-item>
-							<b-nav-item link="#">While in Chicago</b-nav-item>
+							<li class="nav-item"><router-link class="nav-link" to="/">Home</router-link></li>
+							<li class="nav-item"><router-link class="nav-link" to="/wedding">Wedding</router-link></li>
+							<li class="nav-item"><router-link class="nav-link" to="/rsvp">RSVP</router-link></li>
+							<li class="nav-item"><router-link class="nav-link" to="/registry">Registry</router-link></li>
+							<li class="nav-item"><router-link class="nav-link" to="/chicago">While in Chicago</router-link></li>
 						</b-nav>
 					</div>
 				</b-navbar>
