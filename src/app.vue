@@ -1,13 +1,15 @@
 <template>
 	<div id="app">
-		<site-header></site-header>
-		<main>
-			<div class="container">
-				<p>Wedding website for Dacia James and David Rodrigue</p>
-				<video-capture></video-capture>
-			</div>
-		</main>
-		<site-footer></site-footer>
+		<div class="container">
+			<site-header></site-header>
+			<main>
+				<div class="container">
+					<p>Wedding website for Dacia James and David Rodrigue</p>
+					<video-capture></video-capture>
+				</div>
+			</main>
+			<site-footer></site-footer>
+		</div>
 	</div>
 </template>
 
@@ -33,21 +35,27 @@ export default {
 <style lang="sass">
 	@import 'styles/_variables.sass';
 
+	html
+		box-sizing: border-box;
+		height: 100%;
+		line-height: 1.5;
+
 	body
-		background: $color-light-merlot url('assets/backgrounds/background-lights-purple-circles.jpg') 50% top no-repeat / cover;
+		background: $color-light-merlot url('assets/backgrounds/background-lights-purple-circles.jpg') 50% -14% no-repeat / cover;
 		background-blend-mode: lighten;
 		color: $text;
-		font: 15px/1.4 $font-stack-serif;
+		display: block;
+		font: 1rem/1.5 $font-stack-serif;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
-		margin: 0;
-		padding: 0;
 		text-align: center;
 
 	h1, h2, h3,
 	h4, h5, h6
 		font-family: $font-stack-sans-serif2;
 		margin: 0;
+
+	.container
 
 	main
 		position: relative;

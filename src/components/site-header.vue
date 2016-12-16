@@ -33,7 +33,7 @@
 
 		.nav
 			float: right;
-			margin: 10rem 0;
+			margin: 1rem 0;
 
 		h1
 			color: $text;
