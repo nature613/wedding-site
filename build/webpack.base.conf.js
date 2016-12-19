@@ -70,9 +70,12 @@ module.exports = {
         loader: 'url',
         query: {
           limit: 10000,
-          name: utils.assetsPath('img/[name].[hash:7].[ext]'),
-	        exclude: /favicons/
+          name: utils.assetsPath('img/[name].[hash:7].[ext]')
         }
+      },
+			{
+        test: /\.(png|ico)(\?.*)?$/,
+        loader: 'file-loader?name=[name].[ext]'  // <-- retain original file name
       },
       {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
