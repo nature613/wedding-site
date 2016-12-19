@@ -4,50 +4,51 @@
 			<div class="card-deck-wrapper">
 				<div class="card-deck">
 					<b-card variant="default" type="default" align="left">
-						<img class="card-img img-fluid" src="../assets/stock/wedding.jpg" alt="Wedding information">
+						<router-link to="/wedding"><img class="card-img img-fluid" src="../assets/stock/wedding.jpg" alt="Wedding information"></router-link>
 						<div class="card-block">
-							<h4 class="card-title">Wedding</h4>
+							<h4 class="card-title">Wedding Details</h4>
 							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 						</div>
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item">Cras justo odio</li>
-							<li class="list-group-item">Dapibus ac facilisis in</li>
-							<li class="list-group-item">Vestibulum at eros</li>
-						</ul>
 						<div class="card-block">
-							<a href="#" class="card-link">RSVP</a>
-							<a href="#" class="card-link">Registry</a>
+							<p>
+								<router-link class="card-link" to="/rsvp">RSVP</router-link>
+								<router-link class="card-link" to="/registry">Registry</router-link>
+							</p>
 						</div>
 					</b-card>
 
 					<b-card variant="default" type="default" align="left">
-						<img class="card-img img-fluid" src="../assets/stock/chicago-theatre.jpg" alt="Things to do in Chicago">
+						<router-link to="/chicago"><img class="card-img img-fluid" src="../assets/stock/chicago-theatre.jpg" alt="Things to do in Chicago"></router-link>
 						<div class="card-block">
 							<h4 class="card-title">While in Chicago</h4>
 							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 						</div>
 						<div class="card-block">
-							<a href="#" class="card-link">Hotels</a>
-							<a href="#" class="card-link">Restaurants</a>
-						</div>
-						<div class="card-block">
-							<a href="#" class="card-link">Scavenger Hunt</a>
-							<a href="#" class="card-link">Download Waze</a>
+							<p>
+								<router-link class="card-link" to="/hotels">Hotels</router-link>
+								<router-link class="card-link" to="/restaurants">Restaurants</router-link>
+							</p>
+							<p>
+								<router-link class="card-link" to="/scavenger-hunt">Scavenger Hunt</router-link>
+								<a href="#" class="card-link">Download Waze</a>
+							</p>
 						</div>
 					</b-card>
 
 					<b-card variant="default" type="default" align="left">
-						<img class="card-img img-fluid" src="../assets/stock/vendors.jpg" alt="Vendor information">
+						<router-link to="/vendor"><img class="card-img img-fluid" src="../assets/stock/vendors.jpg" alt="Vendor information"></router-link>
 						<div class="card-block">
 							<h4 class="card-title">Vendors</h4>
 							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 						</div>
 						<div class="card-block">
-							<a href="#" class="card-link">Wedding Planner</a>
-							<a href="#" class="card-link">DJ</a>
-						</div>
-						<div class="card-block">
-							<a href="#" class="card-link">Photographers/Videographers</a>
+							<p>
+								<router-link class="card-link" to="/wedding-planner">Wedding Planner</router-link>
+								<router-link class="card-link" to="/music">DJ</router-link>
+							</p>
+							<p>
+								<router-link class="card-link" to="/visual">Photographers/Videographers</router-link>
+							</p>
 						</div>
 					</b-card>
 				</div>
@@ -61,4 +62,12 @@
 
 <style lang="sass">
 	@import '../styles/_variables.sass';
+
+	.card-title,
+	.card-text
+		color: $text2;
+
+	.card-link
+		font-family: $font-stack-sans-serif2;
+		font-weight: 600;
 </style>

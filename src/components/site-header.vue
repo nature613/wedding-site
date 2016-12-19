@@ -1,9 +1,9 @@
 <template>
 	<div id="header">
 		<div class="row">
-			<b-navbar fixed="top" type="dark" variant="default" full>
+			<b-navbar type="dark" variant="default" full>
 				<div class="col-lg-4">
-					<a class="navbar-brand" href="#"><h1>David <span>&amp;</span> Dacia</h1></a>
+					<a class="navbar-brand" href="#"><h1>Dacia <span>&amp;</span> David</h1></a>
 				</div>
 				<div class="col-lg-8">
 					<b-nav type="navbar" class="pull-xs-left">
@@ -26,18 +26,19 @@
 	@import '../styles/_variables.sass';
 
 	#header
-		background: $background3;
-		opacity: .8;
-
 		.bg-faded
 			background: transparent;
 
 		.nav
 			float: right;
-			margin: 1rem 0;
+			margin: .5rem 0;
+
+			.nav-link
+				font-family: $font-stack-sans-serif2;
 
 		h1
 			color: $text;
+			text-shadow: .2rem .15rem $background;
 
 			span
 				font-size: 62.5%;

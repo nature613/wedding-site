@@ -17,6 +17,10 @@
 <style lang="sass" scoped>
 	@import '../styles/_variables.sass';
 
+	#footer
+		height: 18rem;
+		margin-top: 8rem;
+
 	.bg-faded
 		background: linear-gradient(transparent, $background3);
 
