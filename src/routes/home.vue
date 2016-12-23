@@ -1,30 +1,35 @@
 <template>
-	<div class="container">
-		<site-header></site-header>
-		<main>
-			<div class="container">
-				<p>Wedding website for Dacia James and David Rodrigue</p>
-				<video-capture></video-capture>
-			</div>
-		</main>
-		<site-footer></site-footer>
+	<div class="wrapper">
+		<div class="container">
+			<site-header></site-header>
+			<main>
+				<div class="container">
+					<how-it-started></how-it-started>
+					<!-- <video-capture></video-capture> -->
+					<cards></cards>
+				</div>
+			</main>
+			<site-footer></site-footer>
+		</div>
 	</div>
 </template>
 
 <script>
+import Cards from '../components/cards'
 import Countdown from '../components/countdown'
+import HowItStarted from '../components/how-it-started'
 import SiteFooter from '../components/site-footer'
 import SiteHeader from '../components/site-header'
-import RSVPs from '../components/rsvps'
-import VideoCapture from '../components/video-capture'
+//import VideoCapture from '../components/video-capture'
 
 export default {
 	components: {
+		Cards,
 		Countdown,
-		RSVPs,
+		HowItStarted,
+		//VideoCapture,
 		SiteFooter,
-		SiteHeader,
-		VideoCapture
+		SiteHeader
 	}
 }
 </script>

@@ -1,14 +1,12 @@
 <template>
 	<div id="footer">
-		<div class="container">
-			<div class="row">
-				<b-navbar fixed="bottom" type="light" variant="default" full>
-					<div class="col-lg-12">
-						<h2><span>The</span> Rodrigues</h2>
-						<p><em>&hellip; coming November 3rd, 2018</em></p>
-					</div>
-				</b-navbar>
-			</div>
+		<div class="row">
+			<b-navbar fixed="bottom" type="light" variant="default" full>
+				<div class="col-lg-12">
+					<h2><span>The</span> Rodrigues</h2>
+					<p><em>&hellip; coming November 3rd, 2018</em></p>
+				</div>
+			</b-navbar>
 		</div>
 	</div>
 </template>
@@ -16,15 +14,20 @@
 <script>
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
 	@import '../styles/_variables.sass';
 
+	#footer
+		height: 18rem;
+		margin-top: 8rem;
+
 	.bg-faded
-		background: transparent;
+		background: linear-gradient(transparent, $background3);
 
 	h2
+		color: $text;
 		font: 700 6rem/1 $font-stack-sans-serif2;
-		text-shadow: .2rem .15rem $background;
+		text-shadow: $text-shadow;
 		text-transform: uppercase;
 
 		span

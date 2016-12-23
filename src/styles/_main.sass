@@ -5,7 +5,7 @@ html
 	height: 100%;
 	line-height: 1.5;
 
-body
+.wrapper
 	background: $color-light-merlot url('../assets/backgrounds/background-lights-purple-circles.jpg') 50% -14% no-repeat / cover;
 	background-blend-mode: lighten;
 	color: $text;
@@ -20,11 +20,27 @@ h4, h5, h6
 	font-family: $font-stack-sans-serif2;
 	margin: 0;
 
-.container
-
 main
+	margin-bottom: 5rem;
 	position: relative;
-	top: 8rem;
+	top: 5rem;
 
 	.container
-		margin-bottom: 6rem;
+		a,
+		a:visited,
+		a:link
+			color: $text3;
+
+			&:hover
+				color: $text4;
+				text-decoration: underline;
+
+		.content
+			p
+				text-align: left;
+
+		i
+			color: $text3;
+			display: inline-block;
+			font-size: 2.4rem;
+			margin-right: .5rem;
