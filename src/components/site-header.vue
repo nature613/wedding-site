@@ -38,7 +38,7 @@
 
 		h1
 			color: $text;
-			text-shadow: .2rem .15rem $background;
+			text-shadow: $text-shadow;
 
 			span
 				font-size: 62.5%;

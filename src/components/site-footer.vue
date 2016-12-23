@@ -25,8 +25,9 @@
 		background: linear-gradient(transparent, $background3);
 
 	h2
+		color: $text;
 		font: 700 6rem/1 $font-stack-sans-serif2;
-		text-shadow: .2rem .15rem $background;
+		text-shadow: $text-shadow;
 		text-transform: uppercase;
 
 		span

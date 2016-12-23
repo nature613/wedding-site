@@ -6,7 +6,7 @@
 					<b-card variant="default" type="default" align="left">
 						<router-link to="/wedding"><img class="card-img img-fluid" src="../assets/stock/wedding.jpg" alt="Wedding information"></router-link>
 						<div class="card-block">
-							<h4 class="card-title">Wedding Details</h4>
+							<router-link to="/wedding"><h4 class="card-title">Event Details</h4></router-link>
 							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 						</div>
 						<div class="card-block">
@@ -20,7 +20,7 @@
 					<b-card variant="default" type="default" align="left">
 						<router-link to="/chicago"><img class="card-img img-fluid" src="../assets/stock/chicago-theatre.jpg" alt="Things to do in Chicago"></router-link>
 						<div class="card-block">
-							<h4 class="card-title">While in Chicago</h4>
+							<router-link to="/chicago"><h4 class="card-title">While in Chicago</h4></router-link>
 							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 						</div>
 						<div class="card-block">
@@ -38,7 +38,7 @@
 					<b-card variant="default" type="default" align="left">
 						<router-link to="/vendor"><img class="card-img img-fluid" src="../assets/stock/vendors.jpg" alt="Vendor information"></router-link>
 						<div class="card-block">
-							<h4 class="card-title">Vendors</h4>
+							<router-link to="/vendor"><h4 class="card-title">Vendors</h4></router-link>
 							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 						</div>
 						<div class="card-block">
