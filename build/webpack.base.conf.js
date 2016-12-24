@@ -74,7 +74,7 @@ module.exports = {
         }
       },
 			{
-        test: /\.(png|ico)(\?.*)?$/,
+        test: /favicon\.(png|ico)(\?.*)?$/,
         loader: 'file-loader?name=[name].[ext]'  // <-- retain original file name
       },
       {
