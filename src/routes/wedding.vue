@@ -71,7 +71,7 @@
 											Attire
 										</h2>
 										<div class="card-block">
-											<p class="card-text">We are requesting semiformal attire for our event. Guidelines:</p>
+											<p class="card-text">We are requesting <b>semiformal attire</b> for our event. Guidelines:</p>
 
 											<dl>
 												<dt>Women</dt>
@@ -178,5 +178,23 @@ export default {
 				margin-right: 0;
 
 			.card-block
-				margin-bottom: 3rem;
+				margin-bottom: 2rem;
+
+				dt
+					font-family: $font-stack-sans-serif2;
+					font-weight: 900;
+
+				dd
+					font-size: .9rem;
+					margin-bottom: 0;
+					padding-left: 1rem;
+					position: relative;
+
+					&:before
+						color: $text3;
+						content: '\00B7';
+						font-size: 3rem;
+						left: 0rem;
+						position: absolute;
+						top: -2rem;
 </style>
