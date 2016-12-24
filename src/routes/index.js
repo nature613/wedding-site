@@ -5,7 +5,8 @@ import RSVP from './rsvp'
 import Wedding from './wedding'
 
 export default [
-	{ path: '/', component: Home },
+	{ path: '/', redirect: '/home' },
+	{ path: '/home', component: Home },
 	{ path: '/chicago', component: Chicago },
 	{ path: '/registry', component: Registry },
 	{ path: '/rsvp', component: RSVP },
