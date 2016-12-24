@@ -4,6 +4,11 @@
 		<main>
 			<div class="container">
 				<form>
+					<h2>Access Code</h2>
+					<div class="form-group">
+						<input type="password" class="form-control" id="accesscode" placeholder="Code">
+					</div>
+
 					<h2>Our Guest</h2>
 					<div class="form-group">
 						<input type="text" class="form-control" id="yourName" placeholder="Your Name">
@@ -70,6 +75,8 @@
 					</div>
 
 					<button type="submit" class="btn btn-primary">Submit</button>
+
+					For Questions Email: davidanddacia@gmail.com
 				</form>
 			</div>
 		</main>

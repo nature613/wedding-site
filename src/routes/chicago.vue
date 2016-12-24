@@ -13,6 +13,18 @@
 						<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
 					</p>
 				</b-jumbotron>
+
+				<p>If you are joining us from out of town, you may wish to book a hotel reservation. Some hotels we can recommend that are located closer to the venue include:
+
+•	Guesthouse Inn & Suites Monroe ($)
+•	Hilton Garden Inn Seattle/Bothell ($$)
+•	Willows Lodge Woodinville ($$$)
+
+Many other lodging accommodations are available closer to downtown Seattle; we recommend you look for lodging there if you’re planning on exploring the city a bunch over the weekend.
+
+Any questions, comments, concerns, playlist requests, or accommodation inquiries, feel free to contact Katie or Luke: katieplusluke@gmail.com
+
+</p>
 			</div>
 		</main>
 		<site-footer></site-footer>

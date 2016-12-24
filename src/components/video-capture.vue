@@ -6,10 +6,15 @@
 				<div class="video-container">
 					<video autoplay muted></video>
 				</div>
-				<button @click="stop">Stop Recording</button>
+				<div class="recording stop">
+					<button @click="stop"><i class="fa fa-stop"></i></button>
+				</div>
 			</div>
 			<div v-else>
-				<button @click="start">Start Recording</button>
+				<p>If you want to record a video message to us, click the button below to start recording.</p>
+				<div class="recording start">
+					<button @click="start"><i class="fa fa-play"></i></button>
+				</div>
 			</div>
 		</div>
 		<div class="col-lg-2"></div>
@@ -49,7 +54,7 @@ export default {
 }
 </script>
 
-<style lang="sass">
+<style lang="sass" scope>
 	@import '../styles/_variables.sass';
 
 	#video
@@ -65,4 +70,24 @@ export default {
 				video
 					height: auto !important;
 					width: 100% !important;
+
+			.recording
+				background: transparent url('../assets/stock/video.png') top left no-repeat / 60px 60px;
+				height: 6rem;
+				margin: 1rem auto;
+				width: 6rem;
+
+				&.start,
+				&.stop
+					button
+						background-color: transparent;
+						border: 0 none;
+						vertical-align: middle;
+
+						i
+							color: $text;
+							margin-right: 0;
+							position: relative;
+							top: 1.75rem;
+
 </style>
