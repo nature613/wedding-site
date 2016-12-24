@@ -3,6 +3,7 @@ const webpack = require('webpack')
 const merge = require('webpack-merge')
 
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const config = require('../config')
@@ -39,6 +40,7 @@ const webpackConfig = merge(baseWebpackConfig, {
 			}
 		}),
 		new webpack.optimize.OccurrenceOrderPlugin(),
+		new FaviconsWebpackPlugin('./src/assets/favicon.png'),
 		// extract css into its own file
 		new ExtractTextPlugin(utils.assetsPath('css/[name].[contenthash].css')),
 		// generate dist index.html with correct asset hash for caching.
