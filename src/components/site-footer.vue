@@ -1,13 +1,12 @@
 <template>
 	<div id="footer">
-		<div class="row">
-			<b-navbar fixed="bottom" type="light" variant="default" full>
-				<div class="col-lg-12">
-					<h2><span>The</span> Rodrigues</h2>
-					<p><em>&hellip; coming November 3rd, 2018</em></p>
-				</div>
-			</b-navbar>
-		</div>
+		<b-navbar type="light" variant="default" full>
+			<div class="col-lg-12">
+				<h2><span>The</span> Rodrigues</h2>
+				<p><em>&hellip; coming November 3rd, 2018</em></p>
+				<p class="copyright">&copy; 2016 - 2018 Website designed, developed by David and Dacia</p>
+			</div>
+		</b-navbar>
 	</div>
 </template>
 
@@ -18,8 +17,7 @@
 	@import '../styles/_variables.sass';
 
 	#footer
-		height: 18rem;
-		margin-top: 8rem;
+		margin-top: 4rem;
 
 	.bg-faded
 		background: linear-gradient(transparent, $background3);
@@ -34,5 +32,11 @@
 			font-size: $base-font-size;
 
 	p
+		color: $text;
 		font-size: $base-font-size;
+
+		&.copyright
+			color: $text;
+			font-size: .7rem;
+			margin-top: 1rem;
 </style>

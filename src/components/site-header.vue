@@ -31,7 +31,7 @@
 
 		.nav
 			float: right;
-			margin: .5rem 0;
+			margin: 1rem 0;
 
 			.nav-link
 				font-family: $font-stack-sans-serif2;

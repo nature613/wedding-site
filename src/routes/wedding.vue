@@ -32,13 +32,21 @@
 
 									<b-card variant="default" type="default" align="left">
 										<h2>
-											<i class="fa fa-asterisk"></i>
-											Special Attention
+											<i class="fa fa-clock-o"></i>
+											Time
 										</h2>
 										<div class="card-block">
-											<p class="card-text">We are requesting formal attire for our event. Please no jeans or anything too casual, but rather a "Baptist" Sunday's Best. Not prom, but gala.</p>
-
 											<p class="card-text">The doors open at 4:30 p.m. <b>Entry will not be allowed after 5:15 p.m.</b>, as the main event starts promptly at 5:30 p.m.</p>
+
+											<p>The party should last until 10pm.</p>
+										</div>
+
+										<h2>
+											<i class="fa fa-music"></i>
+											The Party
+										</h2>
+										<div class="card-block">
+											<p class="card-text">Be prepared to have a great time. There will be dancing and entertainment.</p>
 										</div>
 									</b-card>
 
@@ -58,11 +66,41 @@
 								<div class="card-deck">
 									<b-card variant="default" type="default" align="left">
 										<h2>
+											<i class="fa fa-male"></i>
+											<i class="fa fa-female"></i>
+											Attire
+										</h2>
+										<div class="card-block">
+											<p class="card-text">We are requesting semiformal attire for our event. Guidelines:</p>
+
+											<dl>
+												<dt>Women</dt>
+												<dd>Short afternoon or cocktail dress</dd>
+												<dd>A “little black dress”</dd>
+												<dd>Long dressy skirt and top</dd>
+												<dd>Dressy separates</dd>
+											</dl>
+
+											<dl>
+												<dt>Men</dt>
+												<dd>Dark, business suit</dd>
+												<dd>Matching vest (optional)</dd>
+												<dd>Dress shirt</dd>
+												<dd>Tie</dd>
+												<dd>Dress shoes and dress socks</dd>
+											</dl>
+										</div>
+									</b-card>
+
+									<b-card variant="default" type="default" align="left">
+										<h2>
 											<i class="fa fa-child"></i>
 											Childcare
 										</h2>
 										<div class="card-block">
 											<p class="card-text">Many of our friends and family members have children. We do not want you and your family to feel excluded; therefore, we will have childcare provided by AGENCY.</p>
+
+											<p class="card-text">We want the parents AND the kids to have a great time at our event!!</p>
 
 											<p class="card-text">We will have food, drinks, entertainment and activities for the kids. We only ask that you tip our childcare providers.</p>
 										</div>
@@ -70,11 +108,13 @@
 
 									<b-card variant="default" type="default" align="left">
 										<h2>
-											<i class="fa fa-music"></i>
-											The Party
+											<i class="fa fa-envelope-o"></i>
+											RSVP
 										</h2>
 										<div class="card-block">
-											<p class="card-text">Even though this is a formal event, there will be dancing and entertainment.</p>
+											<p class="card-text">We are excited to have you as our guest!!!</p>
+
+											<p class="card-text">Please <router-link class="card-link" to="/rsvp">RSVP here</router-link> by <b>September 14th</b>. It is very important that you RSVP by this date, so we can finalize our plans.</p>
 										</div>
 
 										<h2>
@@ -85,29 +125,14 @@
 											<p class="card-text">We know that you want to be a blessing to us, and since we already have a beautiful home, we will not have a traditional registry. Instead, you can contribute to our honeymoon fund or add to our wishing well with card gifts.</p>
 										</div>
 									</b-card>
-
-									<b-card variant="default" type="default" align="left">
-										<h2>
-											<i class="fa fa-at"></i>
-											RSVP
-										</h2>
-										<div class="card-block">
-											<p class="card-text">Please <router-link class="card-link" to="/rsvp">RSVP here</router-link> by September 14th.</p>
-											<rsvps></rsvps>
-										</div>
-
-										<div class="card-block">
-
-										</div>
-									</b-card>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</main>
-			<site-footer></site-footer>
 		</div>
+		<site-footer></site-footer>
 	</div>
 </template>
 
@@ -130,6 +155,8 @@ export default {
 
 .wrapper
 	color: $text2;
+	background-color: $color-purple;
+	background-blend-mode: multiply;
 
 	.jumbotron
 		background: $background url('../assets/backgrounds/background-wedding.jpg') 50% 62% no-repeat / cover;
@@ -138,10 +165,16 @@ export default {
 
 	.card-deck
 		.card
-			padding-top: 1.5rem;
+			padding-top: 2.5rem;
 			text-align: left;
 
 			h2
 				color: $text3;
 				text-align: center;
+
+			.fa-male
+				margin-right: 0;
+
+			.card-block
+				margin-bottom: 3rem;
 </style>
