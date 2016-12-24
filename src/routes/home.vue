@@ -9,8 +9,8 @@
 					<cards></cards>
 				</div>
 			</main>
-			<site-footer></site-footer>
 		</div>
+		<site-footer></site-footer>
 	</div>
 </template>
 
@@ -34,6 +34,10 @@ export default {
 }
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
 @import '../styles/_main.sass';
+
+.wrapper
+	background-color: $color-gold;
+	background-blend-mode: multiply;
 </style>
