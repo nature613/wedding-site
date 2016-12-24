@@ -1,23 +1,27 @@
 <template>
-	<div id="video" class="row">
-		<div class="col-lg-2"></div>
-		<div id="video-recording" class="col-lg-8">
-			<div v-if="isRecording">
-				<div class="video-container">
-					<video autoplay muted></video>
+	<div class="jumbotron jumbotron-fluid">
+		<h2 class="display-3">Record A Message to Us!</h2>
+		<div id="video" class="row">
+			<div class="col-lg-2"></div>
+			<div id="video-recording" class="col-lg-8">
+				<div v-if="isRecording">
+					<div class="flashing"><i class="fa fa-circle"></i></div>
+					<div class="video-container">
+						<video autoplay muted></video>
+					</div>
+					<div class="recording stop">
+						<button @click="stop"><i class="fa fa-stop"></i></button>
+					</div>
 				</div>
-				<div class="recording stop">
-					<button @click="stop"><i class="fa fa-stop"></i></button>
+				<div v-else>
+					<p class="lead">Click play to record your message.</p>
+					<div class="recording start">
+						<button @click="start"><i class="fa fa-play"></i></button>
+					</div>
 				</div>
 			</div>
-			<div v-else>
-				<p>If you want to record a video message to us, click the button below to start recording.</p>
-				<div class="recording start">
-					<button @click="start"><i class="fa fa-play"></i></button>
-				</div>
-			</div>
+			<div class="col-lg-2"></div>
 		</div>
-		<div class="col-lg-2"></div>
 	</div>
 </template>
 
@@ -57,13 +61,25 @@ export default {
 <style lang="sass" scope>
 	@import '../styles/_variables.sass';
 
+	.jumbotron
+		width: 86%;
+
 	#video
-		margin: 3rem;
+		margin: 1rem;
 
 		#video-recording
+			.flashing
+				animation: blinker 1s linear infinite;
+
+				i
+					color: red;
+					font-size: 1rem;
+
+			@keyframes blinker
+				50%
+					opacity: 0;
+
 			.video-container
-				background-color: rgba(43,6,22,0.5);
-				box-shadow: 0px 0px 10px 5px rgba(43,6,22,0.5);
 				margin-bottom: 1rem;
 				padding: 3rem;
 
@@ -72,10 +88,11 @@ export default {
 					width: 100% !important;
 
 			.recording
-				background: transparent url('../assets/stock/video.png') top left no-repeat / 60px 60px;
-				height: 6rem;
-				margin: 1rem auto;
-				width: 6rem;
+				background: transparent url('../assets/stock/video.png') top left no-repeat;
+				background-size: cover;
+				height: 10rem;
+				margin: auto;
+				width: 10rem;
 
 				&.start,
 				&.stop
@@ -88,6 +105,6 @@ export default {
 							color: $text;
 							margin-right: 0;
 							position: relative;
-							top: 1.75rem;
+							top: 4rem;
 
 </style>

@@ -159,9 +159,11 @@ export default {
 	background-blend-mode: multiply;
 
 	.jumbotron
-		background: $background url('../assets/backgrounds/background-wedding.jpg') 50% 62% no-repeat / cover;
+		background: $background url('../assets/backgrounds/background-wedding.jpg') 50% 62% no-repeat;
+		background-size: cover;
 		color: $text;
 		text-shadow: $text-shadow;
+		width: 100%;
 
 	.card-deck
 		.card
