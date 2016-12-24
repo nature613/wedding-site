@@ -7,7 +7,7 @@
 				</div>
 				<div class="col-lg-8">
 					<b-nav type="navbar" class="pull-xs-left">
-						<li class="nav-item"><router-link class="nav-link" to="/">Home</router-link></li>
+						<li class="nav-item"><router-link class="nav-link" to="/home">Home</router-link></li>
 						<li class="nav-item"><router-link class="nav-link" to="/wedding">Wedding</router-link></li>
 						<li class="nav-item"><router-link class="nav-link" to="/rsvp">RSVP</router-link></li>
 						<li class="nav-item"><router-link class="nav-link" to="/registry">Registry</router-link></li>
