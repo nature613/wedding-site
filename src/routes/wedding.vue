@@ -46,7 +46,7 @@
 											The Party
 										</h2>
 										<div class="card-block">
-											<p class="card-text">Be prepared to have a great time. There will be dancing and entertainment.</p>
+											<p class="card-text">Be prepared to have a great time. There will be dancing and entertainment. Use our hashtag when posting videos and photos: <b>#DavidAndDacia</b>.</p>
 										</div>
 									</b-card>
 
@@ -122,13 +122,14 @@
 											Gifts/Registry
 										</h2>
 										<div class="card-block">
-											<p class="card-text">We know that you want to be a blessing to us, and since we already have a beautiful home, we will not have a traditional registry. Instead, you can contribute to our honeymoon fund or add to our wishing well with card gifts.</p>
+											<p class="card-text">We know that you want to be a blessing to us, and since we already have a beautiful home, we will not have a traditional registry. Instead, you can contribute to our honeymoon fund or cash via Google Wallet or PayPal.</p>
 										</div>
 									</b-card>
 								</div>
 							</div>
 						</div>
 					</div>
+					<any-questions></any-questions>
 				</div>
 			</main>
 		</div>
@@ -140,12 +141,14 @@
 import SiteFooter from '../components/site-footer'
 import SiteHeader from '../components/site-header'
 import RSVPs from '../components/rsvps'
+import AnyQuestions from '../components/any-questions'
 
 export default {
 	components: {
 		SiteFooter,
 		SiteHeader,
-		RSVPs
+		RSVPs,
+		AnyQuestions
 	}
 }
 </script>

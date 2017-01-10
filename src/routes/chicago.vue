@@ -16,15 +16,73 @@
 
 				<p>If you are joining us from out of town, you may wish to book a hotel reservation. Some hotels we can recommend that are located closer to the venue include:
 
-•	Guesthouse Inn & Suites Monroe ($)
-•	Hilton Garden Inn Seattle/Bothell ($$)
-•	Willows Lodge Woodinville ($$$)
+•	TBD ($)
+•	TBD ($$)
+•	TBD ($$$)
 
-Many other lodging accommodations are available closer to downtown Seattle; we recommend you look for lodging there if you’re planning on exploring the city a bunch over the weekend.
-
-Any questions, comments, concerns, playlist requests, or accommodation inquiries, feel free to contact Katie or Luke: katieplusluke@gmail.com
+Many other lodging accommodations are available closer to downtown Chicago; we recommend you look for lodging there if you’re planning on exploring the city a bunch over the weekend.
 
 </p>
+
+<p>Use My Maps from Google to help with this</p>
+
+Places to Eat
+BEL 50
+Bakin' & Eggs
+Bongo Room
+Burger Bar Chicago
+Cassava
+Chicago's Pizza
+Chick-fil-A Loyola Water Tower
+Do-Rite Donuts
+Flaco's Tacos
+Grange Hall Burger Bar
+Ipsento
+Irazu
+Little Goat Diner
+Margie's Candies
+Olive Mediterranean Grill
+Uncle Julio's
+Waffles
+Wilde Bar & Restaurant
+Yogen Früz
+hello!
+Places to Go/Things to Do
+The Art Institute of Chicago
+Blue Man Group
+Chicago Cultural Center
+Garfield Park Conservatory
+The Green Mill
+Half Acre Beer Tour
+iO - Improv Olympics
+John Hancock Building
+Magnificent Mile
+Millennium Park
+Museum of Contemporary Art
+Museum of Science & Industry, Chicago
+Navy Pier
+Oak Street Beach
+Sear's [Willis] Tower SkyDeck
+The Second City
+Shedd Aquarium
+TMLMTBGB
+Wicker Park
+howdy!
+Special Events
+The Wedding, Duh!
+Cubs v. Pirates
+Fireworks!
+First Fridays at Flat Iron Arts Building
+First Fridays at the MCA
+Grant Park Music Festival
+Hyatt Regency McCormick Place
+Missio Dei Chicago
+Movies in the Park
+White Sox v. Orioles
+Windy City Ribfest
+sup!
+
+				<any-questions></any-questions>
 			</div>
 		</main>
 		<site-footer></site-footer>
@@ -34,11 +92,13 @@ Any questions, comments, concerns, playlist requests, or accommodation inquiries
 <script>
 import SiteFooter from '../components/site-footer'
 import SiteHeader from '../components/site-header'
+import AnyQuestions from '../components/any-questions'
 
 export default {
 	components: {
 		SiteFooter,
-		SiteHeader
+		SiteHeader,
+		AnyQuestions
 	}
 }
 </script>

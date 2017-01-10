@@ -4,7 +4,7 @@
 			<div class="col-lg-12">
 				<h2><span>The</span> Rodrigues</h2>
 				<p><em>&hellip; coming November 3rd, 2018</em></p>
-				<p class="copyright">&copy; 2016 - 2018 Website designed, developed by David and Dacia</p>
+				<p class="copyright">&copy; 2016 - 2018 website designed, developed by David and Dacia</p>
 			</div>
 		</b-navbar>
 	</div>

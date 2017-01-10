@@ -46,11 +46,13 @@ main
 		a,
 		a:visited,
 		a:link
-			color: $text3;
+			color: $anchor-text;
+			font-family: $font-stack-sans-serif2;
+			text-decoration: underline;
 
 			&:hover
-				color: $text4;
-				text-decoration: underline;
+				color: $anchor-text-hover;
+				text-decoration: none;
 
 		.content
 			p
