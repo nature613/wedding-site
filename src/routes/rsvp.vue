@@ -79,19 +79,22 @@
 					For Questions Email: davidanddacia@gmail.com
 				</form>
 			</div>
+			<any-questions></any-questions>
 		</main>
 		<site-footer></site-footer>
 	</div>
 </template>
 
 <script>
+import AnyQuestions from '../components/any-questions'
 import SiteFooter from '../components/site-footer'
 import SiteHeader from '../components/site-header'
 
 export default {
 	components: {
 		SiteFooter,
-		SiteHeader
+		SiteHeader,
+		AnyQuestions
 	}
 }
 </script>

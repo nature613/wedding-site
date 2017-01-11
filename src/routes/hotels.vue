@@ -4,6 +4,7 @@
 		<main>
 			<div class="container">
 				<p>Hotels</p>
+				<p>For our guests flying into Chicago, please use airport code MDW for Midway airport or ORD for O'Hare airport. Our advice, fly into Midway for less congestion.</p>
 				<!-- item 1 -->
 				<b-collapse-toggle target="item-1" target-group="accordion-1">
 					<div><a href="#">Collapsible Group Item #1</a></div>

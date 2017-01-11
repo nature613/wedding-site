@@ -1,16 +1,16 @@
 <template>
 	<div class="jumbotron jumbotron-fluid">
-		<h2 class="display-3">Record A Message to Us!</h2>
+		<h2>Record A Message to Us!</h2>
 		<div id="video" class="row">
 			<div class="col-lg-2"></div>
 			<div id="video-recording" class="col-lg-8">
 				<div v-if="isRecording">
 					<div class="flashing"><i class="fa fa-circle"></i></div>
-					<div class="video-container">
-						<video autoplay muted></video>
-					</div>
 					<div class="recording stop">
 						<button @click="stop"><i class="fa fa-stop"></i></button>
+					</div>
+					<div class="video-container">
+						<video autoplay muted></video>
 					</div>
 				</div>
 				<div v-else>
@@ -70,18 +70,19 @@ export default {
 		#video-recording
 			.flashing
 				animation: blinker 1s linear infinite;
+				text-align: center;
 
 				i
 					color: red;
 					font-size: 1rem;
+					margin-right: center;
 
 			@keyframes blinker
 				50%
 					opacity: 0;
 
 			.video-container
-				margin-bottom: 1rem;
-				padding: 3rem;
+				margin: 1rem 0 .5rem;
 
 				video
 					height: auto !important;
@@ -90,9 +91,9 @@ export default {
 			.recording
 				background: transparent url('../assets/stock/video.png') top left no-repeat;
 				background-size: cover;
-				height: 10rem;
+				height: 5rem;
 				margin: auto;
-				width: 10rem;
+				width: 5rem;
 
 				&.start,
 				&.stop
@@ -101,10 +102,15 @@ export default {
 						border: 0 none;
 						vertical-align: middle;
 
+						&:focus,
+						&:active
+							outline: 0;
+
 						i
 							color: $text;
+							font-size: 1.75rem;
 							margin-right: 0;
 							position: relative;
-							top: 4rem;
+							top: 1.65rem;
 
 </style>

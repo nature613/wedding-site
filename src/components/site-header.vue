@@ -34,11 +34,24 @@
 			margin: 1rem 0;
 
 			.nav-link
+				border-bottom: 5px solid transparent;
 				font-family: $font-stack-sans-serif2;
 
+				&:hover
+					border-color: $background2;
+
 		h1
+			-moz-transition-duration: 1s;
+			-moz-transition-property: all;
+			-webkit-transition-duration: 1s;
+			-webkit-transition-property: all;
 			color: $text;
 			text-shadow: $text-shadow;
+			transition-duration: 1s;
+			transition-property: all;
+
+			&:hover
+				font-size: 3rem;
 
 			span
 				font-size: 62.5%;

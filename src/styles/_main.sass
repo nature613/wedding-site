@@ -46,11 +46,21 @@ main
 		a,
 		a:visited,
 		a:link
-			color: $text3;
+			-moz-transition-duration: 1s;
+			-moz-transition-property: all;
+			-webkit-transition-duration: 1s;
+			-webkit-transition-property: all;
+			border-bottom: 2px solid transparent;
+			color: $anchor-text;
+			font-family: $font-stack-sans-serif2;
+			text-decoration: none;
+			transition-duration: 1s;
+			transition-property: all;
 
 			&:hover
-				color: $text4;
-				text-decoration: underline;
+				border-color: $anchor-text-hover;
+				color: $anchor-text-hover;
+				text-decoration: none;
 
 		.content
 			p
