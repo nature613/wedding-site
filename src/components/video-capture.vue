@@ -26,6 +26,7 @@
 </template>
 
 <script>
+
 export default {
 	name: 'video-capture',
 	data: function () {
@@ -56,9 +57,10 @@ export default {
 		}
 	}
 }
+
 </script>
 
-<style lang="sass" scope>
+<style lang="sass" scoped>
 	@import '../styles/_variables.sass';
 
 	.jumbotron

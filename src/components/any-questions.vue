@@ -25,9 +25,14 @@
 	</div>
 </template>
 
-<script></script>
+<script>
 
-<style lang="sass" scope>
+export default {
+}
+
+</script>
+
+<style lang="sass" scoped>
 	@import '../styles/_variables.sass';
 
 	#questions
