@@ -3,6 +3,8 @@
 		<site-header></site-header>
 		<main>
 			<div class="container">
+				<!-- TODO: Add logic so you click in the input, the placeholder text will move to the top as if it was the label  -->
+				
 				<form>
 					<h2>Access Code</h2>
 					<div class="form-group">

@@ -106,6 +106,7 @@
 										</div>
 									</b-card>
 
+									<!-- TODO: Make RVP shake a little to show it is important  -->
 									<b-card variant="default" type="default" align="left">
 										<h2>
 											<i class="fa fa-envelope-o"></i>

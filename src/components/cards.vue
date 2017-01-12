@@ -10,9 +10,10 @@
 							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 						</div>
 						<div class="card-block">
+							<!-- TODO: Make RVP shake a little to show it is important  -->
 							<p>
 								<router-link class="card-link" to="/rsvp">RSVP</router-link>
-								<router-link class="card-link" to="/registry">Registry</router-link>
+								<router-link class="card-link" to="/guestbook">Guestbook</router-link>
 							</p>
 						</div>
 					</b-card>

@@ -4,6 +4,8 @@
 		<main>
 			<div class="container">
 				<p>Vendors</p>
+				<!-- TODO: Add animation to todo list task  -->
+
 				<b-jumbotron fluid>
 					<h1 class="display-3">Hello, world!</h1>
 					<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
