@@ -38,24 +38,28 @@ export default {
 			margin: 1rem 0;
 
 			.nav-link
-				border-bottom: 5px solid transparent;
+				border-bottom: 3px solid transparent;
+				color: $text;
 				font-family: $font-stack-sans-serif2;
+				opacity: 0.7;
 
+				&.active,
 				&:hover
 					border-color: $background2;
+					opacity: 1;
 
 		h1
-			-moz-transition-duration: 1s;
+			-moz-transition-duration: .25s;
 			-moz-transition-property: all;
-			-webkit-transition-duration: 1s;
+			-webkit-transition-duration: .25s;
 			-webkit-transition-property: all;
 			color: $text;
 			text-shadow: $text-shadow;
-			transition-duration: 1s;
+			transition-duration: .25s;
 			transition-property: all;
 
 			&:hover
-				font-size: 3rem;
+				font-size: 2.75rem;
 
 			span
 				font-size: 62.5%;
