@@ -3,7 +3,8 @@
 		<site-header></site-header>
 		<main>
 			<div class="container">
-				<p>Registry</p>
+				<p>Online Guestbook</p>
+				<p>A timeline kind of thing that people can use their Twitter, Facebook or Instagram account to post.</p>
 			</div>
 		</main>
 		<site-footer></site-footer>

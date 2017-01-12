@@ -3,7 +3,8 @@
 		<site-header></site-header>
 		<main>
 			<div class="container">
-				<p>While in Chicago</p>
+				<p>Our <b>official</b> guide to <b>Chicago, Illinois</b></p>
+				<p>Places you must visit while in town!</p>
 				<b-jumbotron fluid>
 					<h1 class="display-3">Hello, world!</h1>
 					<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
