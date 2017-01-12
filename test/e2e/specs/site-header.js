@@ -13,7 +13,7 @@ module.exports = {
 		browser.expect.element('.navbar li:nth-child(1) a').text.to.equal('Home')
 		browser.expect.element('.navbar li:nth-child(2) a').text.to.equal('Wedding')
 		browser.expect.element('.navbar li:nth-child(3) a').text.to.equal('RSVP')
-		browser.expect.element('.navbar li:nth-child(4) a').text.to.equal('Registry')
+		browser.expect.element('.navbar li:nth-child(4) a').text.to.equal('Guestbook')
 		browser.expect.element('.navbar li:nth-child(5) a').text.to.equal('While in Chicago')
 
 		browser.end()

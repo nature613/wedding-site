@@ -18,10 +18,11 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+	@import '../styles/_tools.mixins.sass';
 	@import '../styles/_variables.sass';
 
 	#footer
-		margin-top: 4rem;
+		@include rem(margin-top, 40px);
 
 	.bg-faded
 		background: linear-gradient(transparent, $background3);
@@ -33,14 +34,14 @@ export default {
 		text-transform: uppercase;
 
 		span
-			font-size: $base-font-size;
+			@include rem(font-size, $base-font-size);
 
 	p
+		@include rem(font-size, $base-font-size);
 		color: $text;
-		font-size: $base-font-size;
 
 		&.copyright
+			@include rem(font-size, 7px);
+			@include rem(margin-top, 10px);
 			color: $text;
-			font-size: .7rem;
-			margin-top: 1rem;
 </style>

@@ -4,7 +4,7 @@
 		<main>
 			<div class="container">
 				<!-- TODO: Add logic so you click in the input, the placeholder text will move to the top as if it was the label  -->
-				
+
 				<form>
 					<h2>Access Code</h2>
 					<div class="form-group">
@@ -102,5 +102,6 @@ export default {
 </script>
 
 <style lang="sass">
-@import '../styles/_main.sass';
+	@import '../styles/_tools.mixins.sass';
+	@import '../styles/_main.sass';
 </style>

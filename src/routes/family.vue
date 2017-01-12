@@ -76,64 +76,18 @@
 <script>
 import SiteFooter from '../components/site-footer'
 import SiteHeader from '../components/site-header'
-import RSVPs from '../components/rsvps'
 import AnyQuestions from '../components/any-questions'
 
 export default {
 	components: {
 		SiteFooter,
 		SiteHeader,
-		RSVPs,
 		AnyQuestions
 	}
 }
 </script>
 
 <style lang="sass" scoped>
-@import '../styles/_main.sass';
-
-.wrapper
-	color: $text2;
-	background-color: $color-purple;
-	background-blend-mode: multiply;
-
-	.jumbotron
-		background: $background url('../assets/backgrounds/background-wedding.jpg') 50% 62% no-repeat;
-		background-size: cover;
-		color: $text;
-		text-shadow: $text-shadow;
-		width: 100%;
-
-	.card-deck
-		.card
-			padding-top: 2.5rem;
-			text-align: left;
-
-			h2
-				color: $text3;
-				text-align: center;
-
-			.fa-male
-				margin-right: 0;
-
-			.card-block
-				margin-bottom: 2rem;
-
-				dt
-					font-family: $font-stack-sans-serif2;
-					font-weight: 900;
-
-				dd
-					font-size: .9rem;
-					margin-bottom: 0;
-					padding-left: 1rem;
-					position: relative;
-
-					&:before
-						color: $text3;
-						content: '\00B7';
-						font-size: 3rem;
-						left: 0rem;
-						position: absolute;
-						top: -2rem;
+	@import '../styles/_tools.mixins.sass';
+	@import '../styles/_main.sass';
 </style>

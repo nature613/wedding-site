@@ -61,22 +61,23 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+	@import '../styles/_tools.mixins.sass';
 	@import '../styles/_variables.sass';
 
 	.jumbotron
 		width: 86%;
 
 	#video
-		margin: 1rem;
+		@include rem(margin, 10px);
 
 		#video-recording
 			.flashing
-				animation: blinker 1s linear infinite;
+				@include rem(animation, blinker 1s linear infinite);
 				text-align: center;
 
 				i
+					@include rem(font-size, 10px);
 					color: red;
-					font-size: 1rem;
 					margin-right: center;
 
 			@keyframes blinker
@@ -84,18 +85,17 @@ export default {
 					opacity: 0;
 
 			.video-container
-				margin: 1rem 0 .5rem;
+				@include rem(margin, 10px 0 5px);
 
 				video
 					height: auto !important;
 					width: 100% !important;
 
 			.recording
+				@include size(5rem, 5rem);
 				background: transparent url('../assets/stock/video.png') top left no-repeat;
 				background-size: cover;
-				height: 5rem;
 				margin: auto;
-				width: 5rem;
 
 				&.start,
 				&.stop
@@ -109,9 +109,9 @@ export default {
 							outline: 0;
 
 						i
+							@include rem(font-size, 17.5px);
+							@include rem(margin-right, 0);
 							color: $text;
-							font-size: 1.75rem;
-							margin-right: 0;
 							position: relative;
 							top: 1.65rem;
 

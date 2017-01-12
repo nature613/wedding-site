@@ -29,35 +29,36 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+	@import '../styles/_tools.mixins.sass';
 	@import '../styles/_variables.sass';
 
 	.content
-		margin-bottom: 3rem;
+		@include rem(margin-bottom, 30px);
 
 		.jumbotron
 			width: 86%;
 
 			p
-				margin-bottom: 0;
+				@include rem(margin-bottom, 0);
 
 			img
+				@include rem(margin, 0 10px 10px 0);
 				display: inline-block;
 				float: left;
-				margin: 0 1rem 1rem 0;
 				width: 60%;
 
 			.display-3
-				margin-bottom: 1rem;
+				@include rem(margin-bottom, 10px);
 				text-align: left;
 
 			.lead
-				font-weight: 600;
+				@include bold;
 				text-align: left;
 
 			.small
 				font-weight: bolder;
 
 			i
-				font-size: 1.4rem;
-				margin-left: .5rem;
+				@include rem(font-size, 14px);
+				@include rem(margin-left, 5px);
 </style>

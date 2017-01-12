@@ -66,13 +66,44 @@ export default {
 </script>
 
 <style lang="sass">
+	@import '../styles/_tools.mixins.sass';
 	@import '../styles/_variables.sass';
 
-	.card-title,
-	.card-text
-		color: $text2;
+	.card-deck
+		.card
+			@include rem(padding-top, 25px);
 
-	.card-link
-		font-family: $font-stack-sans-serif2;
-		font-weight: 600;
+			.card-title,
+			.card-text
+				color: $text2;
+
+			.card-link
+				@include bold;
+				font-family: $font-stack-sans-serif2;
+
+			h2
+				color: $text3;
+				text-align: center;
+
+			.fa-male
+				@include rem(margin-right, 0);
+
+			.card-block
+				@include rem(margin-bottom, 20px);
+
+				dt
+					@include black;
+					font-family: $font-stack-sans-serif2;
+
+				dd
+					@include rem(font-size, 9px);
+					@include rem(margin-bottom, 0);
+					@include rem(padding-left, 10px);
+					position: relative;
+
+					&:before
+						@include abs-pos(-2rem, auto, auto, 0rem);
+						@include rem(font-size, 30px);
+						color: $text3;
+						content: '\00B7';
 </style>

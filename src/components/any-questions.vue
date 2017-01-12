@@ -33,21 +33,22 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+	@import '../styles/_tools.mixins.sass';
 	@import '../styles/_variables.sass';
 
 	#questions
-		margin-top: 1rem;
+		@include rem(margin-top, 10px);
 
 		h2
-			margin-bottom: 1rem;
+			@include rem(margin-bottom, 10px);
 
 		.card
-			padding-top: 1rem;
+			@include rem(padding-top, 10px);
 
 			i
-				margin-right: 0;
+				@include rem(margin-right, 0);
 
 			b
+				@include rem(font-size, 17.5px);
 				font-family: $font-stack-sans-serif2;
-				font-size: 1.75rem;
 </style>

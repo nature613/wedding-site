@@ -35,5 +35,6 @@ export default {
 </script>
 
 <style lang="sass">
-@import '../styles/_main.sass';
+	@import '../styles/_tools.mixins.sass';
+	@import '../styles/_main.sass';
 </style>

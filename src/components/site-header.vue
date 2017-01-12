@@ -27,6 +27,7 @@ export default {
 </script>
 
 <style lang="sass">
+	@import '../styles/_tools.mixins.sass';
 	@import '../styles/_variables.sass';
 
 	#header
@@ -34,8 +35,8 @@ export default {
 			background: transparent;
 
 		.nav
+			@include rem(margin, 10px 0);
 			float: right;
-			margin: 1rem 0;
 
 			.nav-link
 				border-bottom: 3px solid transparent;
@@ -49,17 +50,13 @@ export default {
 					opacity: 1;
 
 		h1
-			-moz-transition-duration: .25s;
-			-moz-transition-property: all;
-			-webkit-transition-duration: .25s;
-			-webkit-transition-property: all;
+			@include transition-duration(.25s);
+			@include transition-property(all);
 			color: $text;
 			text-shadow: $text-shadow;
-			transition-duration: .25s;
-			transition-property: all;
 
 			&:hover
-				font-size: 2.75rem;
+				@include rem(font-size, 27.5px);
 
 			span
 				font-size: 62.5%;
