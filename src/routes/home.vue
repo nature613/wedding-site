@@ -1,5 +1,6 @@
 <template>
 	<div class="wrapper">
+		<parallax></parallax>
 		<div class="container">
 			<intro></intro>
 			<site-header></site-header>
@@ -20,6 +21,7 @@ import Cards from '../components/cards'
 import Countdown from '../components/countdown'
 import HowItStarted from '../components/how-it-started'
 import Intro from '../components/intro'
+import Parallax from '../components/parallax'
 import SiteFooter from '../components/site-footer'
 import SiteHeader from '../components/site-header'
 import VideoCapture from '../components/video-capture'
@@ -30,6 +32,7 @@ export default {
 		Countdown,
 		HowItStarted,
 		Intro,
+		Parallax,
 		VideoCapture,
 		SiteFooter,
 		SiteHeader

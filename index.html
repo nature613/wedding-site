@@ -39,7 +39,19 @@
 	</head>
 	<body>
 		<div id="app">
-			<router-view></router-view>
+			<div class="preloader">
+				<div class="loader">
+					<div class="dial-container container1">
+						<div class="wedge"></div>
+					</div>
+					<div class="dial-container container2">
+						<div class="wedge"></div>
+					</div>
+					<div class="marker start"></div>
+					<div class="marker end"></div>
+				</div>
+			</div>
+			<router-view v-cloak></router-view>
 		</div>
 	</body>
 </html>
