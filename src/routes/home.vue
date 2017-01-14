@@ -46,4 +46,7 @@ export default {
 .wrapper
 	background-color: $color-gold;
 	background-blend-mode: multiply;
+
+	.jumbotron
+		@include rem(margin-top, 8px);
 </style>

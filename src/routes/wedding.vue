@@ -169,4 +169,11 @@ export default {
 			color: $text;
 			text-shadow: $text-shadow;
 			width: 100%;
+
+		.card
+			@include rem(padding, 20px 0);
+
+			.card-block
+				@include rem(margin-bottom, 0);
+				text-align: left;
 </style>

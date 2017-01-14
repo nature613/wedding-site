@@ -144,6 +144,17 @@ main
 				color: $anchor-text-hover;
 				text-decoration: none;
 
+		.btn
+			@include transition(all .1s linear);
+			box-shadow: 0 5px 0 #006599;
+
+			&::active
+				-webkit-transform: translateY(3px);
+				-ms-transform: translateY(3px);
+				-o-transform: translateY(3px);
+				box-shadow: 0 2px 0 #006599;
+				transform: translateY(3px);
+
 		.content
 			p
 				text-align: left;

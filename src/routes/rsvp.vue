@@ -1,89 +1,90 @@
 <template>
-	<div class="container">
-		<site-header></site-header>
-		<main>
-			<div class="container">
-				<!-- TODO: Add logic so you click in the input, the placeholder text will move to the top as if it was the label  -->
+	<div class="wrapper">
+		<div class="container">
+			<site-header></site-header>
+			<main>
+				<div class="container">
+					<!-- TODO: Add logic so you click in the input, the placeholder text will move to the top as if it was the label  -->
 
-				<form>
-					<h2>Access Code</h2>
-					<div class="form-group">
-						<input type="password" class="form-control" id="accesscode" placeholder="Code">
-					</div>
+					<form>
+						<h2>Access Code</h2>
+						<div class="form-group">
+							<input type="password" class="form-control" id="accesscode" placeholder="Code">
+						</div>
 
-					<h2>Our Guest</h2>
-					<div class="form-group">
-						<input type="text" class="form-control" id="yourName" placeholder="Your Name">
-					</div>
-					<div class="form-group">
-						<input type="email" class="form-control" id="yourEmail" aria-describedby="emailHelp" placeholder="Your Email">
-						<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-					</div>
+						<h2>Our Guest</h2>
+						<div class="form-group">
+							<input type="text" class="form-control" id="yourName" placeholder="Your Name">
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control" id="yourEmail" aria-describedby="emailHelp" placeholder="Your Email">
+							<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+						</div>
 
-					<h2>Your Guest</h2>
-					<div class="form-group">
-						<input type="text" class="form-control" id="theirName" placeholder="Their Name">
-					</div>
+						<h2>Your Guest</h2>
+						<div class="form-group">
+							<input type="text" class="form-control" id="theirName" placeholder="Their Name">
+						</div>
 
-					<fieldset class="form-group">
-						<legend>Kids</legend>
-						<div class="form-check">
+						<fieldset class="form-group">
+							<legend>Kids</legend>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input type="radio" class="form-check-input" name="optionsRadios" id="kidsNo" value="no" checked>
+									<span>No to Kids</span>
+								</label>
+							</div>
+							<div class="form-check">
 							<label class="form-check-label">
-								<input type="radio" class="form-check-input" name="optionsRadios" id="kidsNo" value="no" checked>
-								<span>No to Kids</span>
-							</label>
+									<input type="radio" class="form-check-input" name="optionsRadios" id="kidsYes" value="yes">
+									<span>Yes to Kids</span>
+								</label>
+							</div>
+						</fieldset>
+
+						<div class="form-group">
+							<label for="numberofKids">How many? (max of 2)</label>
+							<select class="form-control" id="numberofKids">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
 						</div>
-						<div class="form-check">
-						<label class="form-check-label">
-								<input type="radio" class="form-check-input" name="optionsRadios" id="kidsYes" value="yes">
-								<span>Yes to Kids</span>
-							</label>
+						<div class="form-group">
+							<input type="text" class="form-control" id="kidOneName" placeholder="Kid's Name">
+							<label for="ageGroup">Age Group (max of 12)</label>
+							<select class="form-control" id="ageGroup">
+								<option>0 - 2</option>
+								<option>3 - 5</option>
+								<option>6 - 8</option>
+								<option>9 - 12</option>
+							</select>
 						</div>
-					</fieldset>
+						<div class="form-group">
+							<input type="text" class="form-control" id="kidTwoName" placeholder="Kid's Name">
+							<label for="ageGroup">Age Group (max of 12)</label>
+							<select class="form-control" id="ageGroup">
+								<option>0 - 2</option>
+								<option>3 - 5</option>
+								<option>6 - 8</option>
+								<option>9 - 12</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="message">Message for us</label>
+							<textarea class="form-control" id="message" rows="3"></textarea>
+						</div>
 
-					<div class="form-group">
-						<label for="numberofKids">How many? (max of 2)</label>
-						<select class="form-control" id="numberofKids">
-							<option>1</option>
-							<option>2</option>
-							<option>3</option>
-							<option>4</option>
-							<option>5</option>
-						</select>
-					</div>
-					<div class="form-group">
-						<input type="text" class="form-control" id="kidOneName" placeholder="Kid's Name">
-						<label for="ageGroup">Age Group (max of 12)</label>
-						<select class="form-control" id="ageGroup">
-							<option>0 - 2</option>
-							<option>3 - 5</option>
-							<option>6 - 8</option>
-							<option>9 - 12</option>
-						</select>
-					</div>
-					<div class="form-group">
-						<input type="text" class="form-control" id="kidTwoName" placeholder="Kid's Name">
-						<label for="ageGroup">Age Group (max of 12)</label>
-						<select class="form-control" id="ageGroup">
-							<option>0 - 2</option>
-							<option>3 - 5</option>
-							<option>6 - 8</option>
-							<option>9 - 12</option>
-						</select>
-					</div>
-					<div class="form-group">
-						<label for="message">Message for us</label>
-						<textarea class="form-control" id="message" rows="3"></textarea>
-					</div>
+						<button type="submit" class="btn btn-primary">Submit</button>
 
-					<button type="submit" class="btn btn-primary">Submit</button>
-
-					For Questions Email: davidanddacia@gmail.com
-				</form>
-			</div>
-			<any-questions></any-questions>
-		</main>
-		<site-footer></site-footer>
+					</form>
+				</div>
+				<any-questions></any-questions>
+			</main>
+			<site-footer></site-footer>
+		</div>
 	</div>
 </template>
 
@@ -101,7 +102,12 @@ export default {
 }
 </script>
 
-<style lang="sass">
-	@import '../styles/_tools.mixins.sass';
-	@import '../styles/_main.sass';
+	<style lang="sass" scoped>
+		@import '../styles/_tools.mixins.sass';
+		@import '../styles/_main.sass';
+
+		.wrapper
+			background-color: $color-green;
+			background-blend-mode: multiply;
+			color: $text2;
 </style>

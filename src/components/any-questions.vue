@@ -38,6 +38,7 @@ export default {
 
 	#questions
 		@include rem(margin-top, 10px);
+		@include rem(padding-bottom, 40px);
 
 		h2
 			@include rem(margin-bottom, 10px);

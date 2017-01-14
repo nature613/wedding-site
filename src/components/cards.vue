@@ -71,8 +71,6 @@ export default {
 
 	.card-deck
 		.card
-			@include rem(padding-top, 25px);
-
 			.card-title,
 			.card-text
 				color: $text2;
