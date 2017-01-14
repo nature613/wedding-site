@@ -52,16 +52,16 @@ export default {
 	.parallax
 		.circle,
 		.squircle
-			@include size(12.5em, 12.5em);
+			@include size(24.5em, 24.5em);
 			border-top: 0.1em solid rgba(255,255,255,0.4);
 			position: absolute;
 
 		.circle
-			@include transform-origin(50% 12.5em);
+			@include transform-origin(50% 24.5em);
 			border-radius: 50%;
 			box-shadow: 0 1em 2em rgba(0,0,0,0.5);
-			left: calc(50% - 6.25em);
-			top: calc(50% - 12.5em);
+			left: calc(50% - 12.25em);
+			top: calc(50% - 24.5em);
 
 		.one
 			background: rgba(225, 236, 17, 0.75);
@@ -99,11 +99,11 @@ export default {
 			border-radius: 25%;
 
 		.small
-			@include size(4em, 4em);
+			@include size(8em, 8em);
 			@include transform-origin(50% 15em);
 			box-shadow: 0 0.25em 0.5em rgba(0,0,0,0.2);
 			left: calc(50% - 2em);
-			top: calc(50% - 15em);
+			top: calc(50% - 30em);
 
 			.squircle
 				background: none;
@@ -133,23 +133,23 @@ export default {
 
 		.large
 			&.squircle
-				@include size(15em, 15em);
+				@include size(30em, 30em);
 				tranform: none;
 				background: rgba(30, 7, 66, 0.65);
 				border: none;
-				left: calc(50% - 7.5em);
+				left: calc(50% - 15em);
 				position: absolute;
-				top: calc(50% - 7.5em);
+				top: calc(50% - 15em);
 
 				&.one
 					@include rotateZ(45deg);
 
 		span
-			@include rem(20em, 20em);
+			@include rem(40em, 40em);
 			display: block;
-			left: calc(50% - 10em);
+			left: calc(50% - 20em);
 			position: absolute;
-			top: calc(50% - 10em);
+			top: calc(50% - 20em);
 
 		.large-circles
 			@include animation(spin 10s linear infinite);

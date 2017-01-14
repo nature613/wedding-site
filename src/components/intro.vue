@@ -21,14 +21,12 @@ export default {
 	},
 	methods: {
 		fadeOut() {
-			const welcome = document.getElementById('welcome')
-			const transitionend = 'webkitAnimationEnd mozAnimationEnd oAnimationEnd MSAnimationEnd oanimationend animationend transitionend oTransitionEnd transitionend webkitTransitionEnd'
+			const intro = document.getElementById('intro')
 
-			console.log(welcome);
-			document.addEventListener(transitionend, function() {
+			setTimeout(function() {
 				console.log(2);
-				welcome.addClass('fadeOut');
-			}, false);
+				intro.className += ' fadeOut';
+			}, 5000);
 		}
 	}
 }
@@ -42,7 +40,7 @@ export default {
 	#intro
 		.background
 			@include size(100%, 100%);
-			background: $background4;;
+			background: $background4;
 			position: fixed;
 			left: 0px;
 			top: 0px;
@@ -129,4 +127,15 @@ export default {
 			100%
 				opacity: 0;
 				transform: translateZ(-1000em);
+
+		&.fadeOut
+			@include transition(all .6s);
+			opacity: 0;
+
+			.background
+				@include size(auto, 0);
+				@include transition(all .5s);
+				background: transparent;
+				position: relative;
+				z-index: -1;
 </style>

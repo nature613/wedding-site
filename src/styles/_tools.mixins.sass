@@ -53,6 +53,9 @@
 	-webkit-justify-content: center;
 	justify-content: center;
 
+@function parseInt($n)
+	@return $n / ($n * 0 + 1);
+
 @mixin rem($property, $values)
 	$px: ();
 	$rem: ();
