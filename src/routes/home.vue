@@ -44,8 +44,12 @@ export default {
 @import '../styles/_main.sass';
 
 .wrapper
-	background-color: $color-gold;
 	background-blend-mode: multiply;
+
+	.parallax
+		.ball
+			background: $color-dark-gold;
+			background: radial-gradient(circle at 100px 100px, $color-brown, $color-dark-gold);
 
 	.jumbotron
 		@include rem(margin-top, 8px);

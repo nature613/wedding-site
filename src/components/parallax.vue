@@ -1,39 +1,24 @@
 <template>
 	<div id="parallax" class="parallax">
-		<span class="large-circles">
-			<div class="large circle one"></div>
-			<div class="large circle two"></div>
-			<div class="large circle three"></div>
-			<div class="large circle four"></div>
-			<div class="large circle five"></div>
-			<div class="large circle six"></div>
-			<div class="large circle seven"></div>
-			<div class="large circle eight"></div>
-		</span>
-		<span class="small-shapes">
-			<div class="small circle one"></div>
-			<div class="small squircle two"></div>
-			<div class="small circle three"></div>
-			<div class="small squircle four"></div>
-			<div class="small circle five"></div>
-			<div class="small squircle six"></div>
-			<div class="small circle seven"></div>
-			<div class="small squircle eight"></div>
-		</span>
-		<span class="content-squircle">
-			<div class="large squircle one"></div>
-			<div class="large squircle two">
-				<div class="content">
-					<svg viewBox="0 0 160 164" xmlns="http://www.w3.org/2000/svg">
-						<g>
-							<g id="svg_1">
-								<path d="m127.805969,90.003128c0.224838,24.213104 21.241287,32.270615 21.474121,32.373459c-0.177704,0.56826 -3.358078,11.482742 -11.072464,22.756622c-6.668747,9.746841 -13.590027,19.457977 -24.493088,19.659103c-10.713348,0.197403 -14.158287,-6.353043 -26.406677,-6.353043c-12.24469,0 -16.072174,6.151901 -26.213551,6.550446c-10.52422,0.398254 -18.538303,-10.539917 -25.26247,-20.251053c-13.740021,-19.864456 -24.24024,-56.132286 -10.1411,-80.613663c7.004152,-12.157551 19.521101,-19.85622 33.10713,-20.053638c10.334515,-0.197132 20.089069,6.952717 26.406689,6.952717c6.313614,0 18.167473,-8.59832 30.628998,-7.335548c5.21682,0.217129 19.860519,2.1073 29.263641,15.871029c-0.75766,0.469692 -17.472931,10.200527 -17.291229,30.443592m-20.134499,-59.456692c5.587379,-6.7633 9.348007,-16.178439 8.322067,-25.546439c-8.053787,0.32369 -17.792625,5.36682 -23.569427,12.126399c-5.177124,5.985922 -9.711121,15.566772 -8.48777,24.749359c8.976891,0.69453 18.147476,-4.561718 23.73513,-11.329308"/>
-							</g>
-						</g>
-					</svg>
-				</div>
+		<div class="ball-container">
+			<div class="action">
+				<figure class="ball">
+					<span class="shadow"></span>
+				</figure>
 			</div>
-		</span>
+
+			<div class="action two">
+				<figure class="ball">
+					<span class="shadow"></span>
+				</figure>
+			</div>
+
+			<div class="action three">
+				<figure class="ball">
+					<span class="shadow"></span>
+				</figure>
+			</div>
+		</div>
 	</div>
 </template>
 
@@ -50,121 +35,65 @@ export default {
 	@import '../styles/_variables.sass';
 
 	.parallax
-		.circle,
-		.squircle
-			@include size(24.5em, 24.5em);
-			border-top: 0.1em solid rgba(255,255,255,0.4);
-			position: absolute;
+		@include perspective(1200px);
+		@include perspective-origin(50% 50%);
 
-		.circle
-			@include transform-origin(50% 24.5em);
-			border-radius: 50%;
-			box-shadow: 0 1em 2em rgba(0,0,0,0.5);
-			left: calc(50% - 12.25em);
-			top: calc(50% - 24.5em);
+		.ball-container
+			@include abs-pos(0, 0, 0, 0);
 
-		.one
-			background: rgba(225, 236, 17, 0.75);
-			transform: rotateZ(225deg);
-
-		.two
-			background: rgba(236, 155, 17, 0.75);
-			transform: rotateZ(180deg);
-
-		.three
-			background: rgba(233, 124, 32, 0.75);
-			transform: rotateZ(135deg);
-
-		.four
-			background: rgba(235, 67, 35, 0.75);
-			transform: rotateZ(90deg);
-
-		.five
-			background: rgba(190, 28, 65, 0.75);
-			transform: rotateZ(45deg);
-
-		.six
-			background: rgba(208, 57, 159, 0.75);
-			transform: rotateZ(0);
-
-		.seven
-			background: rgba(150, 32, 198, 0.75);
-			transform: rotateZ(-45deg);
-
-		.eight
-			background: rgba(95, 33, 203, 0.75);
-			transform: rotateZ(-90deg);
-
-		.squircle
-			border-radius: 25%;
-
-		.small
-			@include size(8em, 8em);
-			@include transform-origin(50% 15em);
-			box-shadow: 0 0.25em 0.5em rgba(0,0,0,0.2);
-			left: calc(50% - 2em);
-			top: calc(50% - 30em);
-
-			.squircle
-				background: none;
-				border: none;
-				box-shadow: none;
-
-				&::after
-					@include rotateZ(-45deg);
-					@include size(100%, 100%);
-					background: red;
-					border-radius: 25%;
-					box-shadow: -0.25em 0.25em 0.5em rgba(0,0,0,0.2);
-					content: "";
-					position: absolute;
-
-				&.two::after
-					background: rgba(195, 204, 23, 0.75);
-
-				&.four::after
-					background: rgba(235, 67, 35, 0.75);
-
-				&.six::after
-					background: rgba(208, 57, 159, 0.75);
-
-				&.eight::after
-					background: rgba(95, 33, 203, 0.75);
-
-		.large
-			&.squircle
-				@include size(30em, 30em);
-				tranform: none;
-				background: rgba(30, 7, 66, 0.65);
-				border: none;
-				left: calc(50% - 15em);
-				position: absolute;
-				top: calc(50% - 15em);
-
-				&.one
-					@include rotateZ(45deg);
-
-		span
-			@include rem(40em, 40em);
-			display: block;
-			left: calc(50% - 20em);
-			position: absolute;
-			top: calc(50% - 20em);
-
-		.large-circles
-			@include animation(spin 10s linear infinite);
-
-		.small-shapes
-			@include animation(spin 30s linear infinite);
-
-		.content-squircle
-			@include animation(spin 20s linear infinite);
-
-		@keyframes spin
+		@keyframes move-bubble
 			0%
-				@include rotateZ(0);
+				-webkit-transform: translateX(-50%) rotateZ(-30deg);
+				transform: translateX(-50%) rotateZ(-30deg);
+				opacity: 0;
+
+			10%
+				opacity: 1;
+
+			80%
+				opacity: 1;
 
 			100%
-				@include rotateZ(360deg);
+				opacity: 0;
+				-webkit-transform: translateX(-50%) rotateZ(30deg);
+				transform: translateX(-50%) rotateZ(30deg);
+
+		.action
+			@include animation(move-bubble 15s linear infinite);
+			@include abs-pos(-50%, auto, auto, 50%);
+			@include rem(margin, 20px);
+			@include size(24em, 24em);
+			@include transform-origin(-200% 200%);
+			-webkit-transform: translateX(-75%);
+			opacity: 0;
+			transform: translateX(-75%);
+
+			&.two
+				@include transform-origin(-300% -100%);
+				left: 70%;
+				top: 20%;
+
+			&.three
+				@include transform-origin(200% 200%);
+				left: 30%;
+
+		.ball
+			@include size(300px, 300px);
+			display: block;
+			background: $color-dark-gold;
+			background: radial-gradient(circle at 100px 100px, $color-gold, $color-dark-gold);
+			border-radius: 50%;
+			margin: 0;
+
+			.shadow
+					@include size(100%, 100%);
+					position: absolute;
+					background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 40%, rgba(255, 255, 255, 0) 50%);
+					-webkit-transform: rotateX(90deg) translateZ(-150px);
+					-moz-transform: rotateX(90deg) translateZ(-150px);
+					-ms-transform: rotateX(90deg) translateZ(-150px);
+					-o-transform: rotateX(90deg) translateZ(-150px);
+					transform: rotateX(90deg) translateZ(-150px);
+					z-index: -1;
 
 </style>
