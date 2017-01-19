@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<intro></intro>
-		<parallax id="home" class="wrapper" background-x="50%" background-y="90%">
+		<parallax id="home" class="wrapper" background-x="50%" background-y="0%">
 			<div class="container">
 				<site-header></site-header>
 				<main>
@@ -46,10 +46,9 @@ export default {
 
 .wrapper
 	@include transition(opacity .65s);
+	background: url('../assets/backgrounds/background-lights-04.jpg') no-repeat;
+	background-size: 110% auto;
 	opacity: 0;
-
-	.jumbotron
-		@include rem(margin-top, 8px);
 
 	&.fadeIn
 		opacity: 1;
