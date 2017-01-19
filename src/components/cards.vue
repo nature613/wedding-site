@@ -1,6 +1,6 @@
 <template>
 	<div class="row">
-		<div class="col-lg-12">
+		<div class="block-content">
 			<div class="card-deck-wrapper">
 				<div class="card-deck">
 					<b-card variant="default" type="default" align="left">
@@ -69,8 +69,15 @@ export default {
 	@import '../styles/_tools.mixins.sass';
 	@import '../styles/_variables.sass';
 
+	.block-content
+		margin: 0 auto;
+		max-width: 800px;
+		width: 100%;
+
 	.card-deck
 		.card
+			opacity: .93;
+			
 			.card-title,
 			.card-text
 				color: $text2;

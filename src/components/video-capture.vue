@@ -65,7 +65,9 @@ export default {
 	@import '../styles/_variables.sass';
 
 	.jumbotron
-		width: 86%;
+		@include rem(margin-top, 20px);
+		max-width: 800px;
+		width: 100%;
 
 	#video
 		@include rem(margin, 10px);

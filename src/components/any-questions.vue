@@ -39,6 +39,7 @@ export default {
 	#questions
 		@include rem(margin-top, 10px);
 		@include rem(padding-bottom, 40px);
+		opacity: .93;
 
 		h2
 			@include rem(margin-bottom, 10px);

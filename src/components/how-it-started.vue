@@ -59,6 +59,7 @@ export default {
 
 			.block-content
 				@include rem(padding, 0 20px);
+				margin-top: 20px;
 
 				.lead
 					@include bold;

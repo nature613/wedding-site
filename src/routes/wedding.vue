@@ -1,5 +1,5 @@
 <template>
-	<div class="wrapper">
+	<parallax id="wedding" class="wrapper" background-x="50%" background-y="1%">
 		<div class="container">
 			<site-header></site-header>
 			<main>
@@ -135,12 +135,13 @@
 			</main>
 		</div>
 		<site-footer></site-footer>
-	</div>
+	</parallax>
 </template>
 
 <script>
 import SiteFooter from '../components/site-footer'
 import SiteHeader from '../components/site-header'
+import Parallax from '../components/parallax'
 import RSVPs from '../components/rsvps'
 import AnyQuestions from '../components/any-questions'
 
@@ -148,6 +149,7 @@ export default {
 	components: {
 		SiteFooter,
 		SiteHeader,
+		Parallax,
 		RSVPs,
 		AnyQuestions
 	}
@@ -159,12 +161,14 @@ export default {
 	@import '../styles/_main.sass';
 
 	.wrapper
-		background: url('../assets/backgrounds/background-lights-03.jpg') 50% top;
+		background: url('../assets/backgrounds/background-lights-03.jpg') 50% 1%;
+		background-size: contain;
 		color: $text2;
 
 		.jumbotron
 			background: $background url('../assets/backgrounds/background-wedding.jpg') 50% 62% no-repeat;
 			background-size: cover;
+			border: 1px solid $text;
 			color: $text;
 			text-shadow: $text-shadow;
 			width: 100%;
