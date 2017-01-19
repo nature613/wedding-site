@@ -159,8 +159,7 @@ export default {
 	@import '../styles/_main.sass';
 
 	.wrapper
-		background-color: $color-purple;
-		background-blend-mode: multiply;
+		background: $background3 url('../assets/backgrounds/background-lights-03.jpg') 50% top no-repeat;
 		color: $text2;
 
 		.jumbotron

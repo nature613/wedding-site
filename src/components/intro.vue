@@ -4,7 +4,7 @@
 			<div class="layer">
 				<div class="foreground">
 					<p id="welcome">Welcome to the wedding website of</p>
-					<h2 id="name">Dacia <span>&amp;</span> Dacia</h2>
+					<h2 id="name">David <span>&amp;</span> Dacia</h2>
 					<h3 id="official"><span>The</span> Rodrigues</h3>
 				</div>
 			</div>
@@ -16,18 +16,11 @@
 
 export default {
 	name: 'intro',
-	mounted: function() {
-		this.fadeOut();
-	},
-	methods: {
-		fadeOut() {
-			const intro = document.getElementById('intro')
-
-			setTimeout(function() {
-				console.log(2);
-				intro.className += ' fadeOut';
-			}, 5000);
-		}
+	mounted() {
+		setTimeout(function() {
+			document.getElementById('intro').className += ' fadeOut';
+			document.getElementById('home').className += ' fadeIn';
+		}, 6000);
 	}
 }
 
@@ -40,45 +33,53 @@ export default {
 	#intro
 		.background
 			@include size(100%, 100%);
-			background: $background4;
+			background: $background3;
 			position: fixed;
 			left: 0px;
 			top: 0px;
 			z-index: 9999;
 
 			.layer
-				@include abs-pos(40%, auto, auto, 50%);
-				@include translate(-50%, -50%);
-				position: fixed;
-				z-index: 100;
+				@include translate(auto, -50%);
+				align-items: center;
+				display: flex;
+				justify-content: center;
+				position: relative;
+				top: 30%;
 
 		p
-			@include rem(font-size, 20px);
+			@include rem(font-size, 24px);
+			color: $text;
 			font-family: $font-stack-sans-serif2;
 
 		h2, h3
+			@include rem(margin-bottom, 12px);
 			color: $text;
-			font: 700 8rem/1 $font-stack-sans-serif2;
+			font: 700 9rem/1 $font-stack-sans-serif2;
 			text-shadow: $text-shadow;
 			text-transform: uppercase;
 
 			span
-				@include rem(font-size, 50px);
+				@include rem(font-size, 55px);
 
 		h3
-			@include rem(font-size, 60px);
+			@include rem(font-size, 50px);
 
 			span
-				@include rem(font-size, 30px);
+				@include rem(font-size, 26px);
 
 		#welcome
-			@include animation(welcome 5s ease-out 1);
+			@include animation(welcome 7s ease-out 1);
 
 		#name
-			@include animation(name 5s ease-out 1);
+			@include animation(name 7s ease-out 1);
+			white-space: nowrap;
+
+			@include tablet
+				white-space: normal;
 
 		#official
-			@include animation(official 5s ease-out 1);
+			@include animation(official 7s ease-out 1);
 
 		@keyframes welcome
 			0%
@@ -130,12 +131,8 @@ export default {
 
 		&.fadeOut
 			@include transition(all .6s);
-			opacity: 0;
 
 			.background
-				@include size(auto, 0);
-				@include transition(all .5s);
-				background: transparent;
-				position: relative;
+				opacity: 0;
 				z-index: -1;
 </style>

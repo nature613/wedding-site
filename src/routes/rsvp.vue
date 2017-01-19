@@ -1,5 +1,5 @@
 <template>
-	<div class="wrapper">
+	<parallax class="wrapper">
 		<div class="container">
 			<site-header></site-header>
 			<main>
@@ -85,18 +85,20 @@
 			</main>
 			<site-footer></site-footer>
 		</div>
-	</div>
+	</parallax>
 </template>
 
 <script>
 import AnyQuestions from '../components/any-questions'
 import SiteFooter from '../components/site-footer'
 import SiteHeader from '../components/site-header'
+import Parallax from '../components/parallax'
 
 export default {
 	components: {
 		SiteFooter,
 		SiteHeader,
+		Parallax,
 		AnyQuestions
 	}
 }
@@ -107,7 +109,7 @@ export default {
 		@import '../styles/_main.sass';
 
 		.wrapper
-			background-color: $color-green;
-			background-blend-mode: multiply;
+			background-image: url('../assets/backgrounds/background-lights-06.png');
+			background-size: contain;
 			color: $text2;
 </style>

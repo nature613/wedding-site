@@ -1,18 +1,19 @@
 <template>
-	<div class="wrapper">
-		<parallax></parallax>
-		<div class="container">
-			<intro></intro>
-			<site-header></site-header>
-			<main>
-				<div class="container">
-					<how-it-started></how-it-started>
-					<cards></cards>
-					<video-capture></video-capture>
-				</div>
-			</main>
-		</div>
-		<site-footer></site-footer>
+	<div>
+		<intro></intro>
+		<parallax id="home" class="wrapper" background-x="50%" background-y="90%">
+			<div class="container">
+				<site-header></site-header>
+				<main>
+					<div class="container">
+						<how-it-started></how-it-started>
+						<cards></cards>
+						<video-capture></video-capture>
+					</div>
+				</main>
+			</div>
+			<site-footer></site-footer>
+		</parallax>
 	</div>
 </template>
 
@@ -44,13 +45,12 @@ export default {
 @import '../styles/_main.sass';
 
 .wrapper
-	background-blend-mode: multiply;
-
-	.parallax
-		.ball
-			background: $color-dark-gold;
-			background: radial-gradient(circle at 100px 100px, $color-brown, $color-dark-gold);
+	@include transition(opacity .65s);
+	opacity: 0;
 
 	.jumbotron
 		@include rem(margin-top, 8px);
+
+	&.fadeIn
+		opacity: 1;
 </style>
