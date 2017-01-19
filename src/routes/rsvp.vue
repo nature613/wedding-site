@@ -1,5 +1,5 @@
 <template>
-	<parallax class="wrapper">
+	<parallax id="rsvp" class="wrapper" background-x="50%" background-y="1%">
 		<div class="container">
 			<site-header></site-header>
 			<main>
@@ -80,11 +80,11 @@
 						<button type="submit" class="btn btn-primary">Submit</button>
 
 					</form>
+					<any-questions></any-questions>
 				</div>
-				<any-questions></any-questions>
 			</main>
-			<site-footer></site-footer>
 		</div>
+		<site-footer></site-footer>
 	</parallax>
 </template>
 
@@ -112,4 +112,19 @@ export default {
 			background-image: url('../assets/backgrounds/background-lights-06.png');
 			background-size: contain;
 			color: $text2;
+
+			form
+				max-width: 600px;
+				width: 100%;
+
+			&#rsvp
+				#questions
+					max-width: 630px;
+					width: auto;
+
+					.col-lg-2
+						display: none;
+
+					.col-lg-8
+						width: 100%;
 </style>
