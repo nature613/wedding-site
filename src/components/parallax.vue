@@ -7,32 +7,33 @@
 <script>
 
 	export default {
-		name: 'parallax',
 		props: {
-			'background-x': {
-				default: '50%'
-			},
-			'background-y': {
-				default: '0%'
-			},
-			'speed': {
-				default: 0.7
+			'background-x': { type: String, default: '50%' },
+			'background-y': { type: String, default: '0%' },
+			'speed': { type: Number, default: 0.7 }
+		},
+		data: function () {
+			return {
+				offset: 0
 			}
 		},
 		computed: {
 			computedStyle: function () {
 				return {
-					backgroundPosition: `${this.backgroundX} ${this.backgroundY}`
+					backgroundPosition: `${this.backgroundX} calc(${this.backgroundY} + ${this.offset}px)`
 				}
 			}
 		},
+		methods: {
+			onScroll() {
+				this.offset = window.pageYOffset * this.speed
+			}
+		},
 		mounted() {
-			window.onscroll = () => {
-				const parallax = document.querySelectorAll('.parallax');
-				[].slice.call(parallax).forEach((el, i) => {
-					el.style.backgroundPosition = `${this.backgroundX} calc(${this.backgroundY} + ${window.pageYOffset * this.speed}px)`
-				});
-			};
+			window.addEventListener('scroll', this.onScroll)
+		},
+		destroy() {
+			window.removeEventListener('scroll', this.onScroll)
 		}
 	}
 

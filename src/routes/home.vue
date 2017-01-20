@@ -1,6 +1,6 @@
 <template>
 	<intro>
-		<parallax class="wrapper" background-x="0%" background-y="0%" speed="0.75">
+		<parallax class="wrapper" background-x="0%" background-y="0%" :speed="0.75">
 			<div class="container">
 				<site-header></site-header>
 				<main>
