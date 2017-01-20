@@ -48,6 +48,8 @@ export default {
 
 			.image
 				@include rem(margin, 0 auto 10px);
+				border: 1px solid $text;
+				border-bottom: 0 none;
 				border-radius: 6px 6px 0 0;
 				box-shadow: 0 0 7px $background;
 				display: block;

@@ -1,5 +1,5 @@
 <template>
-	<div id="intro" class="row">
+	<div id="intro" class="row" :class="{ displayIt: ranIntro }">
 		<div class="background">
 			<div class="layer">
 				<div class="foreground">
@@ -9,24 +9,37 @@
 				</div>
 			</div>
 		</div>
+		<div class="intro-content">
+			<slot></slot>
+		</div>
 	</div>
 </template>
 
 <script>
 
-export default {
-	name: 'intro',
-	mounted() {
-		setTimeout(function() {
-			document.getElementById('intro').className += ' fadeOut';
-			document.getElementById('home').className += ' fadeIn';
-		}, 6000);
+	export default {
+		name: 'intro',
+		computed: {
+			ranIntro: function () {
+				return localStorage.getItem('intro');
+			}
+		},
+		mounted() {
+			const ranIntro = this.ranIntro;
+			localStorage.setItem('intro', 'true');
+			if (!ranIntro) {
+				setTimeout(function() {
+					document.getElementById('intro').className += ' fadeOut';
+					document.querySelector('.intro-content').className += ' fadeIn';
+				}, 6000);
+			}
+		}
 	}
-}
 
 </script>
 
 <style lang="sass" scoped>
+
 	@import '../styles/_tools.mixins.sass';
 	@import '../styles/_variables.sass';
 
@@ -129,10 +142,29 @@ export default {
 				opacity: 0;
 				transform: translateZ(-1000em);
 
+		.intro-content
+			opacity: 0;
+
+			&.fadeIn
+				opacity: 1;
+				transition: opacity .65s;
+
+		&.displayIt
+			.intro-content
+				opacity: 1;
+
+			.background
+				opacity: 0;
+				z-index: -1;
+
+				.wrapper
+					opacity: 1;
+
 		&.fadeOut
 			@include transition(all .6s);
 
 			.background
 				opacity: 0;
 				z-index: -1;
+
 </style>

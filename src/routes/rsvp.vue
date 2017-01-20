@@ -89,42 +89,46 @@
 </template>
 
 <script>
-import AnyQuestions from '../components/any-questions'
-import SiteFooter from '../components/site-footer'
-import SiteHeader from '../components/site-header'
-import Parallax from '../components/parallax'
 
-export default {
-	components: {
-		SiteFooter,
-		SiteHeader,
-		Parallax,
-		AnyQuestions
+	import AnyQuestions from '../components/any-questions'
+	import SiteFooter from '../components/site-footer'
+	import SiteHeader from '../components/site-header'
+	import Parallax from '../components/parallax'
+
+	export default {
+		components: {
+			SiteFooter,
+			SiteHeader,
+			Parallax,
+			AnyQuestions
+		}
 	}
-}
+
 </script>
 
-	<style lang="sass" scoped>
-		@import '../styles/_tools.mixins.sass';
-		@import '../styles/_main.sass';
+<style lang="sass" scoped>
 
-		.wrapper
-			background-image: url('../assets/backgrounds/background-lights-06.png');
-			background-size: contain;
-			color: $text2;
+	@import '../styles/_tools.mixins.sass';
+	@import '../styles/_main.sass';
 
-			form
-				max-width: 600px;
-				width: 100%;
+	.wrapper
+		background-image: url('../assets/backgrounds/background-lights-06.png');
+		background-size: contain;
+		color: $text2;
 
-			&#rsvp
-				#questions
-					max-width: 630px;
-					width: auto;
+		form
+			max-width: 600px;
+			width: 100%;
 
-					.col-lg-2
-						display: none;
+		&#rsvp
+			#questions
+				max-width: 630px;
+				width: auto;
 
-					.col-lg-8
-						width: 100%;
+				.col-lg-2
+					display: none;
+
+				.col-lg-8
+					width: 100%;
+
 </style>

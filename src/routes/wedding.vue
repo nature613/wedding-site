@@ -139,6 +139,7 @@
 </template>
 
 <script>
+
 import SiteFooter from '../components/site-footer'
 import SiteHeader from '../components/site-header'
 import Parallax from '../components/parallax'
@@ -154,9 +155,11 @@ export default {
 		AnyQuestions
 	}
 }
+
 </script>
 
 <style lang="sass" scoped>
+
 	@import '../styles/_tools.mixins.sass';
 	@import '../styles/_main.sass';
 
@@ -179,4 +182,5 @@ export default {
 			.card-block
 				@include rem(margin-bottom, 0);
 				text-align: left;
+
 </style>

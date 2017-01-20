@@ -33,6 +33,7 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+
 	@import '../styles/_tools.mixins.sass';
 	@import '../styles/_variables.sass';
 
@@ -54,4 +55,5 @@ export default {
 			b
 				@include rem(font-size, 17.5px);
 				font-family: $font-stack-sans-serif2;
+
 </style>

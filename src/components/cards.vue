@@ -76,8 +76,8 @@ export default {
 
 	.card-deck
 		.card
-			opacity: .93;
-			
+			background-color: $background2a;
+
 			.card-title,
 			.card-text
 				color: $text2;
