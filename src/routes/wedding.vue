@@ -143,7 +143,6 @@
 import SiteFooter from '../components/site-footer'
 import SiteHeader from '../components/site-header'
 import Parallax from '../components/parallax'
-import RSVPs from '../components/rsvps'
 import AnyQuestions from '../components/any-questions'
 
 export default {
@@ -151,7 +150,6 @@ export default {
 		SiteFooter,
 		SiteHeader,
 		Parallax,
-		RSVPs,
 		AnyQuestions
 	}
 }
