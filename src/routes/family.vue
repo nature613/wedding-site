@@ -74,20 +74,24 @@
 </template>
 
 <script>
-import SiteFooter from '../components/site-footer'
-import SiteHeader from '../components/site-header'
-import AnyQuestions from '../components/any-questions'
 
-export default {
-	components: {
-		SiteFooter,
-		SiteHeader,
-		AnyQuestions
+	import SiteFooter from '../components/site-footer'
+	import SiteHeader from '../components/site-header'
+	import AnyQuestions from '../components/any-questions'
+
+	export default {
+		components: {
+			SiteFooter,
+			SiteHeader,
+			AnyQuestions
+		}
 	}
-}
+
 </script>
 
 <style lang="sass" scoped>
+
 	@import '../styles/_tools.mixins.sass';
 	@import '../styles/_main.sass';
+
 </style>

@@ -84,20 +84,24 @@
 </template>
 
 <script>
-import SiteFooter from '../components/site-footer'
-import SiteHeader from '../components/site-header'
-import Parallax from '../components/parallax'
 
-export default {
-	components: {
-		SiteFooter,
-		SiteHeader,
-		Parallax
+	import SiteFooter from '../components/site-footer'
+	import SiteHeader from '../components/site-header'
+	import Parallax from '../components/parallax'
+
+	export default {
+		components: {
+			SiteFooter,
+			SiteHeader,
+			Parallax
+		}
 	}
-}
+
 </script>
 
 <style lang="sass">
+
 	@import '../styles/_tools.mixins.sass';
 	@import '../styles/_main.sass';
+		
 </style>

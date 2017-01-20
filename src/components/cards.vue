@@ -60,12 +60,13 @@
 
 <script>
 
-export default {
-}
+	export default {
+	}
 
 </script>
 
 <style lang="sass">
+
 	@import '../styles/_tools.mixins.sass';
 	@import '../styles/_variables.sass';
 
@@ -111,4 +112,5 @@ export default {
 						@include rem(font-size, 30px);
 						color: $text3;
 						content: '\00B7';
+
 </style>

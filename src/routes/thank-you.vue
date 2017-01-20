@@ -23,18 +23,22 @@
 </template>
 
 <script>
-import SiteFooter from '../components/site-footer'
-import SiteHeader from '../components/site-header'
 
-export default {
-	components: {
-		SiteFooter,
-		SiteHeader
+	import SiteFooter from '../components/site-footer'
+	import SiteHeader from '../components/site-header'
+
+	export default {
+		components: {
+			SiteFooter,
+			SiteHeader
+		}
 	}
-}
+
 </script>
 
 <style lang="sass">
+
 	@import '../styles/_tools.mixins.sass';
 	@import '../styles/_main.sass';
+
 </style>

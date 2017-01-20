@@ -25,12 +25,13 @@
 
 <script>
 
-export default {
-}
+	export default {
+	}
 
 </script>
 
 <style lang="sass" scoped>
+
 	@import '../styles/_tools.mixins.sass';
 	@import '../styles/_variables.sass';
 
@@ -48,12 +49,12 @@ export default {
 
 			.image
 				@include rem(margin, 0 auto 10px);
+				@include size(800px, 420px);
 				border: 1px solid $text;
 				border-bottom: 0 none;
 				border-radius: 6px 6px 0 0;
 				box-shadow: 0 0 7px $background;
 				display: block;
-				width: 800px;
 
 				img
 					border-radius: 6px  6px 0 0;
@@ -73,4 +74,5 @@ export default {
 				i
 					@include rem(font-size, 14px);
 					@include rem(margin-left, 5px);
+
 </style>

@@ -10,7 +10,6 @@
 						<li class="nav-item"><router-link class="nav-link" to="/home">Home</router-link></li>
 						<li class="nav-item"><router-link class="nav-link" to="/wedding">Wedding</router-link></li>
 						<li class="nav-item"><router-link class="nav-link" to="/rsvp">RSVP</router-link></li>
-						<li class="nav-item"><router-link class="nav-link" to="/guestbook">Guestbook</router-link></li>
 						<li class="nav-item"><router-link class="nav-link" to="/chicago">While in Chicago</router-link></li>
 					</b-nav>
 				</div>
@@ -21,12 +20,13 @@
 
 <script>
 
-export default {
-}
+	export default {
+	}
 
 </script>
 
 <style lang="sass">
+
 	@import '../styles/_tools.mixins.sass';
 	@import '../styles/_variables.sass';
 
@@ -60,4 +60,5 @@ export default {
 
 			span
 				font-size: 62.5%;
+
 </style>

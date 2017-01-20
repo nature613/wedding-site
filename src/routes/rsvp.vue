@@ -120,15 +120,4 @@
 			max-width: 600px;
 			width: 100%;
 
-		&#rsvp
-			#questions
-				max-width: 630px;
-				width: auto;
-
-				.col-lg-2
-					display: none;
-
-				.col-lg-8
-					width: 100%;
-
 </style>

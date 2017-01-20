@@ -130,29 +130,29 @@
 							</div>
 						</div>
 					</div>
-					<any-questions></any-questions>
 				</div>
 			</main>
 		</div>
+		<any-questions></any-questions>
 		<site-footer></site-footer>
 	</parallax>
 </template>
 
 <script>
 
-import SiteFooter from '../components/site-footer'
-import SiteHeader from '../components/site-header'
-import Parallax from '../components/parallax'
-import AnyQuestions from '../components/any-questions'
+	import SiteFooter from '../components/site-footer'
+	import SiteHeader from '../components/site-header'
+	import Parallax from '../components/parallax'
+	import AnyQuestions from '../components/any-questions'
 
-export default {
-	components: {
-		SiteFooter,
-		SiteHeader,
-		Parallax,
-		AnyQuestions
+	export default {
+		components: {
+			SiteFooter,
+			SiteHeader,
+			Parallax,
+			AnyQuestions
+		}
 	}
-}
 
 </script>
 

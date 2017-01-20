@@ -12,19 +12,18 @@
 
 <script>
 
-export default {
-}
+	export default {
+	}
 
 </script>
 
 <style lang="sass" scoped>
+
 	@import '../styles/_tools.mixins.sass';
 	@import '../styles/_variables.sass';
 
 	#footer
 		@include rem(margin-top, 40px);
-
-	.bg-faded
 		background: linear-gradient(transparent, $background3);
 
 	h2
@@ -44,4 +43,5 @@ export default {
 			@include rem(font-size, 7px);
 			@include rem(margin-top, 10px);
 			color: $text;
+
 </style>
