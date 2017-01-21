@@ -6,6 +6,7 @@
 				<main>
 					<div class="container">
 						<how-it-started></how-it-started>
+						<countdown to="November 3, 2018"></countdown>
 						<cards></cards>
 						<video-capture></video-capture>
 					</div>

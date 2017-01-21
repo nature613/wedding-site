@@ -16,8 +16,7 @@
 							<em class="small">yadda&hellip;</em>
 						</b>
 					</p>
-					<p class="cap">Now, they're getting married!!!</p>
-					<countdown date="November 3, 2018"></countdown>
+					<p class="cap">Now, they're getting married in&hellip;</p>
 				</div>
 			</div>
 		</div>
@@ -26,12 +25,8 @@
 
 <script>
 
-	import Countdown from '../components/countdown'
-
 	export default {
-		components: {
-			Countdown
-		}
+
 	}
 
 </script>
@@ -46,6 +41,7 @@
 
 		.jumbotron
 			@include rem(padding, 0 0 20px !important);
+			@include rem(margin-bottom, 0);
 			border-radius: 6px;
 			width: 800px;
 
