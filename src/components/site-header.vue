@@ -50,13 +50,13 @@
 					opacity: 1;
 
 		h1
-			@include transition-duration(.25s);
-			@include transition-property(all);
 			color: $text;
 			text-shadow: $text-shadow;
+			transition: all .25s;
 
 			&:hover
 				@include rem(font-size, 27.5px);
+				cursor: pointer;
 
 			span
 				font-size: 62.5%;

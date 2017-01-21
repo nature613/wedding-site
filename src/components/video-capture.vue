@@ -75,7 +75,7 @@
 
 		#video-recording
 			.flashing
-				@include rem(animation, blinker 1s linear infinite);
+				animation: blinker 1s linear infinite;
 				text-align: center;
 
 				i

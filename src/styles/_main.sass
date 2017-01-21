@@ -132,12 +132,11 @@ main
 		a,
 		a:visited,
 		a:link
-			@include transition-duration(1s);
-			@include transition-property(all);
 			border-bottom: 2px solid transparent;
 			color: $anchor-text;
 			font-family: $font-stack-sans-serif2;
 			text-decoration: none;
+			transition-: all 1s;
 
 			&:hover
 				border-color: $anchor-text-hover;
@@ -145,13 +144,10 @@ main
 				text-decoration: none;
 
 		.btn
-			@include transition(all .1s linear);
 			box-shadow: 0 5px 0 #006599;
+			transition: all .1s linear;
 
 			&::active
-				-webkit-transform: translateY(3px);
-				-ms-transform: translateY(3px);
-				-o-transform: translateY(3px);
 				box-shadow: 0 2px 0 #006599;
 				transform: translateY(3px);
 

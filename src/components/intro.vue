@@ -82,17 +82,17 @@
 				@include rem(font-size, 26px);
 
 		#welcome
-			@include animation(welcome 7s ease-out 1);
+			animation: welcome 7s ease-out 1;
 
 		#name
-			@include animation(name 7s ease-out 1);
+			animation: name 7s ease-out 1;
 			white-space: nowrap;
 
 			@include tablet
 				white-space: normal;
 
 		#official
-			@include animation(official 7s ease-out 1);
+			animation: official 7s ease-out 1;
 
 		@keyframes welcome
 			0%
@@ -161,7 +161,7 @@
 					opacity: 1;
 
 		&.fadeOut
-			@include transition(all .6s);
+			transition: all .6s;
 
 			.background
 				opacity: 0;

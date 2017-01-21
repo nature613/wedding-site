@@ -16,7 +16,8 @@
 							<em class="small">yadda&hellip;</em>
 						</b>
 					</p>
-					<p class="cap">Now, they're getting married on November 3rd 2018 (replace with countdown)!!! <i class="fa fa-smile-o"></i></p>
+					<p class="cap">Now, they're getting married!!!</p>
+					<countdown date="November 3, 2018"></countdown>
 				</div>
 			</div>
 		</div>
@@ -25,7 +26,12 @@
 
 <script>
 
+	import Countdown from '../components/countdown'
+
 	export default {
+		components: {
+			Countdown
+		}
 	}
 
 </script>
