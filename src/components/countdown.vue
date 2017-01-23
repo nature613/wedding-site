@@ -1,7 +1,23 @@
 <template>
 	<div>
 		<div class="block">
-			<p class="digit">{{ days  | two_digits }}<span>:</span>{{ hours | two_digits }}<span>:</span>{{ minutes | two_digits }}</p>
+			<div class="now"><p>Now, they're getting married in</p></div>
+			<p class="digit">
+				<span>{{ days  | two_digits }}</span>
+				<span>Days</span>
+			</p>
+			<p class="digit">
+				<span>{{ hours | two_digits }}</span>
+				<span>Hours</span>
+			</p>
+			<p class="digit">
+				<span>{{ minutes | two_digits }}</span>
+				<span>Minutes</span>
+			</p>
+			<p class="digit">
+				<span>{{ seconds | two_digits }}</span>
+				<span>Seconds</span>
+			</p>
 		</div>
 	</div>
 </template>
@@ -59,26 +75,27 @@
 	@import '../styles/_variables.sass';
 
 	.block
-		.digit
-			@include rem(font-size, 90px);
-			@include rem(margin-bottom, 20px);
+		p
 			font-family: $font-stack-sans-serif;
 			font-weight: 600;
 			line-height: 1;
 			text-shadow: 0.15rem 0.1rem 6px #888;
 
+		.now
+			@include rem(font-size, 16px);
+
+		.digit
+			@include rem(font-size, 60px);
+			@include rem(margin, 0 40px 20px 0);
+			display: inline-block;
+			text-align: center;
+
+			&:last-of-type
+				margin-right: 0;
+
 			span
-				@include rem(font-size, 60px);
-				animation: blink 1s linear infinite;
-				position: relative;
-				top: -20px;
+				display: block;
 
-			@keyframes blink
-				0%
-					opacity: 1;
-				45%
-					opacity: 0;
-				55%
-					opacity: 1;
-
+				&:last-of-type
+					@include rem(font-size, 16px);
 </style>

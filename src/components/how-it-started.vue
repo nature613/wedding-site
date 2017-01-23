@@ -16,7 +16,6 @@
 							<em class="small">yadda&hellip;</em>
 						</b>
 					</p>
-					<p class="cap">Now, they're getting married in&hellip;</p>
 				</div>
 			</div>
 		</div>
