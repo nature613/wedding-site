@@ -1,17 +1,17 @@
 <template>
 	<intro>
 		<parallax class="wrapper" background-x="68%" background-y="0%" :speed="0.75">
+			<site-header></site-header>
 			<div class="container">
-				<site-header></site-header>
 				<main>
 					<div class="container">
 						<how-it-started></how-it-started>
 						<countdown to="November 3, 2018"></countdown>
 						<cards></cards>
-						<video-capture></video-capture>
 					</div>
 				</main>
 			</div>
+			<video-capture></video-capture>
 			<site-footer></site-footer>
 		</parallax>
 	</intro>

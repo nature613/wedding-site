@@ -1,12 +1,14 @@
 <template>
-	<div class="container">
+	<div class="wrapper">
 		<site-header></site-header>
-		<main>
-			<div class="container">
-				<p>Gallery</p>
-			</div>
-		</main>
-		<site-footer></site-footer>
+		<div class="container">
+			<main>
+				<div class="container">
+					<p>Gallery</p>
+				</div>
+			</main>
+			<site-footer></site-footer>
+		</div>
 	</div>
 </template>
 

@@ -10,7 +10,10 @@
 						<li class="nav-item"><router-link class="nav-link" to="/home">Home</router-link></li>
 						<li class="nav-item"><router-link class="nav-link" to="/wedding">Wedding</router-link></li>
 						<li class="nav-item"><router-link class="nav-link" to="/rsvp">RSVP</router-link></li>
-						<li class="nav-item"><router-link class="nav-link" to="/chicago">While in Chicago</router-link></li>
+						<li class="nav-item"><router-link class="nav-link" to="/chicago">
+							<span class="desktop">While in Chicago</span>
+							<span class="mobile">Chicago</span>
+						</router-link></li>
 					</b-nav>
 				</div>
 			</b-navbar>
@@ -31,12 +34,24 @@
 	@import '../styles/_variables.sass';
 
 	#header
+		@include rem(margin, 0 auto);
+		@include rem(padding-top, 10px);
+		max-width: 1140px;
+
+		@include tablet-xlarge
+			max-width: 940px;
+
 		.bg-faded
 			background: transparent;
 
 		.nav
 			@include rem(margin, 10px 0);
 			float: right;
+
+			&.navbar-full
+				@include tablet
+					@include rem(padding-left, 0);
+					@include rem(padding-right, 0);
 
 			.nav-link
 				border-bottom: 3px solid transparent;

@@ -42,7 +42,9 @@
 			@include rem(padding, 0 0 20px !important);
 			@include rem(margin-bottom, 0);
 			border-radius: 6px;
-			width: 800px;
+			max-width: 1000px;
+			min-width: 280px;
+			width: 100%;
 
 			.display-3
 				@include rem(margin-bottom, 10px);
@@ -50,20 +52,28 @@
 
 			.image
 				@include rem(margin, 0 auto 10px);
-				@include size(800px, 420px);
 				border: 1px solid $text;
 				border-bottom: 0 none;
 				border-radius: 6px 6px 0 0;
-				box-shadow: 0 0 7px $background;
 				display: block;
+				max-height: 410px;
+				max-width: 1000px;
+				min-width: 280px;
+				overflow: hidden;
+				width: 100%;
+
+				@include tablet-large
+					max-height: 300px;
 
 				img
 					border-radius: 6px  6px 0 0;
-					max-width: 100%;
+					box-shadow: 0 0 7px $background;
+					max-width: 105%;
 
 			.block-content
 				@include rem(padding, 0 20px);
 				margin-top: 20px;
+				max-width: 800px;
 
 				.lead
 					@include bold;

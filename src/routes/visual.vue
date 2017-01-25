@@ -1,14 +1,16 @@
 <template>
-	<div class="container">
+	<div class="wrapper">
 		<site-header></site-header>
-		<main>
-			<div class="container">
-				<p>Visuals: Photographer/Videographers</p>
-				<b-form-checkbox :list.sync="[{ text: 'First', value: 'first', }, { text: 'Second', value: 'second', }, { text: 'Third', value: 'third', disabled: true }]" :state="'default'" :custom="false" vertical return-object>
-</b-form-checkbox>
-			</div>
-		</main>
-		<site-footer></site-footer>
+		<div class="container">
+			<main>
+				<div class="container">
+					<p>Visuals: Photographer/Videographers</p>
+					<b-form-checkbox :list.sync="[{ text: 'First', value: 'first', }, { text: 'Second', value: 'second', }, { text: 'Third', value: 'third', disabled: true }]" :state="'default'" :custom="false" vertical return-object>
+					</b-form-checkbox>
+				</div>
+			</main>
+			<site-footer></site-footer>
+		</div>
 	</div>
 </template>
 

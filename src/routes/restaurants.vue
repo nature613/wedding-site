@@ -1,48 +1,47 @@
 <template>
 	<div class="wrapper parallax">
-		<parallax></parallax>
+		<site-header></site-header>
 		<div class="container">
-			<site-header></site-header>
 			<main>
 				<div class="container">
 					<p>Restaurants - These are places David and I actually go to/went to over the last few years. We love a good meal, so while in town, please checkout some of our recommendations.</p>
 
-	ZED451	$$$		Steakhouse
-	Xoco		$$		Mexican
-	Wishbone	$$$	Steakhouse
-	Tavern on the Park	$$	American
-	Sunda		$$	Japanese/Sushi
-	South Branch Tavern &amp; Grille	$$	American
-	South Water Kitchen	$$	American
-	Smith &amp; Wollensky $$$$	Steakhouse
-	Shaw's Crab House	$$$	Seafood
-	Roy's Chicago		$$$ Asian Fusion
-	RPM Italian 	$$$		Italian
-	RPM Steak 	$$$$	Steakhouse
-	Ruth's Chris Steak House	$$$ Steakhouse
-	Public House 	$$$	American
-	The Promontory 	$$$	American Contemporary
-	Michael Jordan's Steak House $$$	Steakhouse
-	Mercadito Chicago $$$	Mexican
-	McCormick &amp; Schmick’s Seafood &amp; Steaks	$$$$	Seafood
-	Home Run Inn Pizza	$$ Pizza
-	Grange Hall Burger Bar $$ American
-	Geja's Café 	$$	Fondue
-	Frontier 	$$	American Contemporary
-	Eddie V’s Prime Seafood 	$$$	Seafood
-	The Duck Inn 	$$	American Contemporary
-	Ditka's Restaurant 	$$$	Steakhouse
-	Demera Ethiopian Restaurant 	$$	African
-	Connie's Pizza		$		Pizza
-	Chuck’s: A Kerry Simon Kitchen 	$$	American Contemporary
-	Chicago q 	$$	BBQ/Ribs
-	Cantina Laredo 	$$	Mexican River
-	The Capital Grille $$$	Steakhouse
-	Carnivale 	$$$	Latin
-	Catch 35 		$$	Seafood
-	Bub City	$$	BBQ/Ribs
-	bellyQ		$$$	Asian Fusion
-	Bar Takito 	$$	Latin
+					ZED451	$$$		Steakhouse
+					Xoco		$$		Mexican
+					Wishbone	$$$	Steakhouse
+					Tavern on the Park	$$	American
+					Sunda		$$	Japanese/Sushi
+					South Branch Tavern &amp; Grille	$$	American
+					South Water Kitchen	$$	American
+					Smith &amp; Wollensky $$$$	Steakhouse
+					Shaw's Crab House	$$$	Seafood
+					Roy's Chicago		$$$ Asian Fusion
+					RPM Italian 	$$$		Italian
+					RPM Steak 	$$$$	Steakhouse
+					Ruth's Chris Steak House	$$$ Steakhouse
+					Public House 	$$$	American
+					The Promontory 	$$$	American Contemporary
+					Michael Jordan's Steak House $$$	Steakhouse
+					Mercadito Chicago $$$	Mexican
+					McCormick &amp; Schmick’s Seafood &amp; Steaks	$$$$	Seafood
+					Home Run Inn Pizza	$$ Pizza
+					Grange Hall Burger Bar $$ American
+					Geja's Café 	$$	Fondue
+					Frontier 	$$	American Contemporary
+					Eddie V’s Prime Seafood 	$$$	Seafood
+					The Duck Inn 	$$	American Contemporary
+					Ditka's Restaurant 	$$$	Steakhouse
+					Demera Ethiopian Restaurant 	$$	African
+					Connie's Pizza		$		Pizza
+					Chuck’s: A Kerry Simon Kitchen 	$$	American Contemporary
+					Chicago q 	$$	BBQ/Ribs
+					Cantina Laredo 	$$	Mexican River
+					The Capital Grille $$$	Steakhouse
+					Carnivale 	$$$	Latin
+					Catch 35 		$$	Seafood
+					Bub City	$$	BBQ/Ribs
+					bellyQ		$$$	Asian Fusion
+					Bar Takito 	$$	Latin
 
 					<!-- item 1 -->
 					<b-collapse-toggle target="item-1" target-group="accordion-1">
@@ -103,5 +102,5 @@
 
 	@import '../styles/_tools.mixins.sass';
 	@import '../styles/_main.sass';
-		
+
 </style>

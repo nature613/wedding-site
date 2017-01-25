@@ -101,6 +101,10 @@ body
 	-moz-osx-font-smoothing: grayscale;
 	text-align: center;
 
+	@include tablet
+		background-attachment: fixed !important;
+		background-position: 0 0 !important;
+
 	.medium
 		@include rem(font-size, 8.5px);
 
@@ -115,6 +119,23 @@ h4, h5, h6
 	font-family: $font-stack-sans-serif2;
 	margin: 0;
 
+.mobile
+	display: none;
+
+	@include mobile-large
+		display: inline-block;
+
+.tablet-small
+
+
+.tablet
+
+.desktop
+	display: inline-block;
+
+	@include mobile-large
+		display: none;
+
 main
 	@include rem(margin-bottom, 50px);
 	position: relative;
@@ -128,7 +149,14 @@ main
 		margin-right: auto;
 		padding: 2rem !important;
 
+		@include mobile-large
+			border-radius: 0;
+
 	.container
+		@include tablet
+			@include rem(padding-left, 0);
+			@include rem(padding-right, 0);
+
 		a,
 		a:visited,
 		a:link

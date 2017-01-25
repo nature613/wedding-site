@@ -1,7 +1,7 @@
 <template>
-	<div class="jumbotron jumbotron-fluid">
+	<div id="video" class="jumbotron jumbotron-fluid">
 		<h2>Record A Message to Us!</h2>
-		<div id="video" class="row">
+		<div class="row">
 			<div class="col-lg-2"></div>
 			<div id="video-recording" class="col-lg-8">
 				<div v-if="isRecording">
@@ -65,57 +65,68 @@
 	@import '../styles/_tools.mixins.sass';
 	@import '../styles/_variables.sass';
 
-	.jumbotron
-		@include rem(margin-top, 20px);
-		max-width: 800px;
+	#video
+		background: transparent;
 		width: 100%;
 
-	#video
-		@include rem(margin, 10px);
+		&.jumbotron
+			@include rem(margin, 20px auto 0);
+			@include rem(padding-top, 0);
+			max-width: 800px;
 
-		#video-recording
-			.flashing
-				animation: blinker 1s linear infinite;
-				text-align: center;
+			@include tablet-xlarge
+				@include rem(margin-top, 0);
+				@include rem(padding-bottom, 0);
 
-				i
-					@include rem(font-size, 10px);
-					color: red;
-					margin-right: center;
+			h2
+				@include rem(font-size, 30px);
 
-			@keyframes blinker
-				50%
-					opacity: 0;
+			.lead
+				@include rem(margin-top, 10px);
 
-			.video-container
-				@include rem(margin, 10px 0 5px);
+			#video-recording
+				.flashing
+					animation: blinker 1s linear infinite;
+					text-align: center;
 
-				video
-					height: auto !important;
-					width: 100% !important;
+					i
+						@include rem(font-size, 10px);
+						color: red;
+						margin-right: center;
 
-			.recording
-				@include size(5rem, 5rem);
-				background: transparent url('../assets/stock/video.png') top left no-repeat;
-				background-size: cover;
-				margin: auto;
+				@keyframes blinker
+					50%
+						opacity: 0;
 
-				&.start,
-				&.stop
-					button
-						background-color: transparent;
-						border: 0 none;
-						vertical-align: middle;
+				.video-container
+					@include rem(margin, 10px 0 5px);
 
-						&:focus,
-						&:active
-							outline: 0;
+					video
+						height: auto !important;
+						width: 100% !important;
 
-						i
-							@include rem(font-size, 17.5px);
-							@include rem(margin-right, 0);
-							color: $text;
-							position: relative;
-							top: 1.65rem;
+				.recording
+					@include size(6rem, 6rem);
+					background: transparent url('../assets/stock/video.png') top left no-repeat;
+					background-size: cover;
+					margin: auto;
+
+					&.start,
+					&.stop
+						button
+							background-color: transparent;
+							border: 0 none;
+							vertical-align: middle;
+
+							&:focus,
+							&:active
+								outline: 0;
+
+							i
+								@include rem(font-size, 19px);
+								@include rem(margin-right, 0);
+								color: $text;
+								position: relative;
+								top: 2rem;
 
 </style>

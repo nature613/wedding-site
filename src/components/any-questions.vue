@@ -1,7 +1,7 @@
 <template>
 	<div id="questions" class="row">
 		<b-card variant="default" type="default" align="left">
-			<div class="row">
+			<div class="block-content">
 				<div class="col-lg-4">
 					<h2><i class="fa fa-envelope-o"></i> Email</h2>
 					<p><a href="mailto:davidanddacia@gmail.com">davidanddacia@gmail.com</a></p>

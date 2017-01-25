@@ -1,7 +1,7 @@
 <template>
 	<div class="wrapper">
+		<site-header></site-header>
 		<div class="container">
-			<site-header></site-header>
 			<main>
 				<div class="container">
 					<b-jumbotron fluid>

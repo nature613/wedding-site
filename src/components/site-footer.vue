@@ -2,7 +2,7 @@
 	<div id="footer">
 		<b-navbar type="light" variant="default" full>
 			<div class="col-lg-12">
-				<h2><span>The</span> Rodrigues</h2>
+				<h2><span>The</span> Rodrigue <span>s</span></h2>
 				<p><em>&hellip; coming November 3rd, 2018</em></p>
 				<p class="copyright">&copy; 2016 - 2018 website designed, developed by David and Dacia</p>
 			</div>
@@ -31,6 +31,9 @@
 		font: 700 6rem/1 $font-stack-sans-serif2;
 		text-shadow: $text-shadow;
 		text-transform: uppercase;
+
+		@include tablet
+			@include rem(font-size, 40px);
 
 		span
 			@include rem(font-size, $base-font-size);

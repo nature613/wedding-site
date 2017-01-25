@@ -1,7 +1,7 @@
 <template>
 	<parallax id="rsvp" class="wrapper" background-x="50%" background-y="1%">
+		<site-header></site-header>
 		<div class="container">
-			<site-header></site-header>
 			<main>
 				<div class="container">
 					<!-- TODO: Add logic so you click in the input, the placeholder text will move to the top as if it was the label  -->

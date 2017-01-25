@@ -90,6 +90,9 @@
 			display: inline-block;
 			text-align: center;
 
+			@include tablet
+				@include rem(font-size, 40px);
+
 			&:last-of-type
 				margin-right: 0;
 
