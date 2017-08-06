@@ -1,0 +1,620 @@
+@import 'variables.sass'
+@import 'tools.mixins.sass'
+
+.wrapper
+	display: block
+	font: 16px/1.5 $font-stack-sans-serif
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	text-align: left
+
+h1, h2, h3,
+h4, h5, h6
+	@include rem(margin, 0 0 10px)
+	font-family: $font-stack-sans-serif2
+
+	a
+		i,
+		.svg-inline--fa
+			@include rem(margin-left, 3px)
+			@include rem(margin-right, 0)
+			@include rem(top, -2px)
+			font-size: 11px
+			position: relative
+
+		&:hover,
+		&:focus,
+		&:active
+			i,
+			.svg-inline--fa
+				color: $anchor-text2
+				cursor: pointer
+
+.container
+	@include rem(margin, 0)
+	@include rem(padding, 0)
+
+	@include tablet-small
+		@include rem(margin, 0 auto)
+
+iframe
+	include abs-pos(auto, auto, auto, auto)
+	border: 0 none
+	position: relative
+	transform: translate(-50%, 10%)
+	z-index: 0
+
+	main
+		@include rem(margin, 90px auto 20px)
+		@include rem(padding, 0 40px 50px)
+		@include size(100%, 100%)
+		max-width: 1140px
+		position: relative
+		text-align: left
+		z-index: 10
+
+.content
+	.image
+		border: 0 none !important
+
+.filter,
+.overlay
+	@include abs-pos(0, 0, 0, 0)
+	@include size(100%, 100%)
+	background-color: $background3a
+	position: fixed
+	z-index: 2
+
+.filter
+	@include rem(margin, 0)
+	background-color: $background3c
+
+.jumbotron
+	@include animation(1s fadeIn forwards)
+	@include rem(padding, 20px !important)
+	@include rem(margin-bottom, 0)
+	background-color: $background3b
+	border-radius: $border-radius-none
+	margin-left: auto
+	margin-right: auto
+	max-width: 1000px
+	min-width: 280px
+	width: 100%
+
+	@include tablet-small
+		border-radius: $border-radius-none
+
+.block-content
+	@include animation(1s fadeIn forwards)
+	margin: 0 auto
+	max-width: 660px
+	width: 100%
+
+	@include tablet-xlarge
+		max-width: 1000px
+
+	@include tablet
+		@include rem(padding-left, 10px)
+		@include rem(padding-right, 10px)
+
+	@include tablet-small
+		@include rem(padding-left, 0)
+
+.display-3
+	font-size: 4rem
+
+.lead
+	font-size: 24px
+
+a,
+a:visited,
+a:link
+	@include transform(1px, 0)
+	@include transition(all 1s)
+	box-shadow: 0 0 1px transparent
+	color: $anchor-text2
+	display: inline-block
+	overflow: hidden
+	position: relative
+	text-decoration: none
+	vertical-align: top
+
+	&:not(.navbar-brand),
+	&:not(.has-icon)
+		&:before
+			@include abs-pos(auto, 100%, 0, 0)
+			@include transition(all 1s ease-in)
+			background: $anchor-text2
+			content: ""
+			height: 2px
+			z-index: -1
+
+	&.has-icon,
+	&.navbar-brand
+		&:before
+			background: transparent
+
+	&:hover,
+	&:focus,
+	&:active
+		&:before
+			right: 0
+
+	&.has-icon
+		i,
+		.svg-inline--fa
+			&.fa-chevron-up
+				color: $anchor-text2 !important
+
+		&:hover,
+		&:focus,
+		&:active
+			&:before
+				background: transparent
+
+i,
+.svg-inline--fa
+	@include rem(font-size, 18px)
+	@include rem(margin-right, 5px)
+	display: inline-block
+
+em
+	font-style: normal
+
+.nowrap
+	white-space: nowrap
+
+.card
+	@include animation(1s fadeIn forwards)
+	@include rem(padding, 0 !important)
+	background-color: $background3b
+	text-align: left
+
+	@include tablet-xlarge
+		@include rem(margin-bottom, 20px)
+		display: block
+		max-width: 660px
+
+	@include tablet-small
+		border-radius: 0
+
+	> a
+		@include tablet-xlarge
+			display: block
+			max-height: 200px
+			overflow: hidden
+
+			@include tablet-xlarge
+				max-height: 120px
+
+			&:hover
+				border-color: $text
+				text-decoration: none
+
+			img
+				width: 100%
+
+	.card-title,
+	.card-text
+		@include animation(1s fadeIn forwards)
+		color: $text
+
+	.card-link
+		@include rem(letter-spacing, .5px)
+		@include rem(top, -1px)
+		font-family: $font-stack-sans-serif2
+
+	h2
+		i,
+		.svg-inline--fa
+			font-size: 24px
+			position: relative
+
+	.fa-male
+		@include rem(margin-right, 0)
+
+	.fa-female
+		@include rem(margin-left, -8px)
+
+	.card-block
+		dt
+			@include black;
+			font-family: $font-stack-sans-serif2
+
+		dd
+			@include rem(margin-bottom, 0)
+			@include rem(padding-left, 15px)
+			position: relative
+
+			&:before
+				@include abs-pos(-1.5rem, auto, auto, 0rem)
+				@include rem(font-size, 30px)
+				content: '\00B7'
+
+		ul
+			-webkit-padding-start: 15px
+
+form
+	@include animation(1s fadeIn forwards)
+	@include rem(padding, 20px 30px)
+	background: $background3b
+	max-width: 680px
+	width: 100%
+
+	@include desktop-large
+		max-width: $tablet-large
+
+	.row
+		@include rem(margin-left, -10px)
+		@include rem(margin-right, -10px)
+
+	fieldset
+		legend
+			@include animation(1s fadeIn forwards)
+			@include bold()
+			@include rem(margin-bottom, 10px)
+
+		label
+			@include animation(1s fadeIn forwards)
+			@include rem(font-size, 12px)
+			@include transition(all 1s)
+
+		em
+			@include line-height(12)
+			@include rem(padding, 2.5px 5px 2.5px 15px)
+			background: $background3b
+			color: $color-red
+			font-size: 15px
+			display: block
+			position: relative
+
+
+			i,
+			.svg-inline--fa
+				@include abs-pos(7px, 0, 0, 5px)
+				font-size: 14px
+
+			&.form-control-success
+				@include abs-pos(45px, 25px, auto, auto)
+				@include animation(1s fadeIn forwards)
+				@include rem(padding, 0)
+				background: transparent
+				color: $color-green
+				font-size: 14px
+
+
+		&.form-group
+			@include rem(margin-bottom, 30px)
+
+		.form-check
+			@include rem(margin, 0 20px 2px)
+			display: inline-block
+
+			&.form-control-feedback
+				@include rem(margin, 0)
+
+				em
+					&.form-control-success
+						@include animation(1s fadeIn forwards)
+						@include rem(left, -10px)
+						@include rem(right, auto)
+						@include rem(top, -12px)
+
+						i,
+						.svg-inline--fa
+							@include rem(top, 4px)
+
+			label
+				@include rem(padding-left, 3px)
+				@include transition(all 1s ease-out)
+				cursor: pointer
+
+			input[type="radio"]
+				position: absolute
+				visibility: hidden
+
+				&:checked ~ .check
+					border: 3px solid $anchor-text2
+
+				&:checked ~ .check::before
+					background: $anchor-text2
+
+				&:checked ~ label
+					color: $anchor-text2
+
+			span
+				&:before
+					@include abs-pos(auto, 100%, 0, 5px)
+					@include transition(right 1s ease-out)
+					background: $anchor-text2
+					content: ""
+					height: 2px
+					z-index: -1
+
+			&:hover
+				span
+					color: $anchor-text2
+
+					&:before
+						@include rem(right, 0)
+
+			&.selected
+				span
+					color: $anchor-text2
+
+			.check
+				@include abs-pos(2px, auto, auto, -25px)
+				@include size(20px, 20px)
+				@include transition(border 1s ease-out)
+				border: 3px solid $background2
+				border-radius: $border-radius-round
+				display: block
+				z-index: 5
+
+				&::before
+					@include abs-pos(3px, auto, auto, 3px)
+					@include rem(margin, auto)
+					@include size(8px, 8px)
+					@include transition(background 1s ease-out)
+					border-radius: 100%
+					content: ''
+					display: block
+
+			&:hover
+				.check
+					border-color: $anchor-text2
+
+		.form-item
+			@include transition(all 1s)
+
+			label
+				@include rem(font-size, 13px)
+				display: block
+				max-width: 100%
+				overflow: hidden
+
+			input,
+			input[type="text"],
+			input[type="date"],
+			input[type="datetime"],
+			input[type="email"],
+			input[type="number"],
+			input[type="search"],
+			input[type="time"],
+			input[type="url"],
+			input[type="password"],
+			textarea,
+			select
+				@include line-height(25)
+				@include rem(margin-top, 10px)
+				@include rem(padding, 0 15px 5px 0)
+				@include size(100%, 25px)
+				@include transition(all 1s ease-out)
+				-moz-box-sizing: border-box
+				-webkit-box-sizing: border-box
+				background: transparent
+				border: 0 none
+				border-bottom: 2px solid $color-white
+				border-radius: $border-radius
+				box-sizing: border-box
+				color: $text7
+				cursor: pointer
+				display: block
+				font-size: 18px
+				height: 35px
+				outline: none
+
+				&:hover,
+				&:active,
+				&:focus
+					border-color: $background5
+
+			textarea
+				@include rem(padding, 2.5px 5px)
+				border: 2px solid $color-white
+				cursor: default
+				font-size: 15px
+				height: auto
+				resize: none
+
+
+			&:hover,
+			&.selected
+				border-color: $color-grey-md4
+
+				label
+					color: $anchor-text2
+
+				input,
+				textarea,
+				select
+					border-color: $background5
+
+input[type="submit"],
+input[type="button"],
+button
+	@include bold()
+	@include rem(margin, 0 0 20px)
+	@include rem(padding, 10px 20px)
+	@include rem(transition, all 2.5s ease-in-out)
+	align-self: center;
+	appearance: none;
+	background: transparent
+	border: 2px solid $background2
+	border-radius: $border-radius
+	box-sizing: border-box
+	color: $text
+	cursor: pointer
+	display: flex
+	font-size: 20px
+	line-height: 1
+	text-decoration: none
+	text-align: left
+
+	&:focus,
+	&:active,
+	&:hover
+		border-color: $background5
+		box-shadow: 0 0 10px 0 $background5 inset, 0 0 10px 4px $background5
+		color: $anchor-text2
+		outline: 0
+
+.table
+	@include animation(1s fadeIn forwards)
+
+	td, th
+		text-align: left
+
+		a
+			@incldude bold()
+			color: $anchor_text2
+			cursor: pointer
+			text-transform: capitalize
+
+			&.has-icon
+				i,
+				.svg-inline--fa
+					@include rem(margin-left, 1.5px)
+
+		i,
+		.svg-inline--fa
+			@include rem(margin-top, 3px)
+			font-size: 14px
+
+	thead
+		th
+			border-top: 0 none
+
+			a
+				font-size: 18.5px
+
+	tbody
+		td
+			vertical-align: middle
+
+			.has-icon
+				&:before
+					background: transparent
+
+					&:hover
+					&:before
+						right: 0
+
+				i,
+				.svg-inline--fa
+					@include rem(margin-top, 2px)
+
+			&:last-of-type
+				span
+					color: $color-green
+					font-size: 20px
+
+.accordion-tabs
+	@include animation(1s fadeIn forwards)
+
+	.row
+		@include rem(margin, 0)
+
+	.item
+		@include rem(margin-right, 3px)
+		@include rem(padding, 6px 5px 0)
+		border: 1px solid transparent
+		border-radius: 6px 6px 0 0
+		width: 32.68%
+
+		i,
+		.svg-inline--fa
+			@include rel-pos(-2px, 0, 0, 0)
+			@include rem(font-size, 12px)
+
+		.has-icon
+				i,
+				.svg-inline--fa
+					@include rem(font-size, 9px)
+
+		&:last-of-type
+			@include rem(margin-right, 0)
+
+		&:hover
+			cursor: pointer
+
+			.has-icon
+				i,
+				.svg-inline--fa
+					color: $anchor-text2
+
+		&.active
+			background: linear-gradient(top,$color-grey-md 0%,$color-black 100%) !important
+			border-color: $color-grey-md
+
+.accordion-content
+	@include animation(1s fadeIn forwards)
+	@include rel-pos(-1px, auto, auto, auto)
+	@include rem(padding, 8px 5px 5px)
+	border-top: 1px solid $color-grey-md
+
+	div
+		overflow: hidden
+
+.invisible-content
+	visibility: hidden !important
+
+.visible-content
+	visibility: visible !important
+
+.hide-content
+	display: none !important
+
+.show-content
+	display: block !important
+
+.mobile
+	display: none !important
+
+	@include tablet-small
+		display: inline-block !important
+
+.desktop
+	display: inline-block !important
+
+	@include tablet-small
+		display: none !important
+
+// .fade
+// 	opacity: 1
+
+.mint-loadmore-top
+	span
+		display: inline-block
+		transition: .2s linear
+
+.rotate
+	transform: rotate(180deg)
+
+@-webkit-keyframes fadeIn
+	0% { opacity: 0; transform: translateY(50px) }
+
+	30% { opacity: 0 }
+
+	100% { opacity: 1; transform: translateY(0) }
+
+@keyframes fadeIn
+	0% { opacity: 0; transform: translateY(50px) }
+
+	30% { opacity: 0 }
+
+	100% { opacity: 1; transform: translateY(0) }
+
+@-webkit-keyframes fadeOut
+	0% { opacity: 1; transform: translateY(50px) }
+
+	30% { opacity: 1 }
+
+	100% { opacity: 0; transform: translateY(0) }
+
+@keyframes fadeOut
+	0% { opacity: 1; transform: translateY(50px) }
+
+	30% { opacity: 1 }
+
+	100% { opacity: 0; transform: translateY(0) }

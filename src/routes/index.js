@@ -1,14 +1,39 @@
 import Chicago from './chicago'
 import Home from './home'
-import Family from './family'
 import RSVP from './rsvp'
+import Thanks from './thanks'
+import Wrapper from './wrapper'
 import Wedding from './wedding'
 
 export default [
-	{ path: '/', redirect: '/home' },
-	{ path: '/home', component: Home },
-	{ path: '/chicago', component: Chicago },
-	{ path: '/family', component: Family },
-	{ path: '/rsvp', component: RSVP },
-	{ path: '/wedding', component: Wedding }
+	{
+		path: '/',
+		redirect: '/home'
+	},
+	{
+		component: Wrapper,
+		path: '/wrapper',
+		children: [
+			{
+				component: Home,
+				path: '/home'
+			},
+			{
+				component: RSVP,
+				path: '/rsvp'
+			},
+			{
+				component: Thanks,
+				path: '/thanks'
+			},
+			{
+				component: Wedding,
+				path: '/wedding'
+			}
+		]
+	},
+	{
+		component: Chicago,
+		path: '/chicago'
+	}
 ]

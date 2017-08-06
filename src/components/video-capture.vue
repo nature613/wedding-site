@@ -1,12 +1,10 @@
 <template>
 	<div id="video" class="jumbotron jumbotron-fluid">
 		<h2>Record A Message to Us!</h2>
-		<div class="row">
-			<div class="col-lg-2"></div>
-			<div id="video-recording" class="col-lg-8">
+		<div>
+			<div id="video-recording">
 				<div v-if="isRecording">
-					<div class="flashing"><i class="fa fa-circle"></i></div>
-					<div class="recording stop">
+					<div class="recording stop flashing">
 						<button @click="stop"><i class="fa fa-stop"></i></button>
 					</div>
 					<div class="video-container">
@@ -16,11 +14,10 @@
 				<div v-else>
 					<p class="lead">Click play to record your message.</p>
 					<div class="recording start">
-						<button @click="start"><i class="fa fa-play"></i></button>
+						<button @click="start"><i class="fal fa-video"></i></button>
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-2"></div>
 		</div>
 	</div>
 </template>
@@ -37,7 +34,7 @@
 		methods: {
 			start() {
 				const setupVideo = (stream) => {
-					this._stream = stream;
+					this._stream = stream
 					const video = document.querySelector('video')
 					video.src = window.URL.createObjectURL(stream)
 				}
@@ -62,71 +59,107 @@
 
 <style lang="sass" scoped>
 
-	@import '../styles/_tools.mixins.sass';
-	@import '../styles/_variables.sass';
+	@import '../styles/main.sass'
 
 	#video
-		background: transparent;
-		width: 100%;
+		background: transparent
+		text-align: center
 
 		&.jumbotron
-			@include rem(margin, 20px auto 0);
-			@include rem(padding-top, 0);
-			max-width: 800px;
+			@include rem(margin, 20px auto 0)
+			@include rem(padding-top, 0)
+			max-width: 800px
+			min-width: 280px
+			width: 100%
 
 			@include tablet-xlarge
-				@include rem(margin-top, 0);
-				@include rem(padding-bottom, 0);
+				@include rem(margin-top, 0)
+				@include rem(padding-bottom, 0)
+
+			@include tablet-small
+				@include rem(padding, 0 20px)
 
 			h2
-				@include rem(font-size, 30px);
+				@include rem(margin-bottom, 7px)
+				font-size: 30px
 
 			.lead
-				@include rem(margin-top, 10px);
+				@include rem(margin-top, 0)
+				font-size: 18px
 
 			#video-recording
 				.flashing
-					animation: blinker 1s linear infinite;
-					text-align: center;
+					animation: blinker 1s linear infinite
+					line-height: 27px
+					text-align: center
 
-					i
-						@include rem(font-size, 10px);
-						color: red;
-						margin-right: center;
+					i,
+					.svg-inline--fa
+						color: red
+						font-size: 16px
+						margin-right: center
 
 				@keyframes blinker
 					50%
-						opacity: 0;
+						opacity: 0
 
 				.video-container
-					@include rem(margin, 10px 0 5px);
+					@include rem(margin, 10px 0 5px)
 
 					video
-						height: auto !important;
-						width: 100% !important;
+						height: auto !important
+						width: 100% !important
 
 				.recording
-					@include size(6rem, 6rem);
-					background: transparent url('../assets/stock/video.png') top left no-repeat;
-					background-size: cover;
-					margin: auto;
+					@include rem(margin, 20px auto)
+					@include size(10rem, 10rem)
 
 					&.start,
 					&.stop
 						button
-							background-color: transparent;
-							border: 0 none;
-							vertical-align: middle;
+							@include size(100%, 100%)
+							background-color: $background3b
+							border-radius: $border-radius-round
+							padding: 30px
+							vertical-align: middle
 
 							&:focus,
-							&:active
-								outline: 0;
+							&:active,
+							&:hover
+								border-color: $anchor-text2
+								cursor: pointer
+								outline: 0
 
-							i
-								@include rem(font-size, 19px);
-								@include rem(margin-right, 0);
-								color: $text;
-								position: relative;
-								top: 2rem;
+								i,
+								.svg-inline--fa
+									color: $anchor-text2
+
+							i,
+							.svg-inline--fa
+								@include rem(margin-right, 0)
+								color: $text
+								font-size: 70px
+								position: relative
+
+					&.stop
+						@include size(2rem, 2rem)
+
+						button
+							border: none
+							padding: 7px
+
+							&:focus,
+							&:active,
+							&:hover
+								box-shadow: 0 0 5px 0 $color-red inset, 0 0 5px 4px $color-red
+
+								i,
+								.svg-inline--fa
+									color: $color-red
+
+							i,
+							.svg-inline--fa
+								color: $color-red
+								font-size: 16px
 
 </style>

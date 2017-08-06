@@ -1,24 +1,22 @@
 <template>
-	<div>
-		<div class="block">
-			<div class="now"><p>Now, they're getting married in</p></div>
-			<p class="digit">
-				<span>{{ days  | two_digits }}</span>
-				<span>Days</span>
-			</p>
-			<p class="digit">
-				<span>{{ hours | two_digits }}</span>
-				<span>Hours</span>
-			</p>
-			<p class="digit">
-				<span>{{ minutes | two_digits }}</span>
-				<span>Minutes</span>
-			</p>
-			<p class="digit">
-				<span>{{ seconds | two_digits }}</span>
-				<span>Seconds</span>
-			</p>
-		</div>
+	<div class="block">
+		<h4 class="now">Now, Dacia + David are getting married in</h4>
+		<p class="digit">
+			<span>{{ days  | two_digits }}</span>
+			<span>Days</span>
+		</p>
+		<p class="digit">
+			<span>{{ hours | two_digits }}</span>
+			<span>Hours</span>
+		</p>
+		<p class="digit">
+			<span>{{ minutes | two_digits }}</span>
+			<span>Minutes</span>
+		</p>
+		<p class="digit">
+			<span>{{ seconds | two_digits }}</span>
+			<span>Seconds</span>
+		</p>
 	</div>
 </template>
 
@@ -28,17 +26,17 @@
 
 	Vue.filter('two_digits', function (value) {
 		if (value.toString().length <= 1) {
-			return '0' + value.toString();
+			return '0' + value.toString()
 		}
 
-		return value.toString();
-	});
+		return value.toString()
+	})
 
 	export default {
 		mounted() {
 			window.setInterval(() => {
-				this.now = Math.trunc((new Date()).getTime() / 1000);
-			},1000);
+				this.now = Math.trunc((new Date()).getTime() / 1000)
+			},1000)
 		},
 		props : {
 			to : {
@@ -53,52 +51,63 @@
 		},
 		computed: {
 			seconds() {
-				return (this.date - this.now) % 60;
+				return (this.date - this.now) % 60
 			},
 			minutes() {
-				return Math.trunc((this.date - this.now) / 60) % 60;
+				return Math.trunc((this.date - this.now) / 60) % 60
 			},
 			hours() {
-				return Math.trunc((this.date - this.now) / 60 / 60) % 24;
+				return Math.trunc((this.date - this.now) / 60 / 60) % 24
 			},
 			days() {
-				return Math.trunc((this.date - this.now) / 60 / 60 / 24);
+				return Math.trunc((this.date - this.now) / 60 / 60 / 24)
 			}
 		}
 	}
 
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
 
-	@import '../styles/_tools.mixins.sass';
-	@import '../styles/_variables.sass';
+	@import '../styles/main.sass'
 
 	.block
-		p
-			font-family: $font-stack-sans-serif;
-			font-weight: 600;
-			line-height: 1;
-			text-shadow: 0.15rem 0.1rem 6px #888;
+		text-align: center
 
-		.now
-			@include rem(font-size, 16px);
+		@include tablet-small
+			@include rem(padding, 0 5px)
+
+		h4,
+		p
+			@include animation(1s fadeIn forwards)
+
+		p
+			font-family: $font-stack-sans-serif
+			font-weight: 600
+			line-height: 1
+			text-shadow: 0 0 20px $text5
 
 		.digit
-			@include rem(font-size, 60px);
-			@include rem(margin, 0 40px 20px 0);
-			display: inline-block;
-			text-align: center;
+			@include animation(1s fadeIn forwards)
+			@include rem(margin, 0 40px 20px 0)
+			display: inline-block
+			font-size: 60px
+			text-align: center
 
 			@include tablet
-				@include rem(font-size, 40px);
+				font-size: 40px
+
+			@include tablet-small
+				font-size: 580%
+				margin-right: 4%
 
 			&:last-of-type
-				margin-right: 0;
+				margin-right: 0
 
 			span
-				display: block;
+				display: block
 
 				&:last-of-type
-					@include rem(font-size, 16px);
+					color: $text8
+					font-size: 22px
 </style>

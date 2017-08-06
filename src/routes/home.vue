@@ -1,54 +1,26 @@
 <template>
-	<intro>
-		<parallax class="wrapper" background-x="68%" background-y="0%" :speed="0.75">
-			<site-header></site-header>
-			<div class="container">
-				<main>
-					<div class="container">
-						<how-it-started></how-it-started>
-						<countdown to="November 3, 2018"></countdown>
-						<cards></cards>
-					</div>
-				</main>
-			</div>
-			<video-capture></video-capture>
-			<site-footer></site-footer>
-		</parallax>
-	</intro>
+	<div>
+		<how-it-started></how-it-started>
+		<countdown to="November 3, 2018"></countdown>
+		<event-info></event-info>
+		<video-capture></video-capture>
+	</div>
 </template>
 
 <script>
 
-	import Cards from '../components/cards'
-	import Countdown from '../components/countdown'
-	import HowItStarted from '../components/how-it-started'
-	import Intro from '../components/intro'
-	import Parallax from '../components/parallax'
-	import SiteFooter from '../components/site-footer'
-	import SiteHeader from '../components/site-header'
-	import VideoCapture from '../components/video-capture'
+	import Countdown from '../components/countdown.vue'
+	import EventInfo from '../components/event-info.vue'
+	import HowItStarted from '../components/how-it-started.vue'
+	import VideoCapture from '../components/video-capture.vue'
 
 	export default {
 		components: {
-			Cards,
 			Countdown,
+			EventInfo,
 			HowItStarted,
-			Intro,
-			Parallax,
-			VideoCapture,
-			SiteFooter,
-			SiteHeader
+			VideoCapture
 		}
 	}
 
 </script>
-
-<style lang="sass" scoped>
-
-	@import '../styles/_main.sass';
-
-	.wrapper
-		background: url('../assets/backgrounds/background-lights-04.jpg') no-repeat;
-		background-size: 2000px 1333.5px;
-
-</style>

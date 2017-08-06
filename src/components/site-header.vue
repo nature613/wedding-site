@@ -1,79 +1,122 @@
 <template>
-	<div id="header">
-		<div class="row">
-			<b-navbar type="dark" variant="default" full>
-				<div class="col-lg-4">
-					<a class="navbar-brand" href="#"><h1>Dacia <span>&amp;</span> David</h1></a>
-				</div>
-				<div class="col-lg-8">
-					<b-nav type="navbar" class="pull-xs-left">
-						<li class="nav-item"><router-link class="nav-link" to="/home">Home</router-link></li>
-						<li class="nav-item"><router-link class="nav-link" to="/wedding">Wedding</router-link></li>
-						<li class="nav-item"><router-link class="nav-link" to="/rsvp">RSVP</router-link></li>
-						<li class="nav-item"><router-link class="nav-link" to="/chicago">
-							<span class="desktop">While in Chicago</span>
-							<span class="mobile">Chicago</span>
-						</router-link></li>
-					</b-nav>
-				</div>
-			</b-navbar>
+	<b-navbar id="header" type="dark" variant="default">
+		<div class="col-xl-4">
+			<a class="navbar-brand" href="#"><h1>Dacia <span>+</span> David</h1></a><br />
+			<span>#davidanddacia</span>
 		</div>
-	</div>
+		<div class="col-xl-8">
+			<b-nav is-nav-bar class="pull-xs-left">
+				<li class="nav-item"><router-link class="nav-link" to="/home">Home</router-link></li>
+				<li class="nav-item"><router-link class="nav-link" to="/wedding">Wedding</router-link></li>
+				<li class="nav-item"><router-link class="nav-link" to="/rsvp">RSVP</router-link></li>
+				<li class="nav-item"><router-link class="nav-link" to="/chicago">Chicago</router-link></li>
+			</b-nav>
+		</div>
+	</b-navbar>
 </template>
 
 <script>
 
 	export default {
+
 	}
 
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
 
-	@import '../styles/_tools.mixins.sass';
-	@import '../styles/_variables.sass';
+	@import '../styles/main.sass'
 
 	#header
-		@include rem(margin, 0 auto);
-		@include rem(padding-top, 10px);
-		max-width: 1140px;
+		@include animation(1s fadeIn forwards)
+		background: linear-gradient($background3, transparent)
+		pointer-events: none
+		width: 100%
+		z-index: 3
 
-		@include tablet-xlarge
-			max-width: 940px;
+		&.disappear
+			@include animation-name(fadeOut)
 
-		.bg-faded
-			background: transparent;
+		span
+			@include abs-pos(auto, auto, -25px, 16px)
+			clear: both
+			color: $text8
+			font-style: italic
+
+			@include desktop-large
+				top: -42px
+
+		.navbar-brand
+			@include animation(1s fadeIn forwards)
+			color: $text
+			float: none
+			padding: 0
+			pointer-events: all
+
+			@include tablet-small
+				float: left
+
+			h1
+				font-size: 40px
+				@include rem(margin, 0)
+				@include transition (all 1s)
+
+				&:hover
+					color: $text
+					cursor: pointer
+					font-size: 48px
+
+				span
+					@include bold()
+					@include rel-pos(auto, auto, auto, auto)
+					clear: none
+					color: $text
+					font-size: 62.5%
+					font-style: normal
 
 		.nav
-			@include rem(margin, 10px 0);
-			float: right;
-
-			&.navbar-full
-				@include tablet
-					@include rem(padding-left, 0);
-					@include rem(padding-right, 0);
+			float: right
 
 			.nav-link
-				border-bottom: 3px solid transparent;
-				color: $text;
-				font-family: $font-stack-sans-serif2;
-				opacity: 0.7;
+				@include transform(1px, 0)
+				@include transition(all 1s)
+				box-shadow: 0 0 1px transparent
+				color: $text
+				display: inline-block
+				font-family: $font-stack-sans-serif2
+				opacity: 1
+				overflow: hidden
+				pointer-events: all
+				position: relative
+				text-decoration: none
+				vertical-align: top
 
-				&.active,
+				&:before
+					@include abs-pos(auto, 100%, 0, 0)
+					@include transition(right 1s ease-out)
+					background: $text
+					content: ""
+					height: 2px
+					z-index: -1
+
+				&:hover,
+				&:focus,
+				&.active
+					opacity: 1
+
+					&:before
+						right: 0
+
+				&.active
+					color: $text
+
+					&:before
+						background: $text
+
 				&:hover
-					border-color: $background2;
-					opacity: 1;
+					color: $anchor-text2
 
-		h1
-			color: $text;
-			text-shadow: $text-shadow;
-			transition: all .25s;
-
-			&:hover
-				@include rem(font-size, 27.5px);
-				cursor: pointer;
-
-			span
-				font-size: 62.5%;
+					&:before
+						background: $anchor-text2
 
 </style>

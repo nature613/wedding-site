@@ -1,0 +1,1648 @@
+[
+	{
+		"placeId": "ChIJdxLeB1TTD4gRN48bqf_ocYU",
+		"type": "Hotel",
+		"icon": "bed",
+		"title": "Westin Michigan Avenue Chicago",
+		"location": "Downtown / Near North",
+		"category": "4 stars",
+		"price": "$$$$",
+		"position": {
+			"lat": 41.8993943,
+			"lng": -87.6232076
+		}
+	},
+	{
+		"placeId": "ChIJXajiYVTTD4gRriAjGeRH7tQ",
+		"type": "Hotel",
+		"icon": "bed",
+		"title": "Ritz-Carlton Chicago",
+		"location": "Downtown / Near North",
+		"category": "5 stars",
+		"price": "$$$",
+		"position": {
+			"lat": 41.89802,
+			"lng": -87.62291
+		}
+	},
+	{
+		"placeId": "ChIJP-iYaVLTD4gRwrAZlmMMyp0",
+		"type": "Hotel",
+		"icon": "bed",
+		"title": "Sofitel Chicago Magnificent Mile",
+		"location": "Downtown / Near North",
+		"category": "5 stars",
+		"price": "$$$",
+		"position": {
+			"lat": 41.89865,
+			"lng": -87.6273
+		}
+	},
+	{
+		"placeId": "ChIJhZMAtqwsDogRz2nYVoePQL8",
+		"type": "Hotel",
+		"icon": "bed",
+		"title": "Omni Chicago",
+		"location": "Downtown / Near North",
+		"category": "4 stars",
+		"price": "$$$",
+		"position": {
+			"lat": 41.89466,
+			"lng": -87.62484
+		}
+	},
+	{
+		"placeId": "ChIJw8U5ma0sDogR-gfw-EP0w9M",
+		"type": "Hotel",
+		"icon": "bed",
+		"title": "ACME Hotel Company",
+		"location": "Downtown / Near North",
+		"category": "3 stars",
+		"price": "$$",
+		"position": {
+			"lat": 41.89236,
+			"lng": -87.62749
+		}
+	},
+	{
+		"placeId": "ChIJv0qZca8sDogRy4hcGzkHjvY",
+		"type": "Hotel",
+		"icon": "bed",
+		"title": "Virgin Hotels Chicago",
+		"location": "Downtown / The Loop",
+		"category": "4 stars",
+		"price": "$$$$",
+		"position": {
+			"lat": 41.88598,
+			"lng": -87.62607
+		}
+	},
+	{
+		"placeId": "ChIJyfdSZassDogRiKuPYX_1iok",
+		"type": "Hotel",
+		"icon": "bed",
+		"title": "Courtyard Chicago Downtown/Magnificent Mile",
+		"location": "Downtown / Near North",
+		"category": "3 stars",
+		"price": "$$",
+		"position": {
+			"lat": 41.89311,
+			"lng": -87.62301
+		}
+	},
+	{
+		"placeId": "ChIJafNNF60sDogRI9oGHNcZAUI",
+		"type": "Hotel",
+		"icon": "bed",
+		"title": "Holiday Inn Express Chicago",
+		"location": "Downtown / Near North",
+		"category": "3 stars",
+		"price": "$$",
+		"position": {
+			"lat": 41.89374,
+			"lng": -87.62708
+		}
+	},
+	{
+		"placeId": "ChIJ6dTsFPwwDogRKHrBt08Kolw",
+		"type": "Hotel",
+		"icon": "bed",
+		"title": "Holiday Inn Express & Suites Chicago",
+		"location": "Midway Airport",
+		"category": "3 stars",
+		"price": "$$",
+		"position": {
+			"lat": 41.77429,
+			"lng": -87.74306
+		}
+	},
+	{
+		"placeId": "ChIJAW6oBPwwDogRlGpQqxjrtis",
+		"type": "Hotel",
+		"icon": "bed",
+		"title": "Hampton Inn Chicago",
+		"location": "Midway Airport",
+		"category": "3 stars",
+		"price": "$$",
+		"position": {
+			"lat": 41.77388,
+			"lng": -87.74271
+		}
+	},
+	{
+		"placeId": "ChIJXUrJ4PswDogRcPO39p_yqDk",
+		"type": "Hotel",
+		"icon": "bed",
+		"title": "Residence Inn Chicago",
+		"location": "Midway Airport",
+		"category": "5 stars",
+		"price": "$$",
+		"position": {
+			"lat": 41.77137,
+			"lng": -87.74621
+		}
+	},
+	{
+		"placeId": "ChIJj6Ko-PswDogRA_K_JDY-2gQ",
+		"type": "Hotel",
+		"icon": "bed",
+		"title": "Hyatt Place Chicago",
+		"location": "Midway Airport",
+		"category": "3 stars",
+		"price": "$$$",
+		"position": {
+			"lat": 41.77263,
+			"lng": -87.74693
+		}
+	},
+	{
+		"placeId": "ChIJu0v2trm1D4gRCKrJi_F7GCY",
+		"type": "Hotel",
+		"icon": "bed",
+		"title": "Four Points by Sheraton Chicago",
+		"location": "O'Hare Airport",
+		"category": "3 stars",
+		"price": "$$",
+		"position": {
+			"lat": 41.95524,
+			"lng": -87.88262
+		}
+	},
+	{
+		"placeId": "ChIJgVNwfbC1D4gR-0PgZwqWcy4",
+		"type": "Hotel",
+		"icon": "bed",
+		"title": "Candlewood Suites Chicago",
+		"location": "O'Hare Airport",
+		"category": "2 stars",
+		"price": "$$",
+		"position": {
+			"lat": 41.95223,
+			"lng": -87.88468
+		}
+	},
+	{
+		"placeId": "ChIJA0pWLuKwD4gRQasWY1WWprM",
+		"type": "Hotel",
+		"icon": "bed",
+		"title": "La Quinta Inn",
+		"location": "O'Hare Airport",
+		"category": "2 stars",
+		"price": "$$",
+		"position": {
+			"lat": 42.0231,
+			"lng": -87.95832
+		}
+	},
+	{
+		"placeId": "ChIJfTyXJ03TD4gRRcFyFXbtVfc",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "ZED451",
+		"location": "Downtown / Near North",
+		"category": "Steakhouse",
+		"price": "$$$",
+		"position": {
+			"lat": 41.89598,
+			"lng": -87.63091
+		}
+	},
+	{
+		"placeId": "ChIJFyS_LLIsDogRfYRCJl5tTRk",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Xoco",
+		"location": "Downtown / Near North",
+		"category": "Mexican",
+		"price": "$$",
+		"position": {
+			"lat": 41.8907,
+			"lng": -87.6309
+		}
+	},
+	{
+		"placeId": "ChIJ9UWPMNosDogR63ijWQvYXqM",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Wishbone",
+		"location": "Near West / West Loop",
+		"category": "Breaskfast / Brunch / Cajun",
+		"price": "$$$",
+		"position": {
+			"lat": 41.88287,
+			"lng": -87.6522
+		},
+		"note": "Try the Shrimp & Grits"
+	},
+	{
+		"placeId": "ChIJXXw1hWEsDogR3nW15TjR8Eg",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "BBQ King House",
+		"location": "South / Chinatown",
+		"category": "Chinese",
+		"price": "$",
+		"position": {
+			"lat": 41.85371,
+			"lng": -87.63405
+		}
+	},
+	{
+		"placeId": "ChIJT_A3rbgsDogREjTZZkQe3_E",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "South Branch Tavern & Grille",
+		"location": "Downtown / The Loop",
+		"category": "American",
+		"price": "$$",
+		"position": {
+			"lat": 41.8805,
+			"lng": -87.63783
+		},
+		"note": "Ask for the off-menu burger... I think it is called Lucy"
+	},
+	{
+		"placeId": "ChIJ0UCxLa4sDogRMomCwKTcXS4",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Smith & Wollensky",
+		"location": "Downtown / Near North",
+		"category": "Steakhouse",
+		"price": "$$$$",
+		"position": {
+			"lat": 41.88794,
+			"lng": -87.62856
+		},
+		"note": "Get the Beef Bacon"
+	},
+	{
+		"placeId": "ChIJz9D-q1LTD4gROiswD8vqg4g",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Roy's Chicago",
+		"location": "Downtown / Near North",
+		"category": "Asian Fusion",
+		"price": "$$$",
+		"position": {
+			"lat": 41.89553,
+			"lng": -87.62838
+		}
+	},
+	{
+		"placeId": "ChIJgfrOPLIsDogRvM0_GwLBpyI",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "RPM Italian",
+		"location": "Downtown / Near North",
+		"category": "Italian",
+		"price": "$$$",
+		"position": {
+			"lat": 41.89093,
+			"lng": -87.62994
+		}
+	},
+	{
+		"placeId": "ChIJT2SYmbEsDogRyZedtfpUXZo",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "RPM Steak",
+		"location": "Downtown / Near North",
+		"category": "Steakhouse",
+		"price": "$$$$",
+		"position": {
+			"lat": 41.88936,
+			"lng": -87.6305
+		}
+	},
+	{
+		"placeId": "ChIJZ7qgG64sDogRMAdjq7wBm0E",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Public House",
+		"location": "Downtown / Near North",
+		"category": "American",
+		"price": "$$$",
+		"position": {
+			"lat": 41.88935,
+			"lng": -87.62824
+		},
+		"note": "Pick the Multiple Choice Mac N' Cheese"
+	},
+	{
+		"placeId": "ChIJx2ywOnIpDogRml0FxS9Snlw",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Promontory",
+		"location": "South / Hyde Park",
+		"category": "American",
+		"price": "$$$",
+		"position": {
+			"lat": 41.799,
+			"lng": -87.5876
+		}
+	},
+	{
+		"placeId": "ChIJ15QcDawsDogRa65oI_4Qogg",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Michael Jordan's Steak House",
+		"location": "Downtown / Near North",
+		"category": "Steakhouse",
+		"price": "$$$",
+		"position": {
+			"lat": 41.89126,
+			"lng": -87.62389
+		},
+		"note": "Try the Double Smoked Bacon"
+	},
+	{
+		"placeId": "ChIJEz05bLEsDogRx3lY1yVO-SI",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Mercadito Chicago",
+		"location": "Downtown / Near North",
+		"category": "Mexican",
+		"price": "$$$",
+		"position": {
+			"lat": 41.88938,
+			"lng": -87.63186
+		},
+		"note": "Get the Guacamole, Tacos"
+	},
+	{
+		"placeId": "ChIJ9wz9v68sDogRaFBaY1O8wk8",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "McCormick & Schmick's Seafood & Steaks",
+		"location": "Downtown / The Loop",
+		"category": "Seafood",
+		"price": "$$$$",
+		"position": {
+			"lat": 41.88646,
+			"lng": -87.6275
+		}
+	},
+	{
+		"placeId": "ChIJJY5kDjYyDogR4-uldtFIzx8",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Home Run Inn Pizza",
+		"location": "South Side",
+		"category": "Pizza",
+		"price": "$$",
+		"position": {
+			"lat": 41.83704,
+			"lng": -87.73138
+		}
+	},
+	{
+		"placeId": "ChIJb587v9osDogR2ixWz7ScjuI",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Grange Hall Burger Bar",
+		"location": "Near West / West Loop",
+		"category": "Burgers",
+		"price": "$$",
+		"position": {
+			"lat": 41.88466,
+			"lng": -87.64927
+		}
+	},
+	{
+		"placeId": "ChIJ0x_SL2vTD4gRXzX_O-a8P1c",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Geja's CafÃ©",
+		"location": "North / Lincoln Park",
+		"category": "Fondue",
+		"price": "$$",
+		"position": {
+			"lat": 41.91857,
+			"lng": -87.63799
+		}
+	},
+	{
+		"placeId": "ChIJw0cVUdHSD4gRZADPW6blGZY",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Frontier",
+		"location": "West / West Town",
+		"category": "American",
+		"price": "$$",
+		"position": {
+			"lat": 41.90127,
+			"lng": -87.66345
+		},
+		"note": "Try the Jalapeno Cornbread, Wagyu Sirloin Steak, Fried Chicken Sandwich, 5 Cheese Mac"
+	},
+	{
+		"placeId": "ChIJs5nGOawsDogRCcgSUFxTLYQ",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Eddie V's Prime Seafood ",
+		"location": "Downtown / Near North",
+		"category": "Seafood",
+		"price": "$$$",
+		"position": {
+			"lat": 41.89161,
+			"lng": -87.62526
+		}
+	},
+	{
+		"placeId": "ChIJm6OZ8LItDogR3h4etYjnZkQ",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Duck Inn",
+		"location": "South / Bridgeport",
+		"category": "American",
+		"price": "$$",
+		"position": {
+			"lat": 41.8444,
+			"lng": -87.66013
+		}
+	},
+	{
+		"placeId": "ChIJPXGUsVPTD4gRDnichDKv5IQ",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Ditka's Restaurant",
+		"location": "Downtown / Near North",
+		"category": "Steakhouse",
+		"price": "$$$",
+		"position": {
+			"lat": 41.89858,
+			"lng": -87.62566
+		}
+	},
+	{
+		"placeId": "ChIJn3YvvizSD4gRpcXR5695BoU",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Demera Ethiopian Restaurant",
+		"location": "North / Uptown",
+		"category": "African",
+		"price": "$$",
+		"position": {
+			"lat": 41.96918,
+			"lng": -87.65944
+		}
+	},
+	{
+		"placeId": "ChIJi_wOTFwsDogRc254g-wUOIk",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Connie's Pizza",
+		"location": "South / Chinatown",
+		"category": "Pizza",
+		"price": "$",
+		"position": {
+			"lat": 41.84918,
+			"lng": -87.64086
+		}
+	},
+	{
+		"placeId": "ChIJQzUUQK8sDogR4O8E2STURHI",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Chuck's: A Kerry Simon Kitchen",
+		"location": "Downtown / The Loop",
+		"category": "American",
+		"price": "$$",
+		"position": {
+			"lat": 41.88645,
+			"lng": -87.62476
+		}
+	},
+	{
+		"placeId": "ChIJvwW8pE_TD4gRPxa1d_7g73Q",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Chicago Q",
+		"location": "Downtown / Near North",
+		"category": "BBQ/Ribs",
+		"price": "$$",
+		"position": {
+			"lat": 41.9036,
+			"lng": -87.63041
+		}
+	},
+	{
+		"placeId": "ChIJC-rI860sDogRGN-hjUbEfwA",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Cantina Laredo",
+		"location": "Downtown / Near North",
+		"category": "Mexican",
+		"price": "$$",
+		"position": {
+			"lat": 41.89115,
+			"lng": -87.62836
+		}
+	},
+	{
+		"placeId": "ChIJufo-n88sDogRT_JGk4egawU",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Carnivale",
+		"location": "Near West / West Loop",
+		"category": "Latin",
+		"price": "$$$",
+		"position": {
+			"lat": 41.88693,
+			"lng": -87.646
+		}
+	},
+	{
+		"placeId": "ChIJcZc3I7AsDogRPvq0oBoltJE",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Catch 35",
+		"location": "Downtown / The Loop",
+		"category": "Seafood",
+		"price": "$$",
+		"position": {
+			"lat": 41.88664,
+			"lng": -87.62908
+		}
+	},
+	{
+		"placeId": "ChIJk78j74XSD4gRescUKWxEyA4",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Fat Willy's Rib Shack",
+		"location": "West / Logan Square",
+		"category": "BBQ/Ribs",
+		"price": "$$",
+		"position": {
+			"lat": 41.93043,
+			"lng": -87.68858
+		},
+		"note": "We always order the Spare Ribs"
+	},
+	{
+		"placeId": "ChIJL7QnbiYtDogRzrUzHXhf6R4",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "BellyQ",
+		"location": "Near West / West Loop",
+		"category": "Asian Fusion",
+		"price": "$$$",
+		"position": {
+			"lat": 41.88449,
+			"lng": -87.66268
+		}
+	},
+	{
+		"placeId": "ChIJA2zT2_UrDogRZW0PDfK7iVI",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Yassa African Restaurant",
+		"location": "South / Bronzeville",
+		"category": "African",
+		"price": "$$",
+		"position": {
+			"lat": 41.83073,
+			"lng": -87.61668
+		},
+		"note": "Get the Didi Lamb and the Fataya"
+	},
+	{
+		"placeId": "ChIJrxuroWgsDogRmEcvcT87mnk",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Carbon Live Fire Mexican Grill",
+		"location": "South Side",
+		"category": "Mexican",
+		"price": "$",
+		"position": {
+			"lat": 41.84569,
+			"lng": -87.63479
+		},
+		"note": "We always order the Fire Grilled Steak Burrito Steak Bowl"
+	},
+	{
+		"placeId": "ChIJ6z5a_KvTD4gRHdSiXi6GRLU",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Cheesie's Pub & Grub",
+		"location": "North / Lakeview",
+		"category": "American",
+		"price": "$",
+		"position": {
+			"lat": 41.94004,
+			"lng": -87.65383
+		}
+	},
+	{
+		"placeId": "ChIJC-6hDsBL24cRenxD6X76YIk",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "5411 Empanadas",
+		"location": "North / Lakeview",
+		"category": "Latin",
+		"price": "$",
+		"position": {
+			"lat": 41.93406,
+			"lng": -87.6461
+		}
+	},
+	{
+		"placeId": "ChIJF2sW16wtDogRi8_3XszA1jE",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Jerk Modern Jamaican Grill",
+		"location": "Near West / River West",
+		"category": "Jamaican",
+		"price": "$",
+		"position": {
+			"lat": 41.89623,
+			"lng": -87.64828
+		}
+	},
+	{
+		"placeId": "ChIJTd7t5sIsDogRAIZepeFNY_A",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Gyro-Mena Greektown",
+		"location": "Near West / Greektown",
+		"category": "Greek",
+		"price": "$",
+		"position": {
+			"lat": 41.87786,
+			"lng": -87.64672
+		}
+	},
+	{
+		"placeId": "ChIJeTMAuJksDogR18rhH0XFMjc",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Devil Dawgs",
+		"location": "Downtown / South Loop",
+		"category": "American",
+		"price": "$",
+		"position": {
+			"lat": 41.8721,
+			"lng": -87.62715
+		},
+		"note": "Try the Sloppy Spicy Joe Burger, can't go wrong with ANY Shake"
+	},
+	{
+		"placeId": "ChIJ-T0KSLIsDogRHgkWFAe3uT8",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "India House",
+		"location": "Downtown / Near North",
+		"category": "Indian",
+		"price": "$$",
+		"position": {
+			"lat": 41.89141,
+			"lng": -87.63037
+		}
+	},
+	{
+		"placeId": "ChIJQzYcI-gyDogRUwsMBnciazY",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Jerk Taco Man",
+		"location": "West Side",
+		"category": "Jamaican",
+		"price": "$",
+		"position": {
+			"lat": 41.87672,
+			"lng": -87.72577
+		}
+	},
+	{
+		"placeId": "ChIJ15Q11q7TD4gRji_UypGSsiY",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Royal Indian Grill",
+		"location": "North / Lakeview",
+		"category": "Indian",
+		"price": "$$$",
+		"position": {
+			"lat": 41.94068,
+			"lng": -87.65097
+		}
+	},
+	{
+		"placeId": "ChIJZ00Yu4QsDogR4wNixDtDd_4",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Giordano's",
+		"location": "Downtown / South Loop",
+		"category": "Pizza",
+		"price": "$$",
+		"position": {
+			"lat": 41.86455,
+			"lng": -87.62427
+		}
+	},
+	{
+		"placeId": "ChIJ7Qeb1HEpDogRlS57uvQFJyY",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Original Pancake House (on 47th)",
+		"location": "South / Hyde Park",
+		"category": "Breakfast",
+		"price": "$",
+		"position": {
+			"lat": 41.80988,
+			"lng": -87.59293
+		}
+	},
+	{
+		"placeId": "ChIJx-7Xj5ssDogRQ82Pv1CsDcc",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Yolk",
+		"location": "Downtown / South Loop",
+		"category": "Breakfast",
+		"price": "$",
+		"position": {
+			"lat": 41.86886,
+			"lng": -87.62456
+		}
+	},
+	{
+		"placeId": "ChIJoV7cVDUtDogRwzZ4Bh3c960",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Sunrise Cafe",
+		"location": "West / West Town",
+		"category": "Breakfast",
+		"price": "$",
+		"position": {
+			"lat": 41.89601,
+			"lng": -87.67765
+		}
+	},
+	{
+		"placieId": "ChIJrcI4JKMsDogROJAgB0kvxrQ",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Garrett's Popcorn",
+		"location": "Downtown / The Loop",
+		"category": "Dessert",
+		"price": "$",
+		"position": {
+			"lat": 41.88463,
+			"lng": -87.62884
+		},
+		"note": "Always get the Chicago Mix...don't let Cheese and Caramel throw you off"
+	},
+	{
+		"placeId": "ChIJrc2yQaUsDogRBDIsaBIbnYU",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Macy's on State (Lowel Level)",
+		"location": "Downtown / The Loop",
+		"category": "American",
+		"price": "$",
+		"position": {
+			"lat": 41.88387,
+			"lng": -87.62703
+		},
+		"note": "Try the Meatloaf, Fish N Chips, Bread Pudding"
+	},
+	{
+		"placeId": "ChIJPbLTBrIsDogRuLOjM3yNN64",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Fremont",
+		"location": "Downtown / Near North",
+		"category": "American",
+		"price": "$$$$",
+		"position": {
+			"lat": 41.8906,
+			"lng": -87.62869
+		},
+		"note": "Go for brunch!"
+	},
+	{
+		"placeId": "ChIJob2Cd6wsDogR_Xcd9Hl-y9w",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Stan's Donuts",
+		"location": "Downtown / Near North",
+		"category": "Dessert",
+		"price": "$",
+		"position": {
+			"lat": 41.89195,
+			"lng": -87.62348
+		}
+	},
+	{
+		"placeId": "ChIJsXt4PfAsDogRwGFIDwHrJak",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Cold Stone Creamery",
+		"location": "South Side",
+		"category": "Dessert",
+		"price": "$",
+		"position": {
+			"lat": 41.86505,
+			"lng": -87.64703
+		}
+	},
+	{
+		"placeId": "ChIJ_3C2OkcsDogR1HKmNkyMXPw",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Fabulous Freddies Italian Eatery",
+		"location": "South / Bridgeport",
+		"category": "Pizza",
+		"price": "$",
+		"position": {
+			"lat": 41.83787,
+			"lng": -87.64399
+		},
+		"note": "Get the Italian Ice"
+	},
+	{
+		"placeId": "ChIJY66r0EzTD4gROStTeCl_uwE",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "25 Degrees",
+		"location": "Downtown / Near North",
+		"category": "American",
+		"price": "$$",
+		"position": {
+			"lat": 41.89594,
+			"lng": -87.63155
+		},
+		"note": "Order a Shake...either with or without alcoholic"
+	},
+	{
+		"placeId": "ChIJx2ywOnIpDogRml0FxS9Snlw",
+		"type": "Activity",
+		"icon": "glass-martini",
+		"title": "Promontory",
+		"location": "South / Hyde Park",
+		"category": "Lounge",
+		"price": "$$",
+		"position": {
+			"lat": 41.799,
+			"lng": -87.5876
+		}
+	},
+	{
+		"placeId": "ChIJ8VxpYgYsDogRc_7sVgLy9Tk",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Pearl's Place",
+		"location": "South / Bronzeville",
+		"category": "Soul Food",
+		"price": "$$",
+		"position": {
+			"lat": 41.82363,
+			"lng": -87.62281
+		},
+		"note": "Go for breakfast, lunch, or dinner. Make sure you get the Macaroni N Cheese"
+	},
+	{
+		"placeId": "ChIJv1ZQnEEzDogR5kwZfJ0YOec",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "MacArthur's",
+		"location": "West Side",
+		"category": "Soul Food",
+		"price": "$$",
+		"position": {
+			"lat": 41.88053,
+			"lng": -87.76069
+		}
+	},
+	{
+		"placeId": "ChIJS2hIR9osDogRWinquGFv7xo",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Nando's PERi-PERi",
+		"location": "Near West / West Loop",
+		"category": "African",
+		"price": "$$",
+		"position": {
+			"lat": 41.88402,
+			"lng": -87.65174
+		}
+	},
+	{
+		"placeId": "ChIJ6VbMZK0sDogRXUh8C_iEhfU",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Pinkberry",
+		"location": "Downtown / Near North",
+		"category": "Dessert",
+		"price": "$",
+		"position": {
+			"lat": 41.89377,
+			"lng": -87.62792
+		}
+	},
+	{
+		"placeId": "ChIJAQAAAEQpDogRX-b8EQP4f18",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Kilwin's",
+		"location": "South / Hyde Park",
+		"category": "Dessert",
+		"price": "$$",
+		"position": {
+			"lat": 41.80008,
+			"lng": -87.58928
+		}
+	},
+	{
+		"placeId": "ChIJp3BSHjDTD4gRLlEKA9dn3Ok",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Just Turkey",
+		"location": "Downtown / Near North",
+		"category": "American",
+		"price": "$",
+		"position": {
+			"lat": 41.9047,
+			"lng": -87.64839
+		},
+		"note": "Try the Turkey Cheddar Spinach Lasagna"
+	},
+	{
+		"placeId": "ChIJHUgwtu0sDogR1e1GW8Y73QI",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Manny's",
+		"location": "Downtown / South Loop",
+		"category": "American",
+		"price": "$$$",
+		"position": {
+			"lat": 41.86779,
+			"lng": -87.64203
+		},
+		"note": "Order the Corned Beef and Pastrami on an onion roll"
+	},
+	{
+		"placeId": "ChIJI2zhMGwpDogRhn3_tLitFEo",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Hyde Park Taco Station",
+		"location": "South / Hyde Park",
+		"category": "Mexican",
+		"price": "$",
+		"position": {
+			"lat": 41.79931,
+			"lng": -87.59196
+		}
+	},
+	{
+		"placeId": "ChIJ_0VX-vgrDogRnZLnFyFz2DE",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Chicago Home of Chicken & Waffles",
+		"location": "South / Bronzeville",
+		"category": "Breakfast",
+		"price": "$$",
+		"position": {
+			"lat": 41.82245,
+			"lng": -87.6165
+		}
+	},
+	{
+		"placeId": "ChIJX6y8DdosDogRkk09xSPIUe4",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Do-Rite Donuts & Chicken",
+		"location": "Near West / West Loop",
+		"category": "Dessert",
+		"price": "$",
+		"position": {
+			"lat": 41.88528,
+			"lng": -87.65214
+		}
+	},
+	{
+		"placeId": "ChIJ78NyRsUsDogR6AqyYoPrts4",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Au Cheval",
+		"location": "Near West / West Loop",
+		"category": "Burgers",
+		"price": "$$",
+		"position": {
+			"lat": 41.88465,
+			"lng": -87.64766
+		}
+	},
+	{
+		"placeId": "ChIJveKQipfSD4gRIUiJZVze-aU",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Margie's Candies",
+		"location": "West / Bucktown",
+		"category": "Dessert",
+		"price": "$",
+		"position": {
+			"lat": 41.91734,
+			"lng": -87.68762
+		}
+	},
+	{
+		"placeId": "ChIJDWik5wHTD4gRfHeTTPigb8M",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Batter & Berries",
+		"location": "North / Lincoln Park",
+		"category": "Breakfast",
+		"price": "$$",
+		"position": {
+			"lat": 41.9316,
+			"lng": -87.65772
+		}
+	},
+	{
+		"placeId": "ChIJGXnZiOwsDogRSS0Hzk3qwjQ",
+		"type": "Restaurant",
+		"icon": "utensils",
+		"title": "Portillos",
+		"location": "Downtown / South Loop",
+		"category": "American",
+		"price": "$",
+		"position": {
+			"lat": 41.8703,
+			"lng": -87.64023
+		}
+	},
+	{
+		"placeId": "ChIJlUbZ4qMsDogR3tCinMzzKUg",
+		"type": "Activity",
+		"icon": "ticket-alt",
+		"title": "Art Institute of Chicago",
+		"location": "Downtown / The Loop",
+		"category": "Museum",
+		"price": "$$",
+		"position": {
+			"lat": 41.87958,
+			"lng": -87.62371
+		}
+	},
+	{
+		"placeId": "ChIJ-UF1l6jTD4gRaCz2DNSnpCU",
+		"type": "Activity",
+		"icon": "ticket-alt",
+		"title": "Blue Man Group",
+		"location": "North / Lakeview",
+		"category": "Entertainment",
+		"price": "$$$",
+		"position": {
+			"lat": 41.93885,
+			"lng": -87.64892
+		}
+	},
+	{
+		"placeId": "ChIJ5ywykizSD4gRX8IVtWSf3OI",
+		"type": "Activity",
+		"icon": "ticket-alt",
+		"title": "Green Mill",
+		"location": "North Side",
+		"category": "Entertainment",
+		"price": "$$",
+		"position": {
+			"lat": 41.9692,
+			"lng": -87.6599
+		}
+	},
+	{
+		"placeId": "ChIJpVpEbBTSD4gRzt9QX2qCCP4",
+		"type": "Activity",
+		"icon": "ticket-alt",
+		"title": "Half Acre Beer Tour",
+		"location": "North Side",
+		"category": "Tour",
+		"price": "$$",
+		"position": {
+			"lat": 41.95933,
+			"lng": -87.68197
+		}
+	},
+	{
+		"placeId": "ChIJE9IESSTTD4gRFXNotCW2Sf0",
+		"type": "Activity",
+		"icon": "ticket-alt",
+		"title": "IO - Improv Olympics",
+		"location": "Downtown / Near North",
+		"category": "Entertainment",
+		"price": "$$",
+		"position": {
+			"lat": 41.90851,
+			"lng": -87.65174
+		}
+	},
+	{
+		"placeId": "ChIJFR3zFUHTD4gRiSGHi3J4B7Y",
+		"type": "Activity",
+		"icon": "ticket-alt",
+		"title": "Second City",
+		"location": "North / Lincoln Park",
+		"category": "Entertainment",
+		"price": "$$",
+		"position": {
+			"lat": 41.91152,
+			"lng": -87.63537
+		}
+	},
+	{
+		"placeId": "ChIJNbKQElTTD4gRdOsDd3qTFHM",
+		"type": "Activity",
+		"icon": "ticket-alt",
+		"title": "360 Chicago Observation Deck",
+		"location": "Downtown / Near North",
+		"category": "Tour",
+		"price": "$",
+		"position": {
+			"lat": 41.89864,
+			"lng": -87.62275
+		}
+	},
+	{
+		"placeId": "ChIJr-ihyFbTD4gR81mealSWir4",
+		"type": "Activity",
+		"icon": "ticket-alt",
+		"title": "Magnificent Mile",
+		"location": "Downtown / Near North",
+		"category": "Shopping",
+		"price": "FREE",
+		"position": {
+			"lat": 41.8948,
+			"lng": -87.62421
+		}
+	},
+	{
+		"placeId": "ChIJgfAAC6csDogRK6Ew7nIj9ss",
+		"type": "Activity",
+		"icon": "ticket-alt",
+		"title": "Millennium Park",
+		"location": "Downtown / The Loop",
+		"category": "Tour",
+		"price": "FREE",
+		"position": {
+			"lat": 41.8827,
+			"lng": -87.61939
+		}
+	},
+	{
+		"placeId": "ChIJKXA7AlXTD4gRsvBFJ8wG9x4",
+		"type": "Activity",
+		"icon": "ticket-alt",
+		"title": "Museum of Contemporary Art",
+		"location": "Downtown / Near North",
+		"category": "Museum",
+		"price": "$",
+		"position": {
+			"lat": 41.89721,
+			"lng": -87.62147
+		},
+		"note": "First Fridays at the MCA: A special 21+ social-networking event that includes museum admission, live entertainment, and complimentary hors dâ€™oeuvres for $18 with a cash bar until 9:30 pm."
+	},
+	{
+		"placeId": "ChIJVW9AjgspDogRzTarV8dhvSU",
+		"type": "Activity",
+		"icon": "ticket-alt",
+		"title": "Museum of Science & Industry",
+		"location": "South / Hyde Park",
+		"category": "Museum",
+		"price": "$$",
+		"position": {
+			"lat": 41.79057,
+			"lng": -87.58306
+		}
+	},
+	{
+		"placeId": "ChIJtTDqvE0rDogRocZTJHkILF0",
+		"type": "Activity",
+		"icon": "ticket-alt",
+		"title": "Navy Pier",
+		"location": "Downtown / Near North",
+		"category": "Entertainment",
+		"price": "FREE",
+		"position": {
+			"lat": 41.89155,
+			"lng": -87.60737
+		}
+	},
+	{
+		"placeId": "ChIJu_tp4r4sDogR_dRFCX8wCc8",
+		"type": "Activity",
+		"icon": "ticket-alt",
+		"title": "Sears [Willis] Tower SkyDeck",
+		"location": "Downtown / The Loop",
+		"category": "Tour",
+		"price": "$$",
+		"position": {
+			"lat": 41.87874,
+			"lng": -87.63594
+		}
+	},
+	{
+		"placeId": "ChIJ-XW3X2MrDogR3_tQ3-OdBTI",
+		"type": "Activity",
+		"icon": "ticket-alt",
+		"title": "Shedd Aquarium",
+		"location": "Downtown / South Loop",
+		"category": "Museum",
+		"price": "$$",
+		"position": {
+			"lat": 41.86757,
+			"lng": -87.61403
+		}
+	},
+	{
+		"placeId": "ChIJXWmIuKMsDogRU9zDFF0QQ5M",
+		"type": "Activity",
+		"icon": "ticket-alt",
+		"title": "Chicago Architecture Tour",
+		"location": "Downtown / The Loop",
+		"category": "Tour",
+		"price": "$$$",
+		"position": {
+			"lat": 41.87851,
+			"lng": -87.62473
+		}
+	},
+	{
+		"placeId": "ChIJwaTuf1TTD4gRcjTySGAY86U",
+		"type": "Activity",
+		"icon": "ticket-alt",
+		"title": "Chicago Crime Tours",
+		"location": "Downtown / Near North",
+		"category": "Tour",
+		"price": "$$",
+		"position": {
+			"lat": 41.89719,
+			"lng": -87.62308
+		}
+	},
+	{
+		"placeId": "ChIJP2M9MbwsDogR1aHhJuTlU3c",
+		"type": "Activity",
+		"icon": "ticket-alt",
+		"title": "Money Museum",
+		"location": "Downtown / The Loop",
+		"category": "Museum",
+		"price": "FREE",
+		"position": {
+			"lat": 41.87847,
+			"lng": -87.633
+		}
+	},
+	{
+		"placeId": "ChIJnf3V-S4tDogRTj6krjDhXO0",
+		"type": "Activity",
+		"icon": "ticket-alt",
+		"title": "Ignite Glass Studio",
+		"location": "Near West / West Loop",
+		"category": "Entertainment",
+		"price": "$$$",
+		"position": {
+			"lat": 41.88909,
+			"lng": -87.66521
+		}
+	},
+	{
+		"placeId": "ChIJ9cMIn_jSD4gR4CL6IyPlL1w",
+		"type": "Activity",
+		"icon": "ticket-alt",
+		"title": "Chicago Improv Comedy Club",
+		"location": "West / West Town",
+		"category": "Entertainment",
+		"price": "$$",
+		"position": {
+			"lat": 41.93547,
+			"lng": -87.66438
+		}
+	},
+	{
+		"placeId": "ChIJjTCoH9gsDogRZ1C3-Fa2wtg",
+		"type": "Activity",
+		"icon": "ticket-alt",
+		"title": "PanIQ Escape Room",
+		"location": "Near West / West Loop",
+		"category": "Entertainment",
+		"price": "$$$",
+		"position": {
+			"lat": 41.88575,
+			"lng": -87.657
+		}
+	},
+	{
+		"placeId": "ChIJsTi-rKAtDogRx9MnUyQcC7Q",
+		"type": "Activity",
+		"icon": "ticket-alt",
+		"title": "National Museum of Mexican Art",
+		"location": "South / Pilsen",
+		"category": "Museum",
+		"price": "FREE",
+		"position": {
+			"lat": 41.85598,
+			"lng": -87.67285
+		}
+	},
+	{
+		"placeId": "ChIJtRSxt28rDogRpo4hEqqjIGk",
+		"type": "Activity",
+		"icon": "ticket-alt",
+		"title": "Adler Planterium",
+		"location": "Downtown / South Loop",
+		"category": "Entertainment",
+		"price": "$",
+		"position": {
+			"lat": 41.86633,
+			"lng": -87.60678
+		},
+		"note": "Particularly Adler After Dark for adults"
+	},
+	{
+		"placeId": "ChIJrzSN9rgsDogRFjlYTd0u-Jk",
+		"type": "Activity",
+		"icon": "ticket-alt",
+		"title": "Chicago Pizza Tours",
+		"location": "Downtown / The Loop",
+		"category": "Tour",
+		"price": "$$$",
+		"position": {
+			"lat": 41.88281,
+			"lng": -87.63656
+		}
+	},
+	{
+		"placeId": "ChIJze1XPqIsDogRcU0ZwxLZx_E",
+		"type": "Activity",
+		"icon": "ticket-alt",
+		"title": "Room Escape Adventures",
+		"location": "Downtown / The Loop",
+		"category": "Entertainment",
+		"price": "$$",
+		"position": {
+			"lat": 41.87663,
+			"lng": -87.62485
+		}
+	},
+	{
+		"placeId": "ChIJOVMWdaosDogRhdD74dSDREA",
+		"type": "Activity",
+		"icon": "ticket-alt",
+		"title": "FTW Chicago",
+		"location": "Downtown / Near North",
+		"category": "Entertainment",
+		"price": "$$",
+		"position": {
+			"lat": 41.8914,
+			"lng": -87.61874
+		}
+	},
+	{
+		"placeId": "ChIJTS6R8sXSD4gRSvagw8grD44",
+		"type": "Activity",
+		"icon": "ticket-alt",
+		"title": "Emporium Arcade Bar",
+		"location": "West / Wicker Park",
+		"category": "Entertainment",
+		"price": "$",
+		"position": {
+			"lat": 41.90655,
+			"lng": -87.67172
+		}
+	},
+	{
+		"placeId": "ChIJR-BMErLSD4gRFUV3e3FwXEo",
+		"type": "Activity",
+		"icon": "ticket-alt",
+		"title": "Handmade Market / The Empty Bottle",
+		"location": "West / West Town",
+		"category": "Shopping",
+		"price": "$",
+		"position": {
+			"lat": 41.90046,
+			"lng": -87.68663
+		}
+	},
+	{
+		"placeId": "ChIJexslZ5SvD4gRHAeHyR_60DY",
+		"type": "Activity",
+		"icon": "ticket-alt",
+		"title": "Level 257",
+		"location": "Suburbs / Schaumburg",
+		"category": "Entertainment",
+		"price": "$$",
+		"position": {
+			"lat": 42.04575,
+			"lng": -88.03472
+		}
+	},
+	{
+		"placeId": "ChIJ27kGFRYpDogRJo7kny13uNA",
+		"type": "Activity",
+		"icon": "ticket-alt",
+		"title": "Oriental Institute Museum",
+		"location": "South / Hyde Park",
+		"category": "Museum",
+		"price": "$",
+		"position": {
+			"lat": 41.7892,
+			"lng": -87.59749
+		}
+	},
+	{
+		"placeId": "ChIJc2KLljkpDogRda8AsGdVjcA",
+		"type": "Activity",
+		"icon": "ticket-alt",
+		"title": "DuSable Museum Of African American History",
+		"location": "South / Washington Park",
+		"category": "Museum",
+		"price": "$",
+		"position": {
+			"lat": 41.79181,
+			"lng": -87.6071
+		}
+	},
+	{
+		"placeId": "ChIJhyTEzHHSD4gRaYbCaJ_fWCM",
+		"type": "Activity",
+		"icon": "ticket-alt",
+		"title": "Waveland Bowl",
+		"location": "North Side",
+		"category": "Entertainment",
+		"price": "$$",
+		"position": {
+			"lat": 41.94901,
+			"lng": -87.68885
+		}
+	},
+	{
+		"placeId": "ChIJ36q9du3SD4gRc_oBbj74Fm4",
+		"type": "Activity",
+		"icon": "ticket-alt",
+		"title": "Whirlyball",
+		"location": "North / Bucktown",
+		"category": "Entertainment",
+		"price": "$$",
+		"position": {
+			"lat": 41.92116,
+			"lng": -87.67388
+		}
+	},
+	{
+		"placeId": "ChIJbfsYvUPTD4gR0Xktc9scc08",
+		"type": "Activity",
+		"icon": "ticket-alt",
+		"title": "Chicago History Museum",
+		"location": "North / Lincoln Park",
+		"category": "Museum",
+		"price": "$$",
+		"position": {
+			"lat": 41.91203,
+			"lng": -87.63149
+		}
+	},
+	{
+		"placeId": "ChIJW23RRia0D4gRlL8HDSx0fLA",
+		"type": "Activity",
+		"icon": "ticket-alt",
+		"title": "Chicago Children's Museum",
+		"location": "Downtown / Near North",
+		"category": "Museum",
+		"price": "$$",
+		"position": {
+			"lat": 41.8914,
+			"lng": -87.60914
+		}
+	},
+	{
+		"placeId": "ChIJyZlD7mrTD4gRNg6rvUQMDgU",
+		"type": "Activity",
+		"icon": "glass-martini",
+		"title": "The Drop Lounge",
+		"location": "North / Lincoln Park",
+		"category": "Lounge",
+		"price": "$$",
+		"position": {
+			"lat": 41.91686,
+			"lng": -87.63654
+		}
+	},
+	{
+		"placeId": "ChIJFQylzoUsDogRYqM8igdcdc4",
+		"type": "Activity",
+		"icon": "glass-martini",
+		"title": "M Lounge",
+		"location": "Downtown / South Loop",
+		"category": "Lounge",
+		"price": "$$",
+		"position": {
+			"lat": 41.86139,
+			"lng": -87.62601
+		}
+	},
+	{
+		"placeId": "ChIJH7aA-q8sDogREB67iM5kWks",
+		"type": "Activity",
+		"icon": "ticket-alt",
+		"title": "ROOF on theWit",
+		"location": "Downtown / The Loop",
+		"category": "Lounge",
+		"price": "$$$",
+		"position": {
+			"lat": 41.88603,
+			"lng": -87.62768
+		}
+	},
+	{
+		"placeId": "ChIJE1KUwc_SD4gRj7apfNAFtKM",
+		"type": "Activity",
+		"icon": "glass-martini",
+		"title": "Esso",
+		"location": "West / Wicker Park",
+		"category": "Lounge",
+		"price": "$",
+		"position": {
+			"lat": 41.9047,
+			"lng": -87.66903
+		}
+	},
+	{
+		"placeId": "ChIJEw1E_7EsDogRetk1uWBrRSA",
+		"type": "Activity",
+		"icon": "glass-martini",
+		"title": "The Rec Room",
+		"location": "Downtown / Near North",
+		"category": "Lounge",
+		"price": "$$",
+		"position": {
+			"lat": 41.89023,
+			"lng": -87.62876
+		}
+	},
+	{
+		"placeId": "ChIJWYeup73RD4gRaCe46ePDEQE",
+		"type": "Activity",
+		"icon": "glass-martini",
+		"title": "Pressure Billiards & Cafe",
+		"location": "North / Edgewater",
+		"category": "Lounge",
+		"price": "$$",
+		"position": {
+			"lat": 41.99707,
+			"lng": -87.67064
+		}
+	},
+	{
+		"placeId": "ChIJ0bBajbYsDogRhY8z-LYaZr4",
+		"type": "Activity",
+		"icon": "glass-martini",
+		"title": "The Library",
+		"location": "Downtown / Near North",
+		"category": "Lounge",
+		"price": "$$",
+		"position": {
+			"lat": 41.88928,
+			"lng": -87.6353
+		}
+	},
+	{
+		"placeId": "ChIJp5R9ijTMD4gRMFuIWAvrW6k",
+		"type": "Activity",
+		"icon": "glass-martini",
+		"title": "Sidekicks",
+		"location": "North / Irving Park",
+		"category": "Lounge",
+		"price": "$",
+		"position": {
+			"lat": 41.96092,
+			"lng": -87.73949
+		}
+	},
+	{
+		"placeId": "ChIJEWd-1GMsDogR_8abGQLeCF4",
+		"type": "Activity",
+		"icon": "glass-martini",
+		"title": "Sakura Karaoke Bar",
+		"location": "South / Chinatown",
+		"category": "Lounge",
+		"price": "$$",
+		"position": {
+			"lat": 41.85313,
+			"lng": -87.63315
+		}
+	},
+	{
+		"placeId": "ChIJDyvnr1UsDogRWnMdqPvjYLQ",
+		"type": "Activity",
+		"icon": "glass-martini",
+		"title": "The People's Stage with Pablo Serrano",
+		"location": "South / Pilsen",
+		"category": "Lounge",
+		"price": "$",
+		"position": {
+			"lat": 41.85413,
+			"lng": -87.65493
+		}
+	}
+]

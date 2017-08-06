@@ -1,0 +1,93 @@
+19:40:06.804 INFO - Launching a standalone Selenium Server
+19:40:06.855 INFO - Java: Oracle Corporation 25.91-b14
+19:40:06.856 INFO - OS: Mac OS X 10.11.6 x86_64
+19:40:06.880 INFO - v2.53.1, with Core v2.53.1. Built from revision a36b8b1
+19:40:06.999 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+registration capabilities Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=, platform=WINDOWS}] does not match the current platform MAC
+19:40:07.000 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
+registration capabilities Capabilities [{browserName=MicrosoftEdge, version=, platform=WINDOWS}] does not match the current platform MAC
+19:40:07.000 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+19:40:07.001 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+19:40:07.005 INFO - Driver class not found: org.openqa.selenium.htmlunit.HtmlUnitDriver
+19:40:07.006 INFO - Driver provider org.openqa.selenium.htmlunit.HtmlUnitDriver is not registered
+19:40:07.131 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+19:40:07.132 INFO - Selenium Server is up and running
+19:40:07.873 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, name=Home, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
+19:40:07.887 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, name=Home, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1) on port 21051
+Only local connections are allowed.
+19:40:09.837 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, name=Home, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
+19:40:09.855 INFO - Executing: [get: http://localhost:8080])
+19:40:29.771 INFO - Done: [get: http://localhost:8080]
+19:40:29.800 INFO - Executing: [find elements: By.cssSelector: #app])
+19:40:29.868 INFO - Done: [find elements: By.cssSelector: #app]
+19:40:29.887 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on MAC (dd746d177b0e97d96206d7f73c6360d7)] -> css selector: #app]])
+19:40:29.921 INFO - Done: [is displayed: 0 [[ChromeDriver: chrome on MAC (dd746d177b0e97d96206d7f73c6360d7)] -> css selector: #app]]
+19:40:29.933 INFO - Executing: [find elements: By.cssSelector: a.nav-link.active])
+19:40:29.961 INFO - Done: [find elements: By.cssSelector: a.nav-link.active]
+19:40:29.992 INFO - Executing: [get text: 1 [[ChromeDriver: chrome on MAC (dd746d177b0e97d96206d7f73c6360d7)] -> css selector: a.nav-link.active]])
+19:40:30.041 INFO - Done: [get text: 1 [[ChromeDriver: chrome on MAC (dd746d177b0e97d96206d7f73c6360d7)] -> css selector: a.nav-link.active]]
+19:40:30.050 INFO - Executing: [find elements: By.cssSelector: .wrapper])
+19:40:30.091 INFO - Done: [find elements: By.cssSelector: .wrapper]
+19:40:30.098 INFO - Executing: [get value of css property: 2 [[ChromeDriver: chrome on MAC (dd746d177b0e97d96206d7f73c6360d7)] -> css selector: .wrapper], background-color])
+19:40:30.122 INFO - Done: [get value of css property: 2 [[ChromeDriver: chrome on MAC (dd746d177b0e97d96206d7f73c6360d7)] -> css selector: .wrapper], background-color]
+19:40:30.137 INFO - Executing: [delete session: 7facfae9-35b9-4095-8b19-4ddfcec723aa])
+19:40:30.285 INFO - Done: [delete session: 7facfae9-35b9-4095-8b19-4ddfcec723aa]
+19:40:30.442 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, name=Site Header, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
+19:40:30.443 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, name=Site Header, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1) on port 20313
+Only local connections are allowed.
+19:40:31.751 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, name=Site Header, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
+19:40:31.759 INFO - Executing: [get: http://localhost:8080])
+19:40:33.345 INFO - Done: [get: http://localhost:8080]
+19:40:33.354 INFO - Executing: [find elements: By.cssSelector: #app])
+19:40:33.386 INFO - Done: [find elements: By.cssSelector: #app]
+19:40:33.394 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on MAC (3871ce5343681f53cba012398f9d86df)] -> css selector: #app]])
+19:40:33.423 INFO - Done: [is displayed: 0 [[ChromeDriver: chrome on MAC (3871ce5343681f53cba012398f9d86df)] -> css selector: #app]]
+19:40:33.432 INFO - Executing: [find elements: By.cssSelector: .navbar-brand])
+19:40:33.462 INFO - Done: [find elements: By.cssSelector: .navbar-brand]
+19:40:33.472 INFO - Executing: [get text: 1 [[ChromeDriver: chrome on MAC (3871ce5343681f53cba012398f9d86df)] -> css selector: .navbar-brand]])
+19:40:33.521 INFO - Done: [get text: 1 [[ChromeDriver: chrome on MAC (3871ce5343681f53cba012398f9d86df)] -> css selector: .navbar-brand]]
+19:40:33.528 INFO - Executing: [find elements: By.cssSelector: .navbar li:nth-child(1) a])
+19:40:33.570 INFO - Done: [find elements: By.cssSelector: .navbar li:nth-child(1) a]
+19:40:33.591 INFO - Executing: [get text: 2 [[ChromeDriver: chrome on MAC (3871ce5343681f53cba012398f9d86df)] -> css selector: .navbar li:nth-child(1) a]])
+19:40:33.622 INFO - Done: [get text: 2 [[ChromeDriver: chrome on MAC (3871ce5343681f53cba012398f9d86df)] -> css selector: .navbar li:nth-child(1) a]]
+19:40:33.627 INFO - Executing: [find elements: By.cssSelector: .navbar li:nth-child(2) a])
+19:40:33.662 INFO - Done: [find elements: By.cssSelector: .navbar li:nth-child(2) a]
+19:40:33.669 INFO - Executing: [get text: 3 [[ChromeDriver: chrome on MAC (3871ce5343681f53cba012398f9d86df)] -> css selector: .navbar li:nth-child(2) a]])
+19:40:33.695 INFO - Done: [get text: 3 [[ChromeDriver: chrome on MAC (3871ce5343681f53cba012398f9d86df)] -> css selector: .navbar li:nth-child(2) a]]
+19:40:33.701 INFO - Executing: [find elements: By.cssSelector: .navbar li:nth-child(3) a])
+19:40:33.718 INFO - Done: [find elements: By.cssSelector: .navbar li:nth-child(3) a]
+19:40:33.724 INFO - Executing: [get text: 4 [[ChromeDriver: chrome on MAC (3871ce5343681f53cba012398f9d86df)] -> css selector: .navbar li:nth-child(3) a]])
+19:40:33.748 INFO - Done: [get text: 4 [[ChromeDriver: chrome on MAC (3871ce5343681f53cba012398f9d86df)] -> css selector: .navbar li:nth-child(3) a]]
+19:40:33.753 INFO - Executing: [find elements: By.cssSelector: .navbar li:nth-child(4) a])
+19:40:33.773 INFO - Done: [find elements: By.cssSelector: .navbar li:nth-child(4) a]
+19:40:33.782 INFO - Executing: [get text: 5 [[ChromeDriver: chrome on MAC (3871ce5343681f53cba012398f9d86df)] -> css selector: .navbar li:nth-child(4) a]])
+19:40:33.803 INFO - Done: [get text: 5 [[ChromeDriver: chrome on MAC (3871ce5343681f53cba012398f9d86df)] -> css selector: .navbar li:nth-child(4) a]]
+19:40:33.812 INFO - Executing: [find elements: By.cssSelector: .navbar li:nth-child(5) a])
+19:40:33.831 INFO - Done: [find elements: By.cssSelector: .navbar li:nth-child(5) a]
+19:40:33.835 INFO - Executing: [get text: 6 [[ChromeDriver: chrome on MAC (3871ce5343681f53cba012398f9d86df)] -> css selector: .navbar li:nth-child(5) a]])
+19:40:33.864 INFO - Done: [get text: 6 [[ChromeDriver: chrome on MAC (3871ce5343681f53cba012398f9d86df)] -> css selector: .navbar li:nth-child(5) a]]
+19:40:33.879 INFO - Executing: [delete session: 814fd6cb-e0a9-4440-8eb7-b9ae8088f7c1])
+19:40:34.016 INFO - Done: [delete session: 814fd6cb-e0a9-4440-8eb7-b9ae8088f7c1]
+19:40:34.049 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, name=Wedding, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
+19:40:34.050 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, name=Wedding, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1) on port 25169
+Only local connections are allowed.
+19:40:35.109 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, name=Wedding, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
+19:40:35.116 INFO - Executing: [get: http://localhost:8080#/wedding])
+19:40:36.784 INFO - Done: [get: http://localhost:8080#/wedding]
+19:40:36.791 INFO - Executing: [find elements: By.cssSelector: #app])
+19:40:36.831 INFO - Done: [find elements: By.cssSelector: #app]
+19:40:36.841 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on MAC (87dbac8c431cd01d932a95a2298613b8)] -> css selector: #app]])
+19:40:36.889 INFO - Done: [is displayed: 0 [[ChromeDriver: chrome on MAC (87dbac8c431cd01d932a95a2298613b8)] -> css selector: #app]]
+19:40:36.905 INFO - Executing: [find elements: By.cssSelector: a.nav-link.active])
+19:40:36.940 INFO - Done: [find elements: By.cssSelector: a.nav-link.active]
+19:40:36.952 INFO - Executing: [get text: 1 [[ChromeDriver: chrome on MAC (87dbac8c431cd01d932a95a2298613b8)] -> css selector: a.nav-link.active]])
+19:40:37.004 INFO - Done: [get text: 1 [[ChromeDriver: chrome on MAC (87dbac8c431cd01d932a95a2298613b8)] -> css selector: a.nav-link.active]]
+19:40:37.013 INFO - Executing: [find elements: By.cssSelector: .wrapper])
+19:40:37.053 INFO - Done: [find elements: By.cssSelector: .wrapper]
+19:40:37.061 INFO - Executing: [get value of css property: 2 [[ChromeDriver: chrome on MAC (87dbac8c431cd01d932a95a2298613b8)] -> css selector: .wrapper], background-color])
+19:40:37.079 INFO - Done: [get value of css property: 2 [[ChromeDriver: chrome on MAC (87dbac8c431cd01d932a95a2298613b8)] -> css selector: .wrapper], background-color]
+19:40:37.086 INFO - Executing: [delete session: 05971599-c708-46d5-9f10-c81906ae8b38])
+19:40:37.221 INFO - Done: [delete session: 05971599-c708-46d5-9f10-c81906ae8b38]
