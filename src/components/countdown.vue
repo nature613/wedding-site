@@ -1,22 +1,44 @@
 <template>
 	<div class="block">
 		<h4 class="now">Now, Dacia + David are getting married in</h4>
-		<p class="digit">
-			<span>{{ days  | two_digits }}</span>
-			<span>Days</span>
-		</p>
-		<p class="digit">
-			<span>{{ hours | two_digits }}</span>
-			<span>Hours</span>
-		</p>
-		<p class="digit">
-			<span>{{ minutes | two_digits }}</span>
-			<span>Minutes</span>
-		</p>
-		<p class="digit">
-			<span>{{ seconds | two_digits }}</span>
-			<span>Seconds</span>
-		</p>
+		<div class="ui sixteen column centered grid">
+			<div class="ui row column sixteen">
+				<div class="ui statistics">
+					<div class="ui huge statistic">
+						<div class="value">
+							{{ days  | two_digits }}
+						</div>
+						<div class="label">
+							Days
+						</div>
+					</div>
+					<div class="ui huge statistic">
+						<div class="value">
+							{{ hours | two_digits }}
+						</div>
+						<div class="label">
+							Hours
+						</div>
+					</div>
+					<div class="ui huge statistic">
+						<div class="value">
+							{{ minutes | two_digits }}
+						</div>
+						<div class="label">
+							Minutes
+						</div>
+					</div>
+					<div class="ui huge statistic">
+						<div class="value">
+							{{ seconds | two_digits }}
+						</div>
+						<div class="label">
+							Seconds
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </template>
 
@@ -75,11 +97,18 @@
 		text-align: center
 
 		@include tablet-small
+			@include rem(padding, 0 10px)
+
+		@include phablet-large
 			@include rem(padding, 0 5px)
 
 		h4,
 		p
 			@include animation(1s fadeIn forwards)
+
+		h4
+			font-size: 22px
+			font-weight: normal
 
 		p
 			font-family: $font-stack-sans-serif
@@ -87,27 +116,26 @@
 			line-height: 1
 			text-shadow: 0 0 20px $text5
 
-		.digit
-			@include animation(1s fadeIn forwards)
-			@include rem(margin, 0 40px 20px 0)
-			display: inline-block
-			font-size: 60px
-			text-align: center
-
-			@include tablet
-				font-size: 40px
-
-			@include tablet-small
-				font-size: 580%
-				margin-right: 4%
+		.ui.statistic,
+		.ui.statistics .statistic
+			&:first-of-type
+				margin-left: 0
 
 			&:last-of-type
-				margin-right: 0
+				@include mobile
+					display: none
 
-			span
-				display: block
+			> .value
+				@include animation(1s fadeIn forwards)
+				color: $text
 
-				&:last-of-type
+				@include phablet
+					font-size: 5rem !important
+
+				@include mobile-xsmall
+					font-size: 4rem !important
+
+				~ .label
 					color: $text8
-					font-size: 22px
+
 </style>

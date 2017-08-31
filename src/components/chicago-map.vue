@@ -243,7 +243,7 @@
 				const { formatted_address: address, name, website } = place
 				this.infoContent =
 					`<div class="marker-content" style="text-align: left;">
-						<h6><i class="fa fa-${icon}"></i> ${title}</h6>
+						<h6 style="font-size: 18px; margin: 0 0 10px;"><i class="fa fa-${icon}"></i> ${title}</h6>
 						<p>${category} <span style="color: #1e8947; font-size: 11px; font-weight: bold; position: relative; top: -0.5px;">${price}</span></p>
 						<p style="margin-bottom: 0;">
 							${address}<br />
@@ -309,7 +309,7 @@
 
 			.location-text
 				@include abs-pos(auto, auto, 25px, 0)
-				@include animation(fadeIn 2s forwards)
+				@include animation(fadeIn 1s forwards)
 				@include rem(padding, 5px 25px 5px 30px)
 				background: $background3b
 				color: $text7

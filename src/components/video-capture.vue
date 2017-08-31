@@ -1,5 +1,5 @@
 <template>
-	<div id="video" class="jumbotron jumbotron-fluid">
+	<div id="video" class="jumbotron">
 		<h2>Record A Message to Us!</h2>
 		<div>
 			<div id="video-recording">
@@ -12,7 +12,7 @@
 					</div>
 				</div>
 				<div v-else>
-					<p class="lead">Click play to record your message.</p>
+					<p class="lead">Click video icon to record your message.</p>
 					<div class="recording start">
 						<button @click="start"><i class="fal fa-video"></i></button>
 					</div>
@@ -66,18 +66,11 @@
 		text-align: center
 
 		&.jumbotron
-			@include rem(margin, 20px auto 0)
+			@include rem(margin, 40px auto 0)
 			@include rem(padding-top, 0)
 			max-width: 800px
 			min-width: 280px
 			width: 100%
-
-			@include tablet-xlarge
-				@include rem(margin-top, 0)
-				@include rem(padding-bottom, 0)
-
-			@include tablet-small
-				@include rem(padding, 0 20px)
 
 			h2
 				@include rem(margin-bottom, 7px)

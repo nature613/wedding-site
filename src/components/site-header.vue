@@ -1,24 +1,48 @@
 <template>
-	<b-navbar id="header" type="dark" variant="default">
-		<div class="col-xl-4">
-			<a class="navbar-brand" href="#"><h1>Dacia <span>+</span> David</h1></a><br />
-			<span>#davidanddacia</span>
+	<div id="header">
+		<div class="container">
+			<div class="ui brand">
+				<div class="item">
+					<router-link class="ui" to="/home"><h1>Dacia <span>+</span> David</h1></router-link>
+					<br />
+					<span>#davidanddacia</span>
+				</div>
+			</div>
+
+			<div class="mobile-only ui right floated main menu">
+				<div class="ui big launch right attached fixed button dropdown">
+					<div class="item" @click="showMenu = !showMenu">
+						<i class="content icon"></i>
+						<em>Menu</em>
+					</div>
+
+					<div class="menu" :class="[ showMenu ? 'show-content' : 'hide-content' ]">
+						<router-link to="/home">Home</router-link>
+						<router-link to="/wedding">Wedding</router-link>
+						<router-link to="/rsvp">RSVP</router-link>
+						<router-link to="/chicago">Chicago</router-link>
+					</div>
+				</div>
+			</div>
+
+			<div class="desktop-only ui right floated main menu">
+				<router-link to="/home" @click="showMenu = false">Home</router-link>
+				<router-link to="/wedding" @click="showMenu = false">Wedding</router-link>
+				<router-link to="/rsvp" @click="showMenu = false">RSVP</router-link>
+				<router-link to="/chicago" @click="showMenu = false">Chicago</router-link>
+			</div>
 		</div>
-		<div class="col-xl-8">
-			<b-nav is-nav-bar class="pull-xs-left">
-				<li class="nav-item"><router-link class="nav-link" to="/home">Home</router-link></li>
-				<li class="nav-item"><router-link class="nav-link" to="/wedding">Wedding</router-link></li>
-				<li class="nav-item"><router-link class="nav-link" to="/rsvp">RSVP</router-link></li>
-				<li class="nav-item"><router-link class="nav-link" to="/chicago">Chicago</router-link></li>
-			</b-nav>
-		</div>
-	</b-navbar>
+	</div>
 </template>
 
 <script>
 
 	export default {
-
+		data: function () {
+			return {
+				showMenu: false
+			}
+		}
 	}
 
 </script>
@@ -29,94 +53,137 @@
 
 	#header
 		@include animation(1s fadeIn forwards)
+		@include rem(margin-bottom, 15px)
+		@include rem(padding, 10px 20px 20px)
+		@include size(100%, 90px)
 		background: linear-gradient($background3, transparent)
 		pointer-events: none
-		width: 100%
+		position: relative
 		z-index: 3
 
 		&.disappear
 			@include animation-name(fadeOut)
 
-		span
-			@include abs-pos(auto, auto, -25px, 16px)
-			clear: both
-			color: $text8
-			font-style: italic
+		.container
+			margin: 0 auto
+			max-width: 1200px
 
-			@include desktop-large
-				top: -42px
+			span
+				@include abs-pos(auto, auto, -22px, 0)
+				@include rem(letter-spacing, .5px)
+				clear: both
+				color: $text8
+				font-family: $font-stack-sans-serif
 
-		.navbar-brand
-			@include animation(1s fadeIn forwards)
-			color: $text
-			float: none
-			padding: 0
-			pointer-events: all
-
-			@include tablet-small
+			.brand
+				@include animation(1s fadeIn forwards)
 				float: left
-
-			h1
-				font-size: 40px
-				@include rem(margin, 0)
-				@include transition (all 1s)
-
-				&:hover
-					color: $text
-					cursor: pointer
-					font-size: 48px
-
-				span
-					@include bold()
-					@include rel-pos(auto, auto, auto, auto)
-					clear: none
-					color: $text
-					font-size: 62.5%
-					font-style: normal
-
-		.nav
-			float: right
-
-			.nav-link
-				@include transform(1px, 0)
-				@include transition(all 1s)
-				box-shadow: 0 0 1px transparent
-				color: $text
-				display: inline-block
-				font-family: $font-stack-sans-serif2
-				opacity: 1
-				overflow: hidden
 				pointer-events: all
-				position: relative
-				text-decoration: none
-				vertical-align: top
 
-				&:before
-					@include abs-pos(auto, 100%, 0, 0)
-					@include transition(right 1s ease-out)
-					background: $text
-					content: ""
-					height: 2px
-					z-index: -1
+				.item
+					margin-bottom: 0
+					position: relative
 
-				&:hover,
-				&:focus,
-				&.active
-					opacity: 1
+					a
+						&:before
+							background: transparent
 
-					&:before
-						right: 0
+						h1
+							@include rem(margin, 0)
+							@include transition (all 1s)
+							color: $text
+							font-size: 40px
+							font-weight: normal
+							line-height: 1.2
 
-				&.active
+							span
+								@include bold()
+								@include rel-pos(auto, auto, auto, auto)
+								clear: none
+								color: $text
+								font-size: 62.5%
+								font-style: normal
+
+			.launch
+				background: transparent
+				color: $text
+				font-family: $font-stack-sans-serif2
+				font-size: 15px
+				padding: 0
+				pointer-events: all
+
+				em
+					@include rel-pos(-1px, auto, auto, auto)
+
+				.item
+					@include transform(1px, 0)
+					@include transition(all 1s)
 					color: $text
+					font-family: $font-stack-sans-serif2
+					overflow: hidden
+					padding-right: 0
+					pointer-events: all
+					z-index: 16
 
-					&:before
-						background: $text
+				.menu
+					@include abs-pos(0, auto, auto, 0)
+					@include rem(padding, 40px 10px)
+					background-color: $background3
+					pointer-events: all
+					position: fixed
+					text-align: center
+					z-index: 15
 
-				&:hover
-					color: $anchor-text2
+					a
+						@include rem(margin, 0 15px 10px)
+						@include rem(padding-bottom, 5px)
+						color: $text
+						cursor: pointer
+						display: inline-block
+						font-size: 1.7rem
+						font-weight: normal
 
-					&:before
-						background: $anchor-text2
+						@include mobile
+							@include rem(margin-top, 10px)
+
+						@include mobile-small
+							@include rem(margin-left, 10px)
+							@include rem(margin-right, 10px)
+							font-size: 1.5rem
+
+						@include mobile-xsmall
+							@include rem(margin-left, 7.5px)
+							@include rem(margin-right, 7.5px)
+
+						&:before
+							@include transition(all 1s ease-out)
+
+						&:hover,
+						&.active
+							color: $anchor-text2
+
+							&:before
+								background: $background5
+
+			.desktop-only
+				&.menu
+					pointer-events: all
+
+					a
+						@include rem(padding, 7.5px 20px 10px)
+						color: $text
+						cursor: pointer
+						display: inline-block
+						font-size: 18px
+
+						&:before
+							@include transition(all 1s ease-out)
+
+						&:hover,
+						&.active
+							color: $anchor-text2
+
+							&:before
+								background: $background5
 
 </style>

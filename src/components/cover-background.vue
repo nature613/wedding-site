@@ -1,7 +1,7 @@
 <template>
 	<div class="video-container">
 		<site-header></site-header>
-		<div class="filter"></div>
+		<div class="overlay"></div>
 		<iframe :src="src" height="120%" width="120%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 		<div class="poster"></div>
 		<main>
@@ -49,6 +49,10 @@
 		overflow: hidden
 		position: absolute
 
+		.overlay
+			@include rem(margin, 0)
+			background-color: $background3c
+
 		iframe,
 		video,
 		.poster
@@ -66,12 +70,21 @@
 			z-index: 0
 
 		main
-			@include rem(padding, 30px 70px)
+			@include rem(padding, 30px)
 			position: relative
 			z-index: 3
+
+			@include tablet-xlarge
+				@include rem(padding, 30px 0)
+
+			@include mobile
+				@include rem(padding, 10px 0)
 
 			form
 				@include rem(padding, 20px)
 				background: $background3b
+
+				@include mobile
+					@include rem(padding, 10px)
 
 </style>
