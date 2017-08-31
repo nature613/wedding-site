@@ -211,42 +211,76 @@
 	transform: perspective($perspective) translateZ($translateZ)
 
 // Media queries
+// $mobile-tiny: 340px
+@mixin mobile-tiny
+	@media (max-width: #{$mobile-tiny})
+		@content
+
+// $mobile-xsmall: 380px
+@mixin mobile-xsmall
+	@media (max-width: #{$mobile-xsmall})
+		@content
+
+// $mobile-small: 420px
+@mixin mobile-small
+	@media (max-width: #{$mobile-small})
+		@content
+
+// $mobile: 480px
 @mixin mobile
-	@media (min-width: #{$mobile})
+	@media (max-width: #{$mobile})
 		@content
 
-@mixin mobile-large
-	@media (min-width: #{$mobile-large})
+// $phablet-small: 580px
+@mixin phablet-small
+	@media (max-width: #{$phablet-small})
 		@content
 
+// $phablet: 600px
+@mixin phablet
+	@media (max-width: #{$phablet})
+		@content
+
+// $phablet-large: 620px
+@mixin phablet-large
+	@media (max-width: #{$phablet-large})
+		@content
+
+// $tablet-small: 768px
 @mixin tablet-small
-	@media (min-width: #{$tablet-small})
+	@media (max-width: #{$tablet-small})
 		@content
 
+// $tablet: 820px
 @mixin tablet
-	@media (min-width: #{$tablet})
+	@media (max-width: #{$tablet})
 		@content
 
+// $tablet-large: 980px
 @mixin tablet-large
-	@media (min-width: #{$tablet-large})
+	@media (max-width: #{$tablet-large})
 		@content
 
+// $tablet-xlarge: 1110px
 @mixin tablet-xlarge
-	@media (min-width: #{$tablet-xlarge})
+	@media (max-width: #{$tablet-xlarge})
 		@content
 
+// $desktop: 1280px
 @mixin desktop
-	@media (min-width: #{$desktop})
+	@media (max-width: #{$desktop})
 		@content
 
+// $desktop-large: 1440px
 @mixin desktop-large
-	@media (min-width: #{$desktop-large})
+	@media (max-width: #{$desktop-large})
 		@content
 
+// $desktop-xlarge: 1960px
 @mixin desktop-xlarge
-	@media (min-width: #{$desktop-large} + 1)
+	@media (max-width: #{$desktop-xlarge})
 		@content
 
 @mixin desktop-xxlarge
-	@media (min-width: #{$desktop-xlarge})
+	@media (min-width: #{$desktop-xlarge + 1})
 		@content
