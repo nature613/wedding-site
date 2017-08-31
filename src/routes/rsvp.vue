@@ -61,8 +61,8 @@
 
 					<fieldset class="form-group">
 						<legend>Our Guest</legend>
-						<div class="row">
-							<div class="col-md-6">
+						<div class="ui grid">
+							<div class="column eight wide computer eight wide tablet sixteen wide mobile">
 								<div :class="[ active ? 'form-item selected' : 'form-item' ]">
 									<validate tag="label">
 										<span>Your First + Last Name</span>
@@ -75,7 +75,7 @@
 									</validate>
 								</div>
 							</div>
-							<div class="col-md-6">
+							<div class="column eight wide computer eight wide tablet sixteen wide mobile">
 								<div :class="[ active ? 'form-item selected' : 'form-item' ]">
 									<validate tag="label">
 										<span>Your Email Address</span>
@@ -103,11 +103,9 @@
 					</fieldset>
 
 					<fieldset class="form-group">
+						<legend>Message For Us</legend>
 						<div :class="[ active ? 'form-item selected' : 'form-item' ]">
-							<label>
-								<span>Message For Us</span>
-								<textarea class="form-control" rows="2" v-model.trim="newGuest.message"></textarea>
-							</label>
+							<textarea class="form-control" rows="2" v-model.trim="newGuest.message"></textarea>
 						</div>
 					</fieldset>
 				</div>
@@ -127,7 +125,8 @@
 
 <script>
 
-	import { guestsRef } from '../datastore.js'
+	import * as firebase from 'firebase'
+	import { db, guestsRef } from '../datastore'
 
 	export default {
 		props: {
@@ -176,6 +175,12 @@
 			},
 			removeGuest: function (guest) {
 				guestsRef.child(guest['.key']).remove()
+			},
+			$firebaseRefs: {
+				guests: firebase.database.Reference
+			},
+			removeGuest(guest) {
+				this.$firebaseRefs.guests.child(guest['.key']).remove()
 			}
 		}
 	}
@@ -193,6 +198,7 @@
 
 		h3
 			em
+				@include rem(padding-left, 10px)
 				color: $text8
 				font-size: 26.5px
 
