@@ -70,11 +70,19 @@ module.exports = {
         loader: 'url',
         query: {
           limit: 10000,
-          name: utils.assetsPath('img/[name].[hash:7].[ext]')
+          name: utils.assetsPath('assets/[name].[hash:7].[ext]')
         }
       },
+			{
+				test: /\.(webm|mp4|kml)(\?.*)?$/,
+				loader: 'file',
+				query: {
+          limit: 10000,
+          name: utils.assetsPath('assets/[name].[hash:7].[ext]')
+        }
+			},
       {
-        test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+        test: /\.(woff|svg|woff2?|eot|ttf|otf)(\?.*)?$/,
         loader: 'url',
         query: {
           limit: 10000,
@@ -92,6 +100,10 @@ module.exports = {
       require('autoprefixer')({
         browsers: ['last 2 versions']
       })
-    ]
+    ],
+    transformToRequire: {
+      video: 'poster',
+      source: 'src'
+    }
   }
 }
