@@ -1,5 +1,4 @@
 import Vue from 'vue'
-import BootstrapVue from 'bootstrap-vue'
 import VueForm from 'vue-form'
 import * as VueFire from 'vuefire'
 import * as VueGoogleMaps from 'vue2-google-maps'
@@ -16,8 +15,10 @@ import './vendor/font-awesome/css/font-awesome-light.css'
 import './vendor/font-awesome/css/font-awesome-regular.css'
 import './vendor/font-awesome/css/font-awesome-solid.css'
 
+import '../node_modules/semantic-ui/dist/semantic.min.css'
+import '../node_modules/semantic-ui/dist/semantic.min.js'
+
 // load vue plug-ins
-Vue.use(BootstrapVue)
 Vue.use(VueForm, {
 	inputClasses: {
 		valid: 'form-control-success',
