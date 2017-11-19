@@ -7,8 +7,6 @@ import 'vue-virtual-scroller/dist/vue-virtual-scroller.css'
 import VueYouTubeEmbed from 'vue-youtube-embed'
 import VueRouter from 'vue-router'
 
-import routes from './routes'
-
 import './vendor/font-awesome/css/font-awesome-core.css'
 import './vendor/font-awesome/css/font-awesome-brands.css'
 import './vendor/font-awesome/css/font-awesome-light.css'
@@ -17,6 +15,8 @@ import './vendor/font-awesome/css/font-awesome-solid.css'
 
 import '../node_modules/semantic-ui/dist/semantic.min.css'
 import '../node_modules/semantic-ui/dist/semantic.min.js'
+
+import routes from './routes'
 
 // load vue plug-ins
 Vue.use(VueForm, {
@@ -39,5 +39,9 @@ Vue.use(VueGoogleMaps, {
 
 // set up router and app
 
-const router = new VueRouter({ routes, linkActiveClass: 'active' })
+const router = new VueRouter({
+	routes,
+	mode: 'history',
+	linkActiveClass: 'active'
+})
 const app = new Vue({ router }).$mount('#app')
