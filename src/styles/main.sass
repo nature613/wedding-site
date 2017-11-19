@@ -1,13 +1,18 @@
-@import 'variables.sass'
-@import 'tools.mixins.sass'
+@import './variables.sass'
+@import './tools.mixins.sass'
 
 .wrapper
+	background: #000 url('../assets/stock/water-tower-place.jpg') no-repeat center center fixed
 	color: $text
 	display: block
-	font: 17px/1.5 $font-stack-sans-serif
+	font: 18px/1.5 $font-stack-sans-serif
+	margin: auto
 	-webkit-font-smoothing: antialiased
 	-moz-osx-font-smoothing: grayscale
 	text-align: left
+
+	@include tablet
+		background-position: center 32%
 
 .ui.menu
 	background: transparent
@@ -70,9 +75,10 @@ h4, h5, h6
 		@include rem(margin, 0 auto)
 
 iframe
-	include abs-pos(auto, auto, auto, auto)
+	@include abs-pos(auto, auto, auto, auto)
 	border: 0 none
 	box-shadow: unset
+	display: none
 	position: relative
 	transform: translate(-50%, 10%)
 	z-index: 0
@@ -81,7 +87,7 @@ iframe
 		@include rem(margin, 90px auto 20px)
 		@include rem(padding, 0 40px 50px)
 		@include size(100%, 100%)
-		max-width: 1140px
+		max-width: 1400px
 		position: relative
 		text-align: left
 		z-index: 10
@@ -116,16 +122,16 @@ iframe
 		font-size: 2rem
 
 .lead
-	font-size: 24px
+	font-size: 26px
 
 	@include tablet
-		font-size: 20px
+		font-size: 22px
 
 	@include mobile
-		font-size: 18px
+		font-size: 20px
 
 	@include mobile-xsmall
-		font-size: 16px
+		font-size: 18px
 
 a,
 a:visited,
@@ -261,7 +267,7 @@ ul
 	h2
 		i,
 		.svg-inline--fa
-			font-size: 24px
+			font-size: 26px
 			position: relative
 
 form
@@ -503,6 +509,7 @@ a.button-link
 
 		i,
 		.svg-inline--fa
+			@include rem(margin-left, 3px)
 			@include rem(margin-top, 3px)
 			font-size: 14px
 
@@ -527,6 +534,13 @@ address
 
 .rotate
 	transform: rotate(180deg)
+
+.truncate
+	@include mobile-xsmall
+		overflow: hidden
+		text-overflow: ellipsis
+		white-space: nowrap
+		width: 240px
 
 .desktop-only
 	display: inline-block !important
