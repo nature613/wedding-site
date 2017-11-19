@@ -187,9 +187,7 @@
 
 </script>
 
-<style lang="sass" scoped>
-
-	@import '../styles/main.sass'
+<style scoped lang="sass">
 
 	#rsvp
 		h2
@@ -200,7 +198,7 @@
 			em
 				@include rem(padding-left, 10px)
 				color: $text8
-				font-size: 26.5px
+				font-size: 28.5px
 
 	#get-access,
 	#access-granted

@@ -19,17 +19,3 @@
 		<site-footer></site-footer>
 	</div>
 </template>
-
-<script>
-
-	export default {
-
-	}
-
-</script>
-
-<style lang="sass">
-
-	@import '../styles/main.sass'
-
-</style>

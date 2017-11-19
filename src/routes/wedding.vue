@@ -158,9 +158,7 @@
 
 </script>
 
-<style lang="sass" scoped>
-
-	@import '../styles/main.sass'
+<style scoped lang="sass">
 
 	#wedding
 		@include rem(padding, 20px)

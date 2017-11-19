@@ -11,7 +11,7 @@
 			<div class="ui grid">
 				<div class="ui container">
 					<div class="one wide column"></div>
-					<div class="fifteen wide column">
+					<div class="fourteen wide column">
 						<div class="container">
 							<div id="filtering" class="content">
 								<span>{{ sortedTodos.length}}</span> items
@@ -56,7 +56,7 @@
 										<tr v-for="todo of sortedTodos" :key="todo.id">
 											<td><i :class="'fas fa-' + todo.icon + ''"></i></td>
 											<td>
-												<a :href="'https://www.google.com/maps/place/' + todo.title + '/@' + todo.position.lat + ',' + todo.position.lng + ',19z'" target="_blank"><span class="nowrap">{{ todo.title }}</span></a>
+												<a :href="'https://www.google.com/maps/place/' + todo.title + '/@' + todo.position.lat + ',' + todo.position.lng + ',19z'" target="_blank"><span class="nowrap truncate">{{ todo.title }}</span></a>
 												<span v-if="todo.note" data-inverted="" :data-tooltip="todo.note" data-position="top left"><i class="fas fa-comment"></i></span>
 											</td>
 											<td>
@@ -71,6 +71,7 @@
 							</div>
 						</div>
 					</div>
+					<div class="one wide column"></div>
 				</div>
 			</div>
 		</main>
@@ -243,13 +244,13 @@
 						@include rem(margin, 2.5px 0 0 15px)
 						border: 0 none
 						display: inline-block
-						font-size: 15px
+						font-size: 17px
 
 						span
 							@include rem(margin, 0)
 							color: $anchor-text2
 							display: inline
-							font-size: 11px
+							font-size: 12px
 							position: relative
 							top: -4px
 
@@ -264,7 +265,7 @@
 
 				.note
 					@include rem(margin, 5px 0 25px)
-					font-size: 13px
+					font-size: 15px
 
 		#header
 			@include abs-pos(0, auto, auto, auto)
@@ -376,7 +377,7 @@
 					&:last-of-type
 						span
 							color: $color-green
-							font-size: 20px
+							font-size: 22px
 
 					&:nth-of-type(2)
 						@include phablet-large
@@ -385,13 +386,13 @@
 						span
 							@include rem(margin-left, 0)
 							display: inline-block
-							font-size: 18px
+							font-size: 20px
 
 							@include phablet-large
-								font-size: 16px
+								font-size: 18px
 
 							@include mobile-xsmall
-								font-size: 15px
+								font-size: 17px
 
 							&:hover
 								cursor: pointer
@@ -401,10 +402,11 @@
 
 					&:nth-of-type(3)
 						@include mobile
-							@include rem(padding-right, 5px)
+							@include rem(padding-left, 0)
+							@include rem(padding-right, 0)
 
 						@include mobile-xsmall
-							padding-right: 0
+							display: none
 
 						span
 							@include tablet-large
@@ -415,5 +417,8 @@
 						span
 							@include mobile
 								display: none
+
+						@include mobile-xsmall
+							display: none
 
 </style>
