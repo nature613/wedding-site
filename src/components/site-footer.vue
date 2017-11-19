@@ -46,9 +46,7 @@
 
 </script>
 
-<style lang="sass" scoped>
-
-	@import '../styles/main.sass'
+<style scoped lang="sass">
 
 	#footer
 		@include animation(1s fadeIn forwards)
@@ -62,11 +60,15 @@
 
 		h4
 			@include rem(margin-bottom, 2.5px)
-			font-size: 21.6px
+			@include rem(margin-top, 25px)
+			font-size: 23.6px
+
+			@include tablet
+				margin-top: 0
 
 			i,
 			.svg-inline--fa
-				font-size: 18px
+				font-size: 20px
 
 		p
 			a
@@ -78,7 +80,7 @@
 
 		b
 			font-family: $font-stack-sans-serif2
-			font-size: 17.5px
+			font-size: 19.5px
 
 		.column
 			@include rem(margin-bottom, 20px)
@@ -98,24 +100,24 @@
 		h2
 			color: $text
 			cursor: pointer
-			font: 700 64px/1 $font-stack-sans-serif2
+			font: 700 66px/1 $font-stack-sans-serif2
 			text-shadow: $text-shadow
 			text-transform: uppercase
 
 			@include tablet
-				font-size: 54px
+				font-size: 56px
 
 			span
-				font-size: 32px
+				font-size: 34px
 
 				&:last-of-type
-					font-size: 42px
+					font-size: 44px
 
 		p
 			font-size: $base-font-size
 
 			&.copyright
 				@include rem(margin-top, 10px)
-				font-size: 11px
+				font-size: 12px
 
 </style>

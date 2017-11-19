@@ -89,9 +89,7 @@
 
 </script>
 
-<style lang="sass" scoped>
-
-	@import '../styles/main.sass'
+<style scoped lang="sass">
 
 	.block
 		text-align: center
@@ -100,6 +98,9 @@
 			@include rem(padding, 0 10px)
 
 		@include phablet-large
+			@include rem(padding, 0 15px)
+
+		@include mobile-small
 			@include rem(padding, 0 5px)
 
 		h4,
@@ -107,7 +108,7 @@
 			@include animation(1s fadeIn forwards)
 
 		h4
-			font-size: 22px
+			font-size: 24px
 			font-weight: normal
 
 		p
@@ -125,15 +126,26 @@
 				@include mobile
 					display: none
 
+			&.huge
+				> .value
+					font-size: 10rem !important
+
+					@include tablet
+						font-size: 8rem !important
+
+					@include tablet-small
+						font-size: 6rem !important
+
+					@include mobile-small
+						font-size: 4.5rem !important
+
+					@include mobile-xsmall
+						font-size: 3.5rem !important
+
 			> .value
 				@include animation(1s fadeIn forwards)
 				color: $text
-
-				@include phablet
-					font-size: 5rem !important
-
-				@include mobile-xsmall
-					font-size: 4rem !important
+				font-weight: bold
 
 				~ .label
 					color: $text8

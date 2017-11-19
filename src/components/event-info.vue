@@ -1,8 +1,7 @@
 <template>
 	<div class="ui relaxed grid">
 		<div class="ui stackable sixteen column row equal height">
-			<div class="one wide computer one wide tablet sixteen wide mobile column"></div>
-			<div class="seven wide computer seven wide tablet sixteen wide mobile column">
+			<div class="eight wide computer eight wide tablet sixteen wide mobile column">
 				<div class="ui cards">
 					<div class="ui card">
 						<div class="content">
@@ -11,7 +10,7 @@
 								<p>Our wedding celebration is on
 									<em>Saturday, November 3<sup>rd</sup>, 2018</em><br />
 									It will be held at the
-									<em><a href="https://www.google.com/maps/place/Chicago+Sports+Museum/@41.897972,-87.6241665,19z/data=!4m5!3m4!1s0x880fd3547a49a0c3:0x44868a15ba540fcc!8m2!3d41.897972!4d-87.623614" target="_blank">Chicago Sports Museum</a></em>
+									<em><a href="https://www.google.com/maps/place/Chicago+Sports+Museum/@41.897972,-87.6241665,19z/data=!4m5!3m4!1s0x880fd3547a49a0c3:0x44868a15ba540fcc!8m2!3d41.897972!4d-87.623614" target="_blank">Chicago Sports Museum</a></em> at the Water Tower Place.
 								</p>
 							</div>
 						</div>
@@ -26,13 +25,13 @@
 					</div>
 				</div>
 			</div>
-			<div class="seven wide computer seven wide tablet sixteen wide mobile column">
+			<div class="eight wide computer eight wide tablet sixteen wide mobile column">
 				<div class="ui cards">
 					<div class="ui card">
 						<div class="content">
 							<div class="header"><router-link to="/chicago">While in Chicago</router-link></div>
 							<div class="description">
-								<p>For out of town guests and the locals, Dacia + David is sharing a collection of restaurants, activites, and hotels that you must visit while in town!</p>
+								<p>For out of town guests (locals are welcome too), Dacia + David is sharing a collection of restaurants, activities, and hotels that you must visit while in town!</p>
 							</div>
 						</div>
 						<div class="extra content">
@@ -43,26 +42,16 @@
 					</div>
 				</div>
 			</div>
-			<div class="one wide computer one wide tablet sixteen wide mobile column"></div>
 			<div class="sixteen wide column"></div>
 		</div>
 	</div>
 </template>
 
-<script>
-
-	export default {
-	}
-
-</script>
-
-<style lang="sass" scoped>
-
-	@import '../styles/main.sass'
+<style scoped lang="sass">
 
 	.column
 		.ui.cards > .card
-			min-height: 200px
+			min-height: 230px
 			width: 100%
 
 			@include tablet-large
@@ -88,10 +77,10 @@
 
 				.description
 					p
-						font-size: 19px
+						font-size: 20px
 
 						@include tablet
-							font-size: 16px
+							font-size: 18px
 
 						em
 							color: $text8

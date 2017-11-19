@@ -14,21 +14,11 @@
 	</div>
 </template>
 
-<script>
-
-	export default {
-
-	}
-
-</script>
-
-<style lang="sass" scoped>
-
-	@import '../styles/main.sass'
+<style scoped lang="sass">
 
 	.ui.segment
 		@include rem(margin, 0 auto 30px)
-		@include rem(padding, 0 20px 20px)
+		@include rem(padding, 25px 30px 25px)
 		background: $background3b
 		max-width: 800px
 
@@ -49,7 +39,7 @@
 			color: $text8
 			display: inline-block
 			font-family: $font-stack-serif
-			font-size: 24px
+			font-size: 26px
 
 		.small
 			font-weight: bolder
@@ -57,6 +47,6 @@
 		i,
 		.svg-inline--fa
 			@include rem(margin-left, 5px)
-			font-size: 14px
+			font-size: 16px
 
 </style>

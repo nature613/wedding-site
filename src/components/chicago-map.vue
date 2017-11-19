@@ -243,7 +243,7 @@
 				const { formatted_address: address, name, website } = place
 				this.infoContent =
 					`<div class="marker-content" style="text-align: left;">
-						<h6 style="font-size: 18px; margin: 0 0 10px;"><i class="fa fa-${icon}"></i> ${title}</h6>
+						<h6 style="font-size: 19px; margin: 0 0 10px;"><i class="fa fa-${icon}"></i> ${title}</h6>
 						<p>${category} <span style="color: #1e8947; font-size: 11px; font-weight: bold; position: relative; top: -0.5px;">${price}</span></p>
 						<p style="margin-bottom: 0;">
 							${address}<br />
@@ -292,9 +292,7 @@
 
 </script>
 
-<style lang="sass" scoped>
-
-	@import '../styles/main.sass'
+<style scoped lang="sass">
 
 	.map-container
 		@include size(100%, auto)
@@ -322,7 +320,7 @@
 					i,
 					.svg-inline--fa
 						@include abs-pos(13px, auto, auto, 15px)
-						font-size: 17px
+						font-size: 18px
 						font-weight: 300
 
 </style>

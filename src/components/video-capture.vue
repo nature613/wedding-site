@@ -57,9 +57,7 @@
 
 </script>
 
-<style lang="sass" scoped>
-
-	@import '../styles/main.sass'
+<style scoped lang="sass">
 
 	#video
 		background: transparent
@@ -74,11 +72,11 @@
 
 			h2
 				@include rem(margin-bottom, 7px)
-				font-size: 30px
+				font-size: 32px
 
 			.lead
 				@include rem(margin-top, 0)
-				font-size: 18px
+				font-size: 20px
 
 			#video-recording
 				.flashing
@@ -89,7 +87,7 @@
 					i,
 					.svg-inline--fa
 						color: red
-						font-size: 16px
+						font-size: 18px
 						margin-right: center
 
 				@keyframes blinker
@@ -153,6 +151,6 @@
 							i,
 							.svg-inline--fa
 								color: $color-red
-								font-size: 16px
+								font-size: 18px
 
 </style>

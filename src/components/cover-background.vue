@@ -30,9 +30,7 @@
 
 </script>
 
-<style lang="sass" scoped>
-
-	@import '../styles/main.sass'
+<style scoped lang="sass">
 
 	.no-video .video-container video,
 	.touch .video-container video
@@ -43,31 +41,11 @@
 		display: block !important
 
 	.video-container
-		@include size(100%, auto)
-		background: #000 url('../assets/stock/water-tower-place.jpg') no-repeat
-		background-size: cover
-		overflow: hidden
-		position: absolute
+		@include size(100%, 100%)
 
 		.overlay
 			@include rem(margin, 0)
 			background-color: $background3c
-
-		iframe,
-		video,
-		.poster
-			@include abs-pos(0, 0, 0, 0)
-			@include size(120%, 120%)
-			position: fixed
-			transform: translate(-8%, 0%)
-			z-index: 1
-
-		.poster
-			background: url('../assets/stock/water-tower-place.jpg') center center
-			background-size: cover
-			pointer-events: none
-			position: absolute
-			z-index: 0
 
 		main
 			@include rem(padding, 30px)

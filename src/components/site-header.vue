@@ -8,29 +8,6 @@
 					<span>#davidanddacia</span>
 				</div>
 			</div>
-
-			<div class="mobile-only ui right floated main menu">
-				<div class="ui big launch right attached fixed button dropdown">
-					<div class="item" @click="showMenu = !showMenu">
-						<i class="content icon"></i>
-						<em>Menu</em>
-					</div>
-
-					<div class="menu" :class="[ showMenu ? 'show-content' : 'hide-content' ]">
-						<router-link to="/home">Home</router-link>
-						<router-link to="/wedding">Wedding</router-link>
-						<router-link to="/rsvp">RSVP</router-link>
-						<router-link to="/chicago">Chicago</router-link>
-					</div>
-				</div>
-			</div>
-
-			<div class="desktop-only ui right floated main menu">
-				<router-link to="/home" @click="showMenu = false">Home</router-link>
-				<router-link to="/wedding" @click="showMenu = false">Wedding</router-link>
-				<router-link to="/rsvp" @click="showMenu = false">RSVP</router-link>
-				<router-link to="/chicago" @click="showMenu = false">Chicago</router-link>
-			</div>
 		</div>
 	</div>
 </template>
@@ -47,9 +24,7 @@
 
 </script>
 
-<style lang="sass" scoped>
-
-	@import '../styles/main.sass'
+<style scoped lang="sass">
 
 	#header
 		@include animation(1s fadeIn forwards)
@@ -66,7 +41,7 @@
 
 		.container
 			margin: 0 auto
-			max-width: 1200px
+			max-width: 1400px
 
 			span
 				@include abs-pos(auto, auto, -22px, 0)
@@ -92,7 +67,7 @@
 							@include rem(margin, 0)
 							@include transition (all 1s)
 							color: $text
-							font-size: 40px
+							font-size: 42px
 							font-weight: normal
 							line-height: 1.2
 
@@ -106,9 +81,10 @@
 
 			.launch
 				background: transparent
+				box-shadow: none !important
 				color: $text
 				font-family: $font-stack-sans-serif2
-				font-size: 15px
+				font-size: 17px
 				padding: 0
 				pointer-events: all
 
@@ -174,7 +150,7 @@
 						color: $text
 						cursor: pointer
 						display: inline-block
-						font-size: 18px
+						font-size: 20px
 
 						&:before
 							@include transition(all 1s ease-out)

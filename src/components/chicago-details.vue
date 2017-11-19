@@ -26,9 +26,7 @@
 
 </script>
 
-<style lang="sass" scoped>
-
-	@import '../styles/main.sass'
+<style scoped lang="sass">
 
 	.ui.column.grid > [class*="two wide"].column,
 	.ui.grid>.column.row > [class*="two wide"].column,
@@ -62,10 +60,10 @@
 			right: 0
 
 	p
-		font-size: 16px
+		font-size: 17px
 
 	.get-app
-		font-size: 14px
+		font-size: 15px
 
 		span
 			@include rem(margin-right, 5px)
