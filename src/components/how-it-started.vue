@@ -11,6 +11,8 @@
 				<em class="small">yadda&hellip;</em>
 			</strong>
 		</p>
+
+		<h4 class="now">Now, David + Dacia are getting married in</h4>
 	</div>
 </template>
 
@@ -22,30 +24,39 @@
 		background: $background3b
 		max-width: 800px
 
+		@include mobile-small
+			@include rem(padding, 20px 15px)
+
 		.display-3
-			@include animation(1s fadeIn forwards)
+			@include animation(2s fadeIn forwards)
 			@include rem(margin-bottom, 10px)
 			text-align: left
 
 		.lead
-			@include animation(1s fadeIn forwards)
+			@include animation(2s fadeIn forwards)
 			@include bold()
 			color: $text8
-			font-family: $font-stack-serif
+			font-family: $font-stack-sans-serif
 			text-align: left
+
+		h4
+			@include animation(2s fadeIn forwards)
+			@include rem(margin-bottom, 0)
+			@include rem(margin-top, 20px)
+			font-size: 24px
+			font-weight: normal
 
 		b
 			@include rem(padding-right, 10px)
 			color: $text8
 			display: inline-block
-			font-family: $font-stack-serif
+			font-family: $font-stack-sans-serif
 			font-size: 26px
 
 		.small
 			font-weight: bolder
 
-		i,
-		.svg-inline--fa
+		i
 			@include rem(margin-left, 5px)
 			font-size: 16px
 

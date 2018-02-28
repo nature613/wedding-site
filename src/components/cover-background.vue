@@ -1,12 +1,14 @@
 <template>
 	<div class="video-container">
-		<site-header></site-header>
-		<div class="overlay"></div>
-		<iframe :src="src" height="120%" width="120%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 		<div class="poster"></div>
-		<main>
-			<slot></slot>
-		</main>
+		<div class="overlay"></div>
+		<div class="embed-container">
+			<iframe src="https://player.vimeo.com/video/52302939?autoplay=1&loop=1&background=1" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+			<main>
+				<site-header></site-header>
+				<slot></slot>
+			</main>
+		</div>
 		<site-footer></site-footer>
 	</div>
 </template>
@@ -21,48 +23,64 @@
 		components: {
 			SiteFooter,
 			SiteHeader
-		},
-		props: {
-			'src': { type: String }
 		}
 
-}
+	}
 
 </script>
 
 <style scoped lang="sass">
 
-	.no-video .video-container video,
-	.touch .video-container video
-		display: none
-
-	.no-video .video-container .poster,
-	.touch .video-container .poster
-		display: block !important
-
 	.video-container
 		@include size(100%, 100%)
+		position: relative
 
 		.overlay
 			@include rem(margin, 0)
 			background-color: $background3c
 
-		main
-			@include rem(padding, 30px)
+		.embed-container
+			height: 0
+			max-width: 100%
+			overflow: hidden
 			position: relative
-			z-index: 3
+			padding-bottom: 56.5%
 
 			@include tablet-xlarge
-				@include rem(padding, 30px 0)
+				height: 100%
+				padding-bottom: 0
 
-			@include mobile
-				@include rem(padding, 10px 0)
+			iframe,
+			object,
+			embed
+				@include abs-pos(0, auto, auto, 0)
+				@include size(100%, 100%)
 
-			form
-				@include rem(padding, 20px)
-				background: $background3b
+			main
+				@include rem(margin, 0 auto)
+				@include rem(padding, 0 20px 45px)
+				@include size(100%, 800px)
+				max-width: 1400px
+				overflow-y: auto
+				position: relative
+				text-align: left
+				z-index: 3
 
-				@include mobile
-					@include rem(padding, 10px)
+				@include desktop-xxlarge
+					height: 1200px
+
+				@include tablet-xlarge
+					height: 100%
+
+				@include tablet
+					padding-left: 0
+					padding-right: 0
+
+				form
+					@include rem(padding, 20px)
+					background: $background3b
+
+					@include mobile
+						@include rem(padding, 10px)
 
 </style>

@@ -1,5 +1,6 @@
 <template>
-	<div id="chicago-map" class="map-container">
+	<div id="chicago-map" class="map-container"  @scroll="handleScroll">
+		<site-header :class="{ disappear: !isTop || hideHeader }"></site-header>
 		<gmap-map
 			ref="map"
 			:center="center"
@@ -46,7 +47,7 @@
 						strokeWeight: 0
 					}"
 					:position="m.position"
-					@click="toggleInfoWindow(m,i)"
+					@click="toggleInfoWindow(m,i), hideHeader = true"
 					@mouseover="showMarkerTooltip(m)"
 					@mouseout="hideMarkerTooltip()">
 				</gmap-marker>
@@ -65,7 +66,12 @@
 
 <script>
 
+	import SiteHeader from '../components/site-header.vue'
+
 	export default {
+		components: {
+			SiteHeader
+		},
 		props: {
 			'todos': Array
 		},
@@ -85,6 +91,9 @@
 				currentMarkerIndex: null,
 				infoOptions: {
 					category: '',
+					image1: '',
+					image2: '',
+					image3: '',
 					latitude: '',
 					location: '',
 					longitude: '',
@@ -229,7 +238,9 @@
 						"stylers": [{ "color": "#3d3d3d" }]
 					}
 				],
-				scrollwheel: false
+				scrollwheel: false,
+				isTop: true,
+				hideHeader: false
 			}
 		},
 		computed: {
@@ -239,17 +250,37 @@
 		},
 		methods: {
 			setPlaceInfo(place) {
-				const { category, location, price, title, icon, type } = this.infoOptions
+				const { category, location, price, title, icon, type, image1, image2, image3 } = this.infoOptions
 				const { formatted_address: address, name, website } = place
-				this.infoContent =
-					`<div class="marker-content" style="text-align: left;">
-						<h6 style="font-size: 19px; margin: 0 0 10px;"><i class="fa fa-${icon}"></i> ${title}</h6>
-						<p>${category} <span style="color: #1e8947; font-size: 11px; font-weight: bold; position: relative; top: -0.5px;">${price}</span></p>
-						<p style="margin-bottom: 0;">
-							${address}<br />
-							<a href="https://www.google.com/maps/search/?api=1&query=${name}&zoom=18&basemap=satellite" target="_blank" style="color: #570656;">More Info and Directions</a> | <a href="${website}" target="_blank" style="color: #570656;">Website</a>
-						</p>
-					</div>`
+
+				console.log(this.infoOptions)
+
+				if (image1 === '' && image1 === '' && image3 === '') {
+					this.infoContent =
+						`<div class="marker-content" style="text-align: left;">
+							<h6 style="font-size: 19px; margin: 0 0 10px;"><i class="fa fa-${icon}"></i> ${title}</h6>
+							<p style="text-transform: capitalize;">${category} <span style="color: #01af27; font-size: 11px; font-weight: bold; position: relative; top: -0.5px; text-transform: uppercase;">${price}</span></p>
+							<p style="margin-bottom: 0;">
+								${address}<br />
+								<a href="https://www.google.com/maps/search/?api=1&query=${name}&zoom=18&basemap=satellite" target="_blank" style="color: #0000ff;">More Info and Directions</a> | <a href="${website}" target="_blank" style="color: #0000ff;">Website</a>
+							</p>
+						</div>`
+				} else {
+					this.infoContent =
+						`<div class="marker-content" style="text-align: left;">
+							<h6 style="font-size: 19px; margin: 0 0 10px;"><i class="fa fa-${icon}"></i> ${title}</h6>
+							<p style="text-transform: capitalize;">${category} <span style="color: #01af27; font-size: 11px; font-weight: bold; position: relative; top: -0.5px; text-transform: uppercase;">${price}</span></p>
+							<p style="margin-bottom: 0;">
+								${address}<br />
+								<a href="https://www.google.com/maps/search/?api=1&query=${name}&zoom=18&basemap=satellite" target="_blank" style="color: #0000ff;">More Info and Directions</a> | <a href="${website}" target="_blank" style="color: #0000ff;">Website</a>
+							</p>
+						</div>
+						<div style="padding-top: 5px;">
+							<img src="${image1}" style="height: 150px; width: 150px;" />
+							<img src="${image2}" style="display: inline-block; margin: 0 10px; height: 150px; width: 150px;" />
+							<img src="${image3}" style="height: 150px; width: 150px;" />
+						</div>`
+				}
 			},
 			showMarkerTooltip(marker) {
 				this.markerTooltip.visible = true
@@ -266,6 +297,9 @@
 					this.currentMarkerIndex = index
 					this.infoWindowPos = marker.position
 					this.infoOptions.category = marker.category
+					this.infoOptions.image1 = marker.image1
+					this.infoOptions.image2 = marker.image2
+					this.infoOptions.image3 = marker.image3
 					this.infoOptions.latitude = marker.position.lat
 					this.infoOptions.location = marker.location
 					this.infoOptions.longitude = marker.position.lng
@@ -286,19 +320,31 @@
 			},
 			closeInfoWindow() {
 				this.infoWinOpen = false
+			},
+			handleScroll () {
+				this.isTop = window.scrollY <= 0
 			}
+		},
+		beforeMount () {
+			window.addEventListener('scroll', this.handleScroll)
+		},
+		beforeDestroy () {
+			window.removeEventListener('scroll', this.handleScroll)
 		}
 	}
 
 </script>
 
 <style scoped lang="sass">
-
 	.map-container
 		@include size(100%, auto)
 		max-width: none
 		overflow: hidden
 		position: absolute
+
+		#header
+			position: fixed
+			width: 100%
 
 		.vue-map-container
 			@include size(100%, 400px)
@@ -307,7 +353,7 @@
 
 			.location-text
 				@include abs-pos(auto, auto, 25px, 0)
-				@include animation(fadeIn 1s forwards)
+				@include animation(fadeIn 2s forwards)
 				@include rem(padding, 5px 25px 5px 30px)
 				background: $background3b
 				color: $text7
@@ -317,8 +363,7 @@
 				p
 					@include rem(margin-bottom, 0)
 
-					i,
-					.svg-inline--fa
+					i
 						@include abs-pos(13px, auto, auto, 15px)
 						font-size: 18px
 						font-weight: 300

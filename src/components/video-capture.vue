@@ -5,7 +5,7 @@
 			<div id="video-recording">
 				<div v-if="isRecording">
 					<div class="recording stop flashing">
-						<button @click="stop"><i class="fa fa-stop"></i></button>
+						<button @click="stop, runAnalytics('Stop Recording')"><i class="fa fa-stop"></i></button>
 					</div>
 					<div class="video-container">
 						<video autoplay muted></video>
@@ -14,7 +14,7 @@
 				<div v-else>
 					<p class="lead">Click video icon to record your message.</p>
 					<div class="recording start">
-						<button @click="start"><i class="fal fa-video"></i></button>
+						<button @click="start, runAnalytics('Start Recording')"><i class="fal fa-video"></i></button>
 					</div>
 				</div>
 			</div>
@@ -32,6 +32,9 @@
 			}
 		},
 		methods: {
+			runAnalytics(title) {
+				this.$ga.event('Video Capture', 'click', title)
+			},
 			start() {
 				const setupVideo = (stream) => {
 					this._stream = stream
@@ -80,12 +83,11 @@
 
 			#video-recording
 				.flashing
-					animation: blinker 1s linear infinite
+					animation: blinker 2s linear infinite
 					line-height: 27px
 					text-align: center
 
-					i,
-					.svg-inline--fa
+					i
 						color: red
 						font-size: 18px
 						margin-right: center
@@ -121,12 +123,10 @@
 								cursor: pointer
 								outline: 0
 
-								i,
-								.svg-inline--fa
+								i
 									color: $anchor-text2
 
-							i,
-							.svg-inline--fa
+							i
 								@include rem(margin-right, 0)
 								color: $text
 								font-size: 70px
@@ -144,12 +144,10 @@
 							&:hover
 								box-shadow: 0 0 5px 0 $color-red inset, 0 0 5px 4px $color-red
 
-								i,
-								.svg-inline--fa
+								i
 									color: $color-red
 
-							i,
-							.svg-inline--fa
+							i
 								color: $color-red
 								font-size: 18px
 
