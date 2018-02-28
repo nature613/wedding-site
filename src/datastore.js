@@ -11,4 +11,8 @@ export const firebaseApp = firebase.initializeApp({
 
 export const db = firebaseApp.database()
 
-export const guestsRef = db.ref('rsvp').orderByChild('name')
+export const guestsRef = db.ref('guests').orderByChild('name')
+export const postsRef = db.ref('posts').orderByChild('date')
+export const tasksRef = db.ref('tasks').orderByChild('category')
+export const categoriesRef = db.ref('categories').orderByChild('category')
+export const todosRef = db.ref('todos').orderByChild('title')
