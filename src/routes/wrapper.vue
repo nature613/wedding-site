@@ -10,13 +10,18 @@
 
 	import CoverBackground from '../components/cover-background.vue'
 
+	const methods = require('../scripts/common.js')
+
 	export default {
 
 		components: {
 			CoverBackground
+		},
+		methods: {
+			methods
 		}
 
-}
+	}
 
 </script>
 

@@ -17,6 +17,9 @@
 			Countdown,
 			HowItStarted,
 			SaveTheDate
+		},
+		mounted() {
+			this.$ga.page(this.$router)
 		}
 	}
 
