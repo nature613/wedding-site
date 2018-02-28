@@ -1,0 +1,88 @@
+.ui.segment,
+.ui.segments .segment
+    background: transparent
+    border: 0 none
+    font-size: inherit
+
+    &.add-block
+        @include rem(margin, 0 auto 30px)
+        @include rem(padding, 25px 30px 25px)
+        background: $background3b
+
+        @include tablet
+            @include rem(padding-left, 15px)
+            @include rem(padding-right, 15px)
+
+        i
+            @include rem(margin-left, 5px)
+            font-size: 16px
+
+        .ui.input
+            width: 90%
+
+        .field
+            @include flex-container()
+            @include rem(margin-top, 10px)
+
+            &.inline
+                margin-top: 0
+
+        .ui.form
+            .field
+                .form-item.custom
+                    flex: 1 auto
+                    margin-right: 10px
+
+        .container
+            @include rem(margin-top, 25px)
+
+            #filtering
+                @include rem(margin-bottom, 20px)
+
+            .ui.table
+                .block
+                    @include mobile
+                        padding-left: 0
+                        padding-right: 0
+
+                    .column
+                        .filters
+                            @include rem(margin-left, 30px)
+                            top: 2px
+
+                            @include desktop
+                                @include rem(margin, 7px 0 0 0)
+                                width: 100%
+
+                            a
+                                @include rem(margin-top, -5px)
+                                @include rem(padding-left, 20px)
+                                border: 0 none
+
+                                @include mobile
+                                    @include rem(padding-left, 7px)
+
+                                &.active
+                                    border: 0 none
+
+                table
+                    tr
+                        td
+                            border-collapse: collapse
+
+                            &:first-of-type
+                                width: 120px
+
+                            &:nth-of-type(2)
+                                width: 60px
+
+                            &.editing
+                                .view
+                                    display: none
+
+                                .ui.input
+                                    display: block
+
+                            .ui.input
+                                display: none
+                                width: 65%

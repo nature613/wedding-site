@@ -1,0 +1,76 @@
+*:not(.fa, .fas, .far, .fal, .fab)
+	font-family: $font-stack
+
+.ui.cards > .card .header:not(.ui),
+.ui.cards > .card .content > .header:not(.ui),
+.ui.menu,
+h1, h2, h3,
+h4, h5, h6
+	@include bold()
+	@include rem(margin, 0 0 10px)
+	font-family: $font-stack-sans-serif
+	line-height: 1.4
+
+	a
+		i
+			@include rem(margin-left, 3px)
+			@include rem(margin-right, 0)
+			@include rem(top, -2px)
+			font-size: 11px
+			position: relative
+
+		&:hover,
+		&:focus,
+		&:active
+			i
+				color: $anchor-text2
+				cursor: pointer
+
+.display-3
+	font-size: 4rem
+
+	@include tablet
+		font-size: 3rem
+
+	@include mobile
+		font-size: 2rem
+
+.lead
+	font-size: 26px
+
+	@include tablet
+		font-size: 22px
+
+	@include mobile
+		font-size: 20px
+
+	@include mobile-xsmall
+		font-size: 18px
+
+.noted
+	font-size: 80%
+
+em
+	font-style: normal
+
+ul
+	list-style-position: inside
+	-webkit-padding-start: 20px
+
+dl
+	dt, dd
+		em, .icon
+			color: $text8
+
+	dd
+		-webkit-margin-start: 20px
+
+button,
+input,
+optgroup,
+select,
+textarea
+	font-family: $font-stack
+
+address
+	font-style: normal

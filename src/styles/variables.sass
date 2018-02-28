@@ -1,8 +1,5 @@
-
-$font-stack: Lato,'Helvetica Neue', Arial, Helvetica, sans-serif
-$font-stack-serif: 'Playfair Display', 'Times New Roman', 'Times', serif
-$font-stack-sans-serif: 'Roboto Condensed', Helvetica, Arial, sans-serif
-$font-stack-sans-serif2: 'Oswald', sans-serif
+$font-stack: 'Arimo', Helvetica, Arial, sans-serif
+$font-stack-sans-serif: 'Oswald', Lato,'Helvetica Neue', Arial, Helvetica, sans-serif
 
 $base-font-size: 18px
 $base-font-size-tablet: 17px
@@ -41,32 +38,14 @@ $color-reddish-purple: #570656 // Reddish Purple
 $color-red: #ff0000 // Red
 $color-green-md: rgb(19, 91, 98) // Medium Dark Green
 
-%theme
-	background-color: var(--base-1)
-	color: var(--base-4)
-
-.theme--light
-	@extend %theme;
-	--base-1: $color-white2
-	--base-2: $color-grey1
-	--base-3: $color-grey1
-	--base-4: $color-black
-
-.theme--dark
-	@extend %theme;
-	--base-1: $color-black
-	--base-2: $color-grey-md4
-	--base-3: $color-grey2
-	--base-4: $color-white
-
 $background: $color-merlot
 $background2: $color-white
-$background2a: rgba(255, 255, 255, 0.8)
-$background2b: rgba(255, 255, 255, 0.6)
+$background2a: rgba(255, 255, 255, 0.7)
+$background2b: rgba(255, 255, 255, 0.5)
 $background2c: rgba(255, 255, 255, 0.3)
 $background3: $color-black
 $background3a: rgba(0, 0, 0, 0.8)
-$background3b: rgba(0, 0, 0, 0.6)
+$background3b: rgba(0, 0, 0, 0.65)
 $background3c: rgba(0, 0, 0, 0.4)
 $background4: $color-brown
 $background5: $color-gold-yellow
@@ -79,6 +58,7 @@ $text5: $color-grey
 $text6: $color-reddish-purple
 $text7: $color-gold-yellow
 $text8: $color-gold
+$text9: $color-red
 $anchor-text: $text2
 $anchor-text2: $color-gold-yellow
 $anchor-text-hover: $text4
@@ -92,10 +72,23 @@ $mobile: 480px
 $phablet-small: 580px
 $phablet: 600px
 $phablet-large: 620px
+$tablet-xsmall: 720px
 $tablet-small: 768px
 $tablet: 820px
-$tablet-large: 980px
+$tablet-large: 1025px
 $tablet-xlarge: 1110px
 $desktop: 1280px
 $desktop-large: 1440px
 $desktop-xlarge: 1960px
+
+/* Breakpoints */
+$breakpoint-phone: $mobile
+$breakpoint-tablet: $phablet-large
+$breakpoint-desktop: $tablet-large
+$breakpoint-desktop-lg: $desktop-xlarge
+
+$breakpoint-phone-sm-max: ($breakpoint-phone - 1)
+$breakpoint-phone-max: ($breakpoint-tablet - 1)
+$breakpoint-mobile-max: ($breakpoint-desktop - 1)
+$breakpoint-desktop-max: ($breakpoint-desktop-lg - 1)
+

@@ -1,0 +1,46 @@
+#filtering
+    @include rem(margin-bottom, 5px)
+
+    span
+        @include bold()
+        color: $color-gold
+        font-size: 28px
+
+    > div
+        @include rem(margin-left, 15px)
+
+    .ui.input
+        width: 58%
+
+        @include mobile
+            @include rem(margin-left, 0)
+            @include rem(margin-top, 20px)
+            width: 97%
+
+        input ~ a
+            @include animation(2s fadeIn forwards)
+            @include rem(margin, 2.5px 0 0 15px)
+            border: 0 none
+            display: inline-block
+            font-size: 17px
+
+            span
+                @include rem(margin, 0)
+                color: $anchor-text2
+                display: inline
+                font-size: 12px
+                position: relative
+                top: -4px
+
+                @include tablet
+                    display: none
+
+                &:hover
+                    color: $text
+
+                i
+                    @include rem(top, -1.5px)
+
+    .note
+        @include rem(margin, 5px 0 25px)
+        font-size: 15px

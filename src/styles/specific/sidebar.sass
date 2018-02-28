@@ -1,0 +1,21 @@
+.ui.vertical.menu.sidebar
+	background-color: $background3
+
+	> div
+		@include rem(margin, 0 10px auto 0)
+
+	a
+		@include rem(padding, 25px 0 25px 30px)
+		@include size(100%, auto)
+		border-left: 7px solid transparent
+		display: block
+		font-size: 2.5rem
+
+		&:hover,
+		&.active,
+		&:focus
+			border-color: $background2
+			outline: none
+
+			&:before
+				background: transparent

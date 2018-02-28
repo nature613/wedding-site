@@ -1,0 +1,29 @@
+.container
+    @include rem(margin, 0)
+    @include rem(padding, 0)
+
+    @include tablet-small
+        @include rem(margin, 0 auto)
+
+.flex-container
+    @include flex-container()
+
+    > *
+        &:last-of-type
+            margin-left: auto
+
+    &.form-column
+        @include align-content-stretch()
+
+        @include tablet
+            display: block
+
+        .column
+            flex: 1 auto
+            max-width: 320px
+
+            @include tablet
+                @include rem(margin-bottom, 20px)
+                flex: none
+                max-width: none
+                width: 100%

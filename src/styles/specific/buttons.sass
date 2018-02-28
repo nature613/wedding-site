@@ -1,0 +1,53 @@
+a.button-link,
+input[type="submit"],
+input[type="button"],
+button
+	@include bold()
+	@include flexbox()
+	@include rem(margin, 0 0 20px)
+	@include rem(padding, 10px 40px)
+	@include vendor-prefix(appearance, none)
+	@include vendor-prefix(box-sizing, border-box)
+	align-self: center
+	background: $background3
+	border: 0 none
+	border-radius: $border-radius
+	box-shadow: 0 0 10px 0 $background5 inset, 0 0 10px 4px $background5
+	color: $text
+	cursor: pointer
+	font-family: $font-stack-sans-serif
+	font-size: $base-font-size
+	line-height: 1
+	outline: none
+	text-decoration: none
+	text-align: left
+
+	&.button
+		overflow: hidden
+		position: relative
+
+		span
+			pointer-events: none
+			position: relative
+
+		&::before
+			--size: 0
+			background: radial-gradient(circle closest-side, $anchor-text2, transparent)
+			content: ''
+			height: var(--size)
+			left: var(--x)
+			position: absolute
+			top: var(--y)
+			transform: translate(-50%, -50%)
+			transition: width .2s ease, height .2s ease
+			width: var(--size)
+
+		&:focus::before,
+		&:active::before,
+		&:hover::before
+			--size: 400px
+
+a.button-link
+	@include rem(margin-top, 20px)
+	display: inline-block
+	width: auto

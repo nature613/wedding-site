@@ -1,0 +1,40 @@
+.ui.comments
+    max-width: 60%
+
+    @include tablet-xlarge
+        max-width: 420px
+
+    @include tablet
+        max-width: none
+
+    .comment
+        border-bottom: 1px solid $background2c
+        font-size: 14px
+        padding-bottom: 8px
+
+        > .content
+            position: relative
+
+            a.button-link,
+            input[type="submit"],
+            input[type="button"],
+            button
+                @include abs-pos(2px, 0, auto, auto)
+
+        .avatar
+            font-size: 2em
+            height: 1.5em
+            margin: 0
+            width: auto
+
+        .author,
+        .text
+            color: $text
+            font-size: 16px
+
+        .author
+            font-size: 14px
+
+        .metadata
+            color: $text8
+            font-size: 12px

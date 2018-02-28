@@ -1,0 +1,24 @@
+i
+	@include rem(font-size, 18px)
+	@include rem(margin-right, 5px)
+	display: inline-block
+
+	&.sort
+		@include rem(font-size, 15px)
+		color: $anchor-text2
+		display: block
+		height: .15rem
+
+		&.sorted.active
+			color: $text
+
+		~ a
+			@include rem(margin-top, -2.5px)
+			@include rem(padding-left, 20px)
+			float: right
+
+			@include mobile-small
+				margin-top: 0
+
+			&:before
+				background: transparent

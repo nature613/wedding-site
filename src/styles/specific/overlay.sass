@@ -1,0 +1,16 @@
+.poster,
+.overlay
+    @include abs-pos(0, 0, 0, 0)
+    @include size(100%, auto)
+    background-color: $background3a
+    position: fixed
+    z-index: 2
+
+.poster
+    background-color: transparent
+    background: url('../assets/stock/water-tower-place.jpg') no-repeat bottom center fixed
+    background-size: cover
+    display: none
+
+    @include tablet-xlarge
+        display: block

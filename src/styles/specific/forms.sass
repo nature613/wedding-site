@@ -1,0 +1,211 @@
+.form-item,
+.ui.input
+	@include transition(all 2s)
+
+	label
+		@include rem(font-size, 13px)
+		display: block
+		max-width: 100%
+
+	input,
+	input[type="text"],
+	input[type="date"],
+	input[type="datetime"],
+	input[type="email"],
+	input[type="number"],
+	input[type="search"],
+	input[type="time"],
+	input[type="url"],
+	input[type="password"],
+	textarea,
+	select
+		@include line-height(25)
+		@include rem(padding, 3px 17px 3px 6px)
+		@include size(70%, 25px)
+		@include transition(all 2s ease-out)
+		@include vendor-prefix(box-sizing, border-box)
+		background: transparent
+		border: 0 none
+		border-bottom: 1px solid $color-white
+		border-radius: $border-radius
+		color: $text7
+		cursor: pointer
+		display: inline-block
+		font-size: 17px
+		height: 30px
+		outline: none
+
+		&:hover,
+		&:active,
+		&:focus
+			border-color: $background5
+
+		&::selection
+			background-color: transparent
+			color: $text
+
+	textarea
+		@include rem(padding, 2.5px 5px)
+		border: 1px solid $color-white
+		color: $text7
+		cursor: default
+		font-size: 16px
+		height: auto
+		line-height: 1.1
+		resize: none
+
+	&:hover,
+	&.selected
+		border-color: $color-grey-md4
+
+		label
+			color: $anchor-text2
+
+		input,
+		textarea,
+		select
+			border-color: $background5
+
+form
+	@include animation(2s fadeIn forwards)
+	@include rem(padding, 20px 30px)
+	background: $background3b
+	max-width: 780px
+	width: 100%
+
+	@include tablet
+		max-width: none
+
+	fieldset
+		legend
+			@include animation(2s fadeIn forwards)
+			@include bold()
+			@include rem(margin-bottom, 10px)
+
+		label
+			@include animation(2s fadeIn forwards)
+			@include rem(font-size, 12px)
+			@include transition(all 2s)
+
+		em
+			@include line-height(12)
+			@include rem(padding, 2.5px 5px 2.5px 15px)
+			background: $background3b
+			color: $color-red
+			font-size: 15px
+			display: block
+			position: relative
+
+			i
+				@include abs-pos(7px, 0, 0, 5px)
+				font-size: 14px
+
+			&.form-control-success
+				@include abs-pos(32px, 28px, auto, auto)
+				@include animation(2s fadeIn forwards)
+				@include rem(padding, 0)
+				background: transparent
+				color: $color-green
+				font-size: 14px
+
+		&.form-group
+			@include rem(margin-bottom, 30px)
+
+		.form-check
+			@include rem(margin, 0 20px 2px)
+			display: inline-block
+			position: relative
+
+			&.form-control-feedback
+				@include rem(margin, 0)
+
+				em
+					&.form-control-success
+						@include animation(2s fadeIn forwards)
+						@include rem(left, -10px)
+						@include rem(right, auto)
+						@include rem(top, -12px)
+
+						i
+							@include rem(top, 4px)
+
+			label
+				@include rem(padding-left, 3px)
+				@include transition(all 2s ease-out)
+				cursor: pointer
+
+			input[type="radio"]
+				position: absolute
+				visibility: hidden
+
+				&:checked ~ .check
+					border: 3px solid $anchor-text2
+
+				&:checked ~ .check::before
+					background: $anchor-text2
+
+				&:checked ~ label
+					color: $anchor-text2
+
+			span
+				&:before
+					@include abs-pos(auto, 100%, 0, 5px)
+					@include transition(all 2s ease-out)
+					background: $anchor-text2
+					content: ""
+					height: 2px
+					z-index: -1
+
+			&:hover
+				span
+					color: $anchor-text2
+
+					&:before
+						@include rem(right, 0)
+
+			&.selected
+				span
+					color: $anchor-text2
+
+			.check
+				@include abs-pos(2px, auto, auto, -25px)
+				@include size(20px, 20px)
+				@include transition(all 2s ease-out)
+				border: 3px solid $background2
+				border-radius: $border-radius-round
+				display: block
+				z-index: 5
+
+				&::before
+					@include abs-pos(3px, auto, auto, 3px)
+					@include rem(margin, auto)
+					@include size(8px, 8px)
+					@include transition(background 2s ease-out)
+					border-radius: 100%
+					content: ''
+					display: block
+
+			&:hover
+				.check
+					border-color: $anchor-text2
+
+		.ui.slider.checkbox,
+		.ui.slider.checkbox
+			label,
+			.box
+				color: $text
+
+				&:before
+					background-color: $background2b
+
+			input:checked,
+			input:checked
+				~ .box,
+				~ label
+					color: $text7 !important
+
+					&:after
+						background: $background5
+
+					&:before
+						background: $background2b !important

@@ -1,0 +1,49 @@
+.ui.menu,
+.selection.dropdown
+	background: transparent
+	border: 0
+	box-shadow: unset
+
+.ui.dropdown .menu
+	background: $background3a
+
+.ui.selection.dropdown
+	color: $text
+	width: 100%
+
+	&:hover,
+	&:focus,
+	&.active
+		border-color: $background5
+
+		.menu
+			background: $background3
+			border-color: $background2c
+			width: 100%
+
+			> .item
+				background: $background3
+				width: 100%
+
+	> .dropdown.icon
+		top: .5em
+
+	.text
+		color: $anchor-text2
+		font-size: 16px
+
+		&.default
+			color: rgba(191,191,191,.87)
+
+	.menu
+		background: $background3
+
+		> .item
+			border-color: $background2c
+			border-right-color: transparent
+			border-right-width: 3px
+			color: $text
+
+			&:hover
+				border-color: $anchor-text2
+				color: $anchor-text2

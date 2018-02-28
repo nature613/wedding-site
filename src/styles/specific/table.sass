@@ -1,0 +1,156 @@
+.table
+    @include animation(2s fadeIn forwards)
+
+    tr
+        border-collapse: collapse
+
+    td, th
+        border-collapse: collapse
+
+        a
+            text-transform: capitalize
+
+            &.has-icon
+                i
+                    @include rem(margin-left, 1.5px)
+
+        i
+            @include rem(margin-left, 3px)
+            @include rem(margin-top, 3px)
+            font-size: 14px
+
+    td
+        span
+            font-size: 14px
+
+        .view
+            span
+                text-transform: capitalize
+
+.container
+    .table
+        position: relative
+
+        @include desktop-large
+            font-size: 1rem
+
+        .block
+            @include animation(2s fadeIn forwards)
+            @include rem(padding, 15px 10px)
+            background: $color-grey-dark2
+            margin-bottom: 0
+            position: relative
+            width: 100%
+            z-index: 6
+
+            &.fixed
+                left: 0 !important
+                position: fixed
+
+                .wide
+                    @include tablet-large
+                        width: 62.5% !important
+
+                        &:last-of-type
+                            width: 37.5% !important
+
+                    @include tablet
+                        width: 100% !important
+
+                        &:last-of-type
+                            width: 100% !important
+
+            &.placeholder
+                height: 80px
+
+                @include tablet
+                    height: auto
+
+            span
+                @include rel-pos(2px, auto, auto, auto)
+                @include rem(margin, 0 0 0 5px)
+                display: inline-block
+
+                &:first-of-type
+                    @include rem(margin-left, 0)
+
+            .wide
+                &:last-of-type
+                    text-align: right
+
+                    span
+                        top: -2px
+
+                        a
+                            @include animation(2s fadeIn forwards)
+                            @include rem(margin-right, 10px)
+                            @include rem(padding, 1px 5px)
+                            border: 2px solid $background5
+                            cursor: pointer
+                            display: inline-block
+                            min-width: 60px
+                            text-align: center
+
+                            &:last-of-type
+                                @include rem(margin-right, 5px)
+
+                            &.active,
+                            &:hover
+                                border-color: $text
+
+                                i
+                                    color: $text
+
+                            i
+                                @include rem(margin, 0)
+                                @include rem(top, 1.5px)
+                                position: relative
+
+                                @include tablet-large
+                                    font-size: 1.5rem
+
+        table
+            width: 100%
+
+            i
+                font-size: 18px
+
+                &.remove
+                    &:hover
+                        color: $text9 !important
+                        cursor: pointer
+
+            td, th
+                font-size: 1em
+
+                @include tablet-large
+                    padding-right: 0
+
+                &:nth-of-type(2)
+                    @include phablet-large
+                        @include rem(padding-left, 0)
+
+                    span
+                        @include rem(margin-left, 0)
+                        display: inline-block
+
+                        &:hover
+                            cursor: pointer
+
+                            i
+                                color: $anchor-text2
+                                font-size: 20px
+
+                &:nth-of-type(3)
+                    @include mobile
+                        @include rem(padding-left, 0)
+                        @include rem(padding-right, 0)
+
+                &.location
+                    span
+                        @include tablet
+                            display: none
+
+                .ui.input
+                    input.custom
+                        font-size: 14px

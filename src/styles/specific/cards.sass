@@ -1,0 +1,162 @@
+.ui.cards
+	@include flex-container()
+	@include align-items-stretch()
+
+.ui.card,
+.ui.cards > .card
+	background-color: $background3b
+	box-shadow: unset
+
+	> .extra a:not(.ui):hover,
+	> .card >.extra a:not(.ui):hover
+		color: $text
+
+	.description,
+	p,
+	.header
+		color: $text
+
+	.extra
+		a
+			color: $anchor-text2
+
+.ui.cards.link
+	.column
+		@include rem(padding, 15px 10px !important)
+		flex: 1 auto
+		max-width: 580px
+
+		@include tablet
+			@include rem(padding, 10px 20px !important)
+			max-width: none
+			width: 100%
+
+	.ui.card,
+	> .card
+		width: 250px
+
+		*
+			color: $text
+
+		.image
+			text-align: center
+
+			a
+				border: 0 none
+				border-color: transparent
+				box-shadow: unset
+
+				&.active,
+				&:focus,
+				&:hover
+					border-color: transparent
+					box-shadow: unset
+
+					&:before
+						background: transparent
+						height: 0
+
+			i
+				@include animation(2s fadeIn forwards)
+				@include rem(font-size, 80px)
+				color: $text
+				height: 1.2rem
+				margin: 0
+				padding: 0
+
+				&:hover,
+				&.active
+					color: $text7
+
+		.extra
+			font-size: 1rem
+
+			span
+				i
+					font-size: 14px
+
+		.meta
+			text-align: center
+
+			a,
+			> a:not(.ui)
+				color: $text
+
+		&.active,
+		&:focus,
+		&.hover,
+		&:hover
+			background-color: $background3b
+			box-shadow: unset
+			border: none
+
+			.image
+				a
+					border: 0 none
+					border-color: transparent
+					box-shadow: unset
+
+					&.active,
+					&:focus,
+					&:hover
+						border-color: transparent
+						box-shadow: unset
+
+						&:before
+							background: transparent
+							height: 0
+
+				i
+					color: $text7
+
+			.meta
+				a,
+				> a:not(.ui)
+					border-color: $text7
+					color: $text7
+
+					&.active,
+					&:focus,
+					&:hover
+						&:before
+							background: transparent
+							height: 0
+
+.card
+	@include animation(2s fadeIn forwards)
+	@include rem(padding, 0 !important)
+	background-color: $background3b
+	text-align: left
+
+	@include tablet-small
+		border-radius: 0
+
+	@include tablet-xlarge
+		@include rem(margin-bottom, 20px)
+		display: block
+		max-width: 660px
+
+	> a
+		@include tablet-xlarge
+			display: block
+			max-height: 200px
+			overflow: hidden
+
+			@include tablet-xlarge
+				max-height: 120px
+
+			&:hover
+				border-color: $text
+				text-decoration: none
+
+			img
+				width: 100%
+
+	.card-link
+		@include rem(letter-spacing, .5px)
+		@include rem(top, -1px)
+
+	h2
+		i
+			font-size: 26px
+			position: relative

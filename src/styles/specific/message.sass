@@ -1,0 +1,28 @@
+.ui.message
+    @include rem(margin-bottom, 30px)
+
+    &.ui.success
+        background-color: $background2a
+
+        a
+            color: #2c662d
+            font-weight: bold
+
+    &.icon
+        background-color: $background3
+        color: $text
+
+        > i.icon:not(.close)
+            font-size: 3em
+
+        > .content
+            @include rem(padding-top, 10px)
+
+        .header
+            @include rem(margin-bottom, 15px)
+            font-size: 200%
+
+        p
+            b
+                em
+                    color: $text7

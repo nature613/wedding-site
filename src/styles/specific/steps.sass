@@ -1,0 +1,29 @@
+.ui.steps
+	@include tablet-xsmall
+		@include flex-direction(row)
+		-webkit-box-orient: horizontal
+
+	.step
+		background-color: transparent
+		color: $text
+		font-family: $font-stack
+
+		@include tablet-xsmall
+			@include flex-direction(row)
+			@include rem(padding-left, 7.5px !important)
+			@include rem(padding-right, 7.5px !important)
+			-webkit-box-orient: horizontal
+			width: 33% !important
+
+		&:after
+			background-color: transparent
+
+		.content
+			@include rem(margin-left, 10px)
+
+			@include tablet-xsmall
+				text-align: left
+
+		.description
+			color: $text
+

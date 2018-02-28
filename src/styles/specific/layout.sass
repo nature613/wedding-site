@@ -1,0 +1,95 @@
+.wrapper
+	background-color: $background3
+	color: $text
+	display: block
+	font: 18px/1.5 $font-stack
+	margin: auto
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	text-align: left
+
+	main,
+	.main
+		@include rem(margin, 10px auto)
+		@include rem(padding, 0)
+		max-width: 1024px
+		position: relative
+		width: 100%
+		z-index: 5
+
+		@include tablet-large
+			max-width: 90%
+
+section
+	@include rem(margin, 50px auto)
+	max-width: 800px
+
+	h2
+		font-size: 3.5rem
+
+		@include tablet
+			@include rem(margin-left, 25px)
+
+		@include phablet
+			font-size: 3rem
+
+.content
+	.image
+		border: 0 none !important
+
+.nowrap
+	white-space: nowrap
+
+pre
+	font-family: $font-stack
+	white-space: pre-wrap
+	word-wrap: break-word
+
+.truncate
+	@include mobile-xsmall
+		overflow: hidden
+		text-overflow: ellipsis
+		white-space: nowrap
+		width: 240px
+
+.invisible-content
+	visibility: hidden !important
+
+.visible-content
+	visibility: visible !important
+
+.hide-content
+	display: none !important
+
+.show-content
+	display: block !important
+
+.desktop-only
+	display: inline-block !important
+
+	@include tablet
+		display: none !important
+
+.tablet-only
+	display: inline-block !important
+
+	@include phablet-large
+		display: none !important
+
+.mobile-only
+	display: none !important
+
+	@include tablet
+		display: inline-block !important
+
+.not-on-tablet
+	@include tablet-small
+		display: none !important
+
+.not-on-mobile
+	@include phablet-large
+		display: none !important
+
+.not-on-sm-mobile
+	@include mobile-small
+		display: none !important

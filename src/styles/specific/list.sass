@@ -1,0 +1,67 @@
+.ui.list .list > .item .header,
+.ui.list > .item .header,
+.ui.list .list > .item .description,
+.ui.list > .item .description
+    color: $text
+
+.listing
+    .ui.list
+        .item
+            @include rem(padding, 20px)
+            border-color: $background2a
+
+            &.completed
+                *
+                    color: $anchor-text2
+
+                .content
+                    span
+                        border-color: $anchor-text2
+
+                        &::before
+                            content: '\00b7'
+                            font-size: 6rem
+                            left: -2.5px
+                            top: -1.5px
+
+                    .text
+                        @include regular
+                        text-decoration: line-through
+
+            .content
+                position: relative
+
+                .text
+                    @include bold
+                    @include rem(margin-left, 7.5px)
+
+                span
+                    @include abs-pos(0, auto, auto, -25px)
+                    @include size(20px, 20px)
+                    @include transition(border 2s ease-out)
+                    border: 3px solid $background2
+                    border-radius: $border-radius-round
+                    display: block
+                    z-index: 5
+
+                    &::before
+                        @include abs-pos(3px, auto, auto, 3px)
+                        @include rem(margin, auto)
+                        @include size(8px, 8px)
+                        @include transition(background 2s ease-out)
+                        border-radius: 100%
+                        content: ''
+                        display: block
+
+                &:hover
+                    *
+                        color: $anchor-text2
+
+                    span
+                        border-color: $anchor-text2
+
+                        &::before
+                            content: '\00b7'
+                            font-size: 6rem
+                            left: -2.5px
+                            top: -1.575px

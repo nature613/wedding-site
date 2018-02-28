@@ -1,0 +1,47 @@
+a,
+a:visited,
+a:link
+    @include transform(1px, 0)
+    @include transition(all 2s)
+    box-shadow: 0 0 1px transparent
+    color: $anchor-text2
+    display: inline-block
+    outline: none
+    position: relative
+
+    &:not(.tab-title),
+    &:not(.has-icon),
+    &:not(.button-link)
+        &:before
+            @include abs-pos(auto, 100%, 0, 0)
+            @include transition(all 2s ease-in)
+            background: $anchor-text2
+            content: ""
+            height: 0
+            left: 0
+            right: auto
+            z-index: 1
+
+    &:hover,
+    &.active
+        color: $text
+        cursor: pointer
+        outline: none
+
+        &:before
+            background: $background2
+            height: 2px
+            right: 0
+
+    &.has-icon
+        &:before
+            background: transparent
+
+        i
+            &.fa-chevron-up
+                color: $anchor-text2 !important
+
+        &:hover,
+        &.active
+            &:before
+                background: transparent

@@ -1,0 +1,13 @@
+[data-tooltip]:before
+    z-index: 6
+
+[data-tooltip]:after
+    @include rem(padding-bottom, 10px)
+    max-width: 500px
+    min-width: 300px
+    white-space: normal
+    z-index: 12
+
+[data-inverted]:after,
+[data-inverted]:before
+    background: $color-grey-dark2
